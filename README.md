@@ -2,7 +2,7 @@
 
 Installation guidance, tested results and troubleshooting for ASUS Zenbook Duo laptops, starting with the **2026 UX8407AA on CachyOS + KDE Plasma + Wayland**.
 
-**Current status — 3 November 2026:** CachyOS is installed and the desktop works after recovery from a first-login graphics freeze. The installed kernel is `7.3.1-1-cachyos`. The freeze still needs investigation; no Burakgon modules or custom kernel patches have been applied yet.
+See the [machine profiles](machines/) for recorded configurations and test results, and the [installation journal](docs/journey/2026-11-03.md) for the documented journey.
 
 ## Which approach should I use?
 
@@ -11,7 +11,7 @@ Installation guidance, tested results and troubleshooting for ASUS Zenbook Duo l
 | 2026 UX8407AA, CachyOS, KDE Wayland | Start with the distribution's kernel, then select applicable [Burakgon modules](docs/research/burakgon-modules.md) based on actual hardware tests. |
 | 2024/2025 UX8406 family or another distro | Confirm the exact model and software first; use the [project comparison](docs/research/project-comparison.md) to choose compatible fixes. The 2026 patches are not interchangeable with older models. |
 
-Burakgon modules are individual fixes: some change configuration or add firmware, while others build replacement kernel drivers. Installing Linux does **not** automatically mean you need to patch the whole kernel. Our next step is to collect the installed system's logs, establish recovery, address the [installer source-review findings](docs/research/source-review-findings.md), and apply only the needed fixes.
+Burakgon modules are individual fixes: some change configuration or add firmware, while others build replacement kernel drivers. Installing Linux does **not** automatically mean you need to patch the whole kernel. Check the [source-review findings](docs/research/source-review-findings.md) and hardware compatibility before selecting fixes.
 
 ## Install Codex on the CachyOS laptop
 
@@ -36,7 +36,7 @@ Open **Konsole** on the installed laptop. Run each step in order, stopping if a 
    curl -fsSL https://chatgpt.com/codex/install.sh | sh
    ```
 
-3. Add its location to **Fish**, the shell on this installation, and verify it:
+3. If your shell is **Fish**, add its location and verify it:
 
    ```fish
    fish_add_path "$HOME/.local/bin"
@@ -56,7 +56,7 @@ Open **Konsole** on the installed laptop. Run each step in order, stopping if a 
 
    Choose **Sign in with ChatGPT** and finish the browser sign-in. If the installer already opened Codex outside the repository, exit that session and launch it here.
 
-5. Paste **Prompt 2** below on the new laptop. Use **Prompt 1** on a separate computer that will guide you through installing Linux.
+5. Paste **Prompt 2** below on the installed Linux laptop. Use **Prompt 1** on a separate computer that will guide you through installing Linux.
 
 If you already cloned the repository, open that folder instead of cloning again. See [agent setup](docs/agent-setup.md) for updating an existing checkout, GitHub push access, Bash/WSL setup and installation troubleshooting.
 
@@ -81,15 +81,15 @@ Clone the repository first if you skipped the Codex instructions. Follow Claude'
 
 ## Prompt 1 — guide me from another computer
 
-Use this on the preparation computer, such as the older laptop running Windows/WSL. The agent guides you through work on the target laptop and records the results you return.
+Use this on a preparation computer, including Windows with WSL. The agent guides you through work on the target laptop and records the results you return.
 
 ```text
 Help me install and configure Linux on an ASUS Zenbook Duo, guiding me through
 the process step by step. You are running on my preparation computer; your
 terminal does not automatically control the laptop being installed.
 
-Read AGENTS.md, docs/handoff.md, docs/research/project-comparison.md, the relevant
-machine profile and docs/journey/2026-11-03.md. Use the recorded lessons, but
+Read AGENTS.md, docs/research/project-comparison.md, and any existing machine
+profile, handoff and journal relevant to this target. Use the recorded lessons, but
 verify current upstream documentation and compatibility before recommending fixes.
 
 First establish the target laptop's exact model/year, current OS, desired Linux
@@ -116,33 +116,31 @@ help me install an agent, clone this repository on it and continue with Prompt 2
 
 ## Prompt 2 — finish setup locally on the Linux laptop
 
-Use this **inside the repository on the installed laptop**. For our current UX8407AA, this continues from the successful installation; it does not start over.
+Use this **inside the repository on the installed Linux laptop** to continue configuration and troubleshooting from its existing state.
 
 ```text
 Continue configuring this Zenbook Duo locally until its Linux setup is stable.
-Read AGENTS.md, docs/handoff.md, docs/open-issues.md, the relevant machine README
-and state.json, docs/research/burakgon-modules.md and
-docs/research/source-review-findings.md before changing hardware settings.
+Read AGENTS.md, docs/open-issues.md, the relevant machine profile and state.json,
+and its handoff and research before changing hardware settings. Treat findings
+for other machines as reference material, not this machine's measured state.
 
 Verify which machine and environment your terminal actually controls: DMI model,
-distro, kernel, desktop/session, bootloader, encryption and mounts. The expected
-target is UX8407AA on CachyOS with KDE Wayland, but use measured facts. If it is
-WSL, live media or another model/distro, adapt the plan and explain the difference.
+distro, kernel, desktop/session, bootloader, encryption and mounts. If it is
+WSL or live media, establish access to the installed target before applying fixes.
 
 Inspect Git state and reconcile remote main while preserving local changes.
 Collect a read-only baseline with bash scripts/collect-diagnostics.sh --sudo and
-review logs/incoming/ plus any saved failed/current boot logs. Existing notes say
-no Burakgon modules were applied; verify whether that is still true. Do not treat
-the current clean filtered log as proof the earlier DMC graphics freeze is fixed.
+review available logs. Verify which fixes are already installed and compare the
+measured state with the record. Investigate unresolved issues using full evidence;
+a clean filtered log or a single successful boot does not establish a lasting fix.
 
 For UX8407AA/CachyOS/KDE, use selected Burakgon modules appropriate to the actual
-kernel and symptoms. Establish recovery, preserve encrypted-root arguments and
-back up /boot/configuration. Refresh the reviewed upstream source. Resolve and
-test the recorded rollback-ownership defect if it remains present, and check
-pacman-hook compatibility before relying on the framework. Then implement the
-needed fixes in attributable steps or necessary dependency groups. Do not run
-the blanket recommended preset, mix competing Duo runtimes, or apply obsolete
-audio patches. Keep DMC login-freeze diagnosis separate from the TCSS panel issue.
+kernel and symptoms, using docs/research/burakgon-modules.md and the source-review
+findings. For other models or distros, assess the compatible approach first.
+Establish recovery, preserve boot/encryption settings and back up affected files.
+Refresh upstream research and verify applicability, dependencies and rollback.
+Implement needed fixes in attributable steps or necessary dependency groups.
+Avoid blanket presets, competing runtimes and patches already included upstream.
 
 Carry out the diagnostics and applicable reversible fixes within this setup task.
 For actions requiring physical interaction or a reboot, save a checkpoint first
@@ -161,9 +159,7 @@ missing evidence and the next concrete action, then continue the work.
 
 ## How the next agent gets context
 
-Start the agent **in the cloned repository** and give it the appropriate prompt. Codex loads [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports the same instructions for Claude Code. Those instructions point to the current state and require a record of each trial. The repository carries context between machines; the agent does not automatically inherit this chat. See [Codex instructions](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [Claude project instructions](https://code.claude.com/docs/en/memory).
-
-Put the saved `zenbook-previous-first-boot.log` and `zenbook-current-fixed-boot.log` in **`logs/incoming/`** on the new laptop before starting, if available. These raw files stay local until reviewed; they are not transferred by a Git clone.
+Start the agent **in the cloned repository** and give it the appropriate prompt. Codex loads [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports the same instructions for Claude Code. Those instructions direct the agent to the relevant machine record and require documentation of each trial. The repository carries context between sessions; earlier conversations are not automatically available. See [Codex instructions](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [Claude project instructions](https://code.claude.com/docs/en/memory).
 
 ## Installation record and troubleshooting
 

@@ -8,6 +8,8 @@ The filename is **AGENTS.md**; the user's request also spelled it AGNETS.md. The
 
 README.md is the user-facing installation entry point: keep it focused on model/distro guidance, setup commands, starting prompts and links. Local development housekeeping, build cleanup, evidence processing and repository maintenance belong here or in the relevant docs, not in the README narrative. This separation was explicitly requested by the user.
 
+Keep README instructions and prompts reusable. Personal pending tasks, specific saved-log filenames and session-specific machine status belong in the handoff, machine profile or log-intake docs. Link those records instead of embedding their current to-do list in the README.
+
 Agent installation and Git access are documented in `docs/agent-setup.md`. The README contains separate preparation-computer and native-target prompts. `CLAUDE.md` imports this file so both agents share the same workflow. At session start summarize the verified machine, current status, missing evidence and next action; do not imply the agent inherited the chat or automatically read every linked document.
 
 ## Verify which machine you control
