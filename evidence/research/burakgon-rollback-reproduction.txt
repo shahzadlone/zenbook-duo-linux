@@ -1,0 +1,10 @@
+Recorded 2026-11-03 on the older documentation host; no target hardware modified.
+Command: bash scripts/reproduce-burakgon-rollback.sh /path/to/pinned-burakgon-checkout
+Exit status: 0 (the defect was reproduced, not corrected)
+
+Source commit: 8030783aac5273da5f2aa0da217a6bc408ee0533
+Scenario: destination existed before apply and had identical content.
+After apply: destination present.
+After revert: destination missing.
+SRC-001 REPRODUCED: revert deleted an unowned, pre-existing identical file.
+Only disposable test files were affected; the temporary directory was cleaned.

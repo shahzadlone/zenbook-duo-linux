@@ -1,0 +1,70 @@
+Rufus x64 v4.15.2396 (Portable)
+Windows version: Windows 11 Home x64 (Build 26300.9711)
+Syslinux versions: 4.07/2013-07-25, 6.04/pre1
+Grub versions: 0.4.6a, 2.14
+System locale ID: 0x0409 (en-US)
+Will use default UI locale 0x0409
+SetLGP: Successfully set NoDriveTypeAutorun policy to 0x0000009E
+Localization set to 'en-US'
+Found USB 2.0 device 'Kingston DataTraveler 2.0 USB Device' (0930:6544)
+1 device found
+Disk type: Removable, Disk size: 14.4 GB, Sector size: 512 bytes
+Cylinders: 1884, Tracks per cylinder: 255, Sectors per track: 63
+Partition type: SFD (Super Floppy Disk) or unpartitioned
+Found 5 additional UEFI revocation filters from remote SBAT
+
+Image provided: 'C:\Users\[LOCAL_USER]\Downloads\cachyos-desktop-linux-260809.iso'
+Scanning image...
+Found 4 active Secure Boot certificate entries from remote
+Found 1 revoked Secure Boot certificate entries from remote
+ISO analysis:
+  Image is an ISO9660 image
+  Will use '/boot/syslinux/syslinux.cfg' for Syslinux
+  Detected Syslinux version: 6.04/pre3-3-g05ac953c (from '/boot/syslinux/isolinux.bin')
+Disk image analysis:
+  Image has a Isolinux Master Boot Record
+  Image is a bootable disk image
+  Size: 3.0 GB (Projected)
+UEFI bootloaders analysis:
+  • /EFI/BOOT/BOOTIA32.EFI
+  (Unsigned Bootloader)
+  • /EFI/BOOT/BOOTx64.EFI
+  (Unsigned Bootloader)
+ISO label: 'COS_202608'
+  Size: 3.0 GB (Projected)
+  Uses: Syslinux/Isolinux v6.04
+  Uses: EFI
+Using image: cachyos-desktop-linux-260809.iso (3.0 GB)
+Checking for UEFI DBX updates...
+Saved https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/x86/DBXUpdate.bin as 'dbx_ia32.bin'
+Unable to retrieve file length: [0x00002F76] The requested header was not found
+Saved https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm/DBXUpdate.bin as 'dbx_arm.bin'
+Saved https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm64/DBXUpdate.bin as 'dbx_aa64.bin'
+Checking for Rufus updates...
+Checking release channel...
+No new release version found.
+
+Format operation started
+Requesting disk access...
+Will use 'D:' as volume mountpoint
+WARNING: Could not delete partition(s): [0x80070032] The request is not supported.
+Opened \\.\PhysicalDrive1 for shared write access
+Requesting logical volume handle...
+I/O boundary checks disabled
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Opened \\.\PhysicalDrive1 for shared write access
+
+Found USB 2.0 device 'Kingston DataTraveler 2.0 USB Device' (0930:6544)
+No logical drive found (unpartitioned?)
+1 device found
+No volume information for drive 0x81
+Disk type: Removable, Disk size: 14.4 GB, Sector size: 512 bytes
+Cylinders: 1884, Tracks per cylinder: 255, Sectors per track: 63
+Partition type: MBR, NB Partitions: 1
+Disk ID: 0xC72E0D0F
+Drive has a Isolinux Master Boot Record
+Partition 2:
+  Type: EFI System Partition (0xef)
+  Detected File System: FAT16
+  Size: 23 MB (24117248 bytes)
+  Start Sector: 6181056, Boot: No

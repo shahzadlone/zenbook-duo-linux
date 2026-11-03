@@ -1,0 +1,28 @@
+# Private, unreviewed logs, originals and local working material.
+.local/
+evidence/private/
+logs/*.log
+logs/incoming/*
+!logs/incoming/.gitkeep
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Never vendor installer images, disk images, firmware dumps or build caches.
+*.iso
+*.img
+*.qcow2
+target/
+node_modules/
+__pycache__/
+*.pyc
+build/
+dist/
+vendor/
+
+# Editor and operating-system files.
+.DS_Store
+*~
+*.swp

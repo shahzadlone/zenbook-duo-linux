@@ -1,0 +1,11 @@
+# Keep documentation portable; preserve evidence bytes across Windows/Linux clones.
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+evidence/** -text
+evidence/**/*.log -whitespace
+logs/reviewed/** -text
+logs/reviewed/**/*.log -whitespace
+*.jpg binary
+*.png binary

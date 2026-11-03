@@ -1,0 +1,488 @@
+{
+  "as_of": "2026-11-03",
+  "modules": [
+    {
+      "id": "audio-cs35l56-ot25",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/audio-cs35l56-ot25",
+      "metadata": {
+        "ID": "audio-cs35l56-ot25",
+        "NAME": "Audio on 7.2.11: add the CS35L56 OT25 DAI the 7.2.11 machine driver waits for (backport of upstream 86c8360c97f6)",
+        "SUMMARY": "Speakers/mic on 7.2.11 (sof_sdw: CODEC DAI cs35l56-ot25 not registered)",
+        "CATEGORY": "audio",
+        "SEVERITY": "critical",
+        "RISK": "low",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "7.2.11",
+        "KERNEL_MAX": "7.2.12",
+        "DEFAULT": "on",
+        "UPSTREAM": "7.2.11 took 4b7f393a01f8 ('ASoC: sdw_utils: Switch CS35L56/57/62/63 to use OT25 DAI') without 86c8360c97f6 ('ASoC: cs35l56: Add DAI for SDCA OT25 stream'); the latter was queued for 7.2.12 on 2026-10-17"
+      },
+      "local_state": "not_applied",
+      "selection": "Skip on current 7.3.1",
+      "validation_note": "Targets incomplete 7.2.11 backport; do not duplicate upstream fix."
+    },
+    {
+      "id": "audio-ghost-rt722",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/audio-ghost-rt722",
+      "metadata": {
+        "ID": "audio-ghost-rt722",
+        "NAME": "Audio on 7.2.x: drop the ghost RT722 codec (backport of upstream ca02ffd4975c)",
+        "SUMMARY": "Speakers/mic on 7.2.x kernels (sof_sdw probe -12 fix)",
+        "CATEGORY": "audio",
+        "SEVERITY": "critical",
+        "RISK": "low",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "7.3-rc1",
+        "DEFAULT": "on",
+        "UPSTREAM": "merged in 7.3 (ca02ffd4975c 'soundwire: dmi-quirks: Disable ghost Realtek on Asus Zenbook Duo'), not tagged for stable"
+      },
+      "local_state": "not_applied",
+      "selection": "Skip on current 7.3.1",
+      "validation_note": "Upstream 7.3 fix reported; test actual audio first."
+    },
+    {
+      "id": "desktop-kde-duo",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/desktop-kde-duo",
+      "metadata": {
+        "ID": "desktop-kde-duo",
+        "NAME": "KDE Plasma dual-screen support: rotation, hinge layout, touch mapping, keyboard dock, one brightness",
+        "SUMMARY": "duo-rotate user service + both panels follow one brightness slider (KDE Plasma Wayland)",
+        "CATEGORY": "desktop",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "KWin rotates every output alike, resets touch orientation on rotation and binds the single backlight to eDP-1 only"
+      },
+      "local_state": "not_applied",
+      "selection": "Core integration candidate",
+      "validation_note": "Review dependencies, Qt build, actual display manager and lower-panel guard."
+    },
+    {
+      "id": "desktop-power-widget",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/desktop-power-widget",
+      "metadata": {
+        "ID": "desktop-power-widget",
+        "NAME": "Panel widget: what the laptop draws (on battery and plugged in), charging rate, breakdown, temperatures, fans, power mode",
+        "SUMMARY": "KDE panel widget showing how many watts the laptop draws, how fast the battery charges or drains, and where the power goes",
+        "CATEGORY": "desktop",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Optional; defer",
+      "validation_note": "Telemetry UI after core hardware is stable."
+    },
+    {
+      "id": "display-dpcd-backlight",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/display-dpcd-backlight",
+      "metadata": {
+        "ID": "display-dpcd-backlight",
+        "NAME": "OLED brightness: use the eDP DPCD (AUX) backlight interface",
+        "SUMMARY": "Screen brightness slider/keys actually change the OLED panels",
+        "CATEGORY": "display",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "VBT selects PWM; panels report BRIGHT_PWM_PIN=0, BRIGHT_AUX_SET=1 (DPCD 0x702=0x86); same fix used on other ASUS PTL OLEDs"
+      },
+      "local_state": "not_applied",
+      "selection": "Candidate if brightness needs it",
+      "validation_note": "Verify effective xe parameter and actual panel brightness response."
+    },
+    {
+      "id": "display-dsc-10bit",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/display-dsc-10bit",
+      "metadata": {
+        "ID": "display-dsc-10bit",
+        "NAME": "OLED panels: 10-bit through DSC instead of 6-bit + dithering",
+        "SUMMARY": "Both panels at 30 bpp (DSC) instead of 18 bpp dithered; Panel Replay SU stays on",
+        "CATEGORY": "display",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "xe prefers lowering bpc over DSC on eDP (HBR2x4 cannot carry 2880x1800@144 at 8 bpc); 'prefer DSC' was rejected upstream, no module parameter. Needs display-psr-et-off (xe #8923: DSC + Early Transport corruption)"
+      },
+      "local_state": "not_applied",
+      "selection": "Defer until stable",
+      "validation_note": "Colour-depth/DSC optimization; dependency and stability check required."
+    },
+    {
+      "id": "display-edp2-tcss",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/display-edp2-tcss",
+      "metadata": {
+        "ID": "display-edp2-tcss",
+        "NAME": "Bottom screen after a docked power-on: xe requests Type-C subsystem power for eDP-2",
+        "SUMMARY": "Bottom screen works even when the laptop was powered on with the keyboard on it",
+        "CATEGORY": "display",
+        "SEVERITY": "critical",
+        "RISK": "medium",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "xe #9196; v2 sent 2026-10-15: https://lore.kernel.org/all/20261015-ptl-port-b-tcss-v2-0-e00ce882402d@gmail.com/"
+      },
+      "local_state": "not_applied",
+      "selection": "High-priority separate candidate",
+      "validation_note": "Fixes startup-dependent lower-panel power; resolve rollback/hooks and validate DKMS/initramfs first."
+    },
+    {
+      "id": "display-psr-et-off",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/display-psr-et-off",
+      "metadata": {
+        "ID": "display-psr-et-off",
+        "NAME": "Panel Replay: turn off Selective Update Early Transport (ghost cursors)",
+        "SUMMARY": "No stale cursor copies on the top panel; Panel Replay SU stays on",
+        "CATEGORY": "display",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "unfixed: 7.3 adds no Early Transport change (ET alignment + SU area fixes already in 7.2.9); no module parameter, only the debugfs PSR debug bit"
+      },
+      "local_state": "not_applied",
+      "selection": "Conditional graphics candidate",
+      "validation_note": "Targets Panel Replay Early Transport/cursor artifacts; not a proven DMC remedy."
+    },
+    {
+      "id": "keyboard-hid-asus",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/keyboard-hid-asus",
+      "metadata": {
+        "ID": "keyboard-hid-asus",
+        "NAME": "Detachable keyboard: patched hid-asus (backlight, Fn hotkeys, USB 0x1cd7 + BT 0x1cd8)",
+        "SUMMARY": "Keyboard backlight that actually changes + ASUS Fn keys (DKMS, 7.2.x/7.3.x)",
+        "CATEGORY": "input",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "no Duo IDs upstream; oversized (64 byte) SET_REPORT times out on this keyboard (-110)"
+      },
+      "local_state": "not_applied",
+      "selection": "Core input candidate",
+      "validation_note": "Confirm IDs; use matching 7.3 source; validate docked/Bluetooth keys and LEDs."
+    },
+    {
+      "id": "power-dtt",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/power-dtt",
+      "metadata": {
+        "ID": "power-dtt",
+        "NAME": "Windows-equivalent power limits: thermald adaptive (Intel DTT tables from BIOS)",
+        "SUMMARY": "PL1/PL2/TCC per profile like Windows (balanced: 20W -> 28-42W sustained)",
+        "CATEGORY": "power",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "userspace only (thermald --adaptive parses the BIOS GDDV/APAT/APCT tables)"
+      },
+      "local_state": "not_applied",
+      "selection": "Defer",
+      "validation_note": "Raises power limits via firmware tables; needs thermal and battery validation."
+    },
+    {
+      "id": "power-kbd-lid-wake",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/power-kbd-lid-wake",
+      "metadata": {
+        "ID": "power-kbd-lid-wake",
+        "NAME": "Lid closed over the docked keyboard: the keyboard no longer wakes the laptop",
+        "SUMMARY": "No wake/suspend loop in the bag: the docked keyboard's USB wakeup is off while the lid is closed",
+        "CATEGORY": "power",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Candidate after sleep baseline",
+      "validation_note": "Investigate docked keyboard remote-wakeup behavior before applying."
+    },
+    {
+      "id": "power-profile-sync",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/power-profile-sync",
+      "metadata": {
+        "ID": "power-profile-sync",
+        "NAME": "power-saver really saves power: asus-wmi quiet + SoC low-power + Xe power_saving",
+        "SUMMARY": "PPD power-saver reaches Windows 'Whisper' (PL1 20-30W, quiet fans) and GPU power_saving",
+        "CATEGORY": "power",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "platform_profile aggregate = intersection of handlers: asus-wmi offers quiet, SoC slider offers low-power, so no low-power choice survives"
+      },
+      "local_state": "not_applied",
+      "selection": "Defer until power baseline",
+      "validation_note": "Profile mapping changes require mode transition tests."
+    },
+    {
+      "id": "power-runtime-pm",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/power-runtime-pm",
+      "metadata": {
+        "ID": "power-runtime-pm",
+        "NAME": "PCI runtime PM 'auto' for platform functions left at 'on'",
+        "SUMMARY": "Bluetooth, CSME/HECI, DTT, telemetry, SRAM, eSPI, SPI, host bridge may runtime-suspend",
+        "CATEGORY": "power",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Defer",
+      "validation_note": "Broad runtime-power policy; validate suspend and device behavior."
+    },
+    {
+      "id": "power-tpm-rng",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/power-tpm-rng",
+      "metadata": {
+        "ID": "power-tpm-rng",
+        "NAME": "Stop the hwrng kthread polling the TPM (~20 wakeups/s)",
+        "SUMMARY": "Kernel entropy keeps coming from RDRAND/RDSEED + jitter; fTPM/CSME stops being woken",
+        "CATEGORY": "power",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Optional; defer",
+      "validation_note": "Power/entropy policy, not a display repair."
+    },
+    {
+      "id": "sensors-accel-mount",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/sensors-accel-mount",
+      "metadata": {
+        "ID": "sensors-accel-mount",
+        "NAME": "Accelerometer mount matrix: panels are mounted upside down",
+        "SUMMARY": "Sensor reports orientation relative to the (180 deg mounted) panels, auto-rotate is correct",
+        "CATEGORY": "sensors",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "candidate for systemd hwdb/60-sensor.hwdb"
+      },
+      "local_state": "not_applied",
+      "selection": "With validated sensor setup",
+      "validation_note": "Coordinate mount matrix with desktop rotation ownership."
+    },
+    {
+      "id": "sensors-ish-firmware",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/sensors-ish-firmware",
+      "metadata": {
+        "ID": "sensors-ish-firmware",
+        "NAME": "Integrated Sensor Hub: ASUS-signed Panther Lake ISH firmware",
+        "SUMMARY": "Accelerometer, ambient light and hinge sensors (rotation, auto brightness)",
+        "CATEGORY": "sensors",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "maybe",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "firmware not in linux-firmware (only Dell/HP/Lenovo PTL images); fetched from ASUS driver package"
+      },
+      "local_state": "not_applied",
+      "selection": "Core candidate if sensors fail",
+      "validation_note": "Verify ASUS package checksum/model and use firmware/updates path."
+    },
+    {
+      "id": "system-health",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/system-health",
+      "metadata": {
+        "ID": "system-health",
+        "NAME": "Health checks: warn after kernel updates and at login when a fix is not active",
+        "SUMMARY": "pacman hook after kernel updates + one check per login; notifies only on problems",
+        "CATEGORY": "system",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Pair with validated fixes",
+      "validation_note": "Useful ongoing checks/notifications; independently verify active drivers."
+    },
+    {
+      "id": "touchpad-accel",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/touchpad-accel",
+      "metadata": {
+        "ID": "touchpad-accel",
+        "NAME": "Keyboard touchpad: Apple's trackpad acceleration in KWin (until Plasma 6.9)",
+        "SUMMARY": "Pixel-precise when moving slowly, crosses the screen with a short flick, docked and on Bluetooth",
+        "CATEGORY": "input",
+        "SEVERITY": "major",
+        "RISK": "medium",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "off",
+        "UPSTREAM": "KWin custom acceleration (MR 6937, Plasma 6.9) could replace the library with kcminputrc settings"
+      },
+      "local_state": "not_applied",
+      "selection": "Optional; defer",
+      "validation_note": "Preference/performance library, not required to make the machine boot."
+    },
+    {
+      "id": "touchpad-motion",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/touchpad-motion",
+      "metadata": {
+        "ID": "touchpad-motion",
+        "NAME": "Keyboard touchpad: no lost motion on Bluetooth, equal axes (USB 0x1cd7 + BT 0x1cd8)",
+        "SUMMARY": "Cursor no longer drops motion on Bluetooth; up/down moves as fast as left/right",
+        "CATEGORY": "input",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "libinput: jump detection on MSC_TIMESTAMP; systemd hwdb/60-evdev.hwdb resolution entry"
+      },
+      "local_state": "not_applied",
+      "selection": "Conditional input candidate",
+      "validation_note": "Bluetooth timing and axis normalization; validate versions and behavior."
+    },
+    {
+      "id": "touchpad-palm",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/touchpad-palm",
+      "metadata": {
+        "ID": "touchpad-palm",
+        "NAME": "Keyboard touchpad: palm rejection and disable-while-typing (USB 0x1cd7 + BT 0x1cd8)",
+        "SUMMARY": "Touchpad ignores palms and pauses while you type, docked and on Bluetooth",
+        "CATEGORY": "input",
+        "SEVERITY": "major",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "candidate for libinput quirks/50-system-asus.quirks"
+      },
+      "local_state": "not_applied",
+      "selection": "Input candidate after baseline",
+      "validation_note": "Test disable-while-typing/palm rejection with actual keyboard."
+    },
+    {
+      "id": "touchscreen-hid",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/touchscreen-hid",
+      "metadata": {
+        "ID": "touchscreen-hid",
+        "NAME": "Top touchscreen: HID-over-I2C instead of raydium_i2c_ts, touch aligned with the upside-down panel",
+        "SUMMARY": "Top screen touch + pen work and land under the finger, fixes raydium_i2c_irq Oops",
+        "CATEGORY": "input",
+        "SEVERITY": "critical",
+        "RISK": "low",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "patch in kernel/patches (Input: raydium_i2c_ts: skip HID-over-I2C devices), not yet submitted"
+      },
+      "local_state": "not_applied",
+      "selection": "Core candidate after baseline",
+      "validation_note": "Inspect top touch binding; blacklist/calibrate only for matching hardware."
+    },
+    {
+      "id": "wifi-powersave-ac",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/wifi-powersave-ac",
+      "metadata": {
+        "ID": "wifi-powersave-ac",
+        "NAME": "Wi-Fi power save only on battery (low latency on AC)",
+        "SUMMARY": "On AC: Wi-Fi PS off (gateway RTT 16 ms avg / 158 ms spikes -> 7 ms); on battery: PS on",
+        "CATEGORY": "network",
+        "SEVERITY": "minor",
+        "RISK": "low",
+        "REBOOT": "no",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "-"
+      },
+      "local_state": "not_applied",
+      "selection": "Optional; defer",
+      "validation_note": "Installer mirror slowness does not establish a Wi-Fi power-save defect."
+    },
+    {
+      "id": "wifi-roam-deauth",
+      "source_commit": "8030783aac5273da5f2aa0da217a6bc408ee0533",
+      "source_url": "https://github.com/burakgon/zenbook-duo-2026-linux/tree/8030783aac5273da5f2aa0da217a6bc408ee0533/modules/wifi-roam-deauth",
+      "metadata": {
+        "ID": "wifi-roam-deauth",
+        "NAME": "Wi-Fi roaming with WPA3/PMF: mac80211 deauthenticates from the AP it leaves",
+        "SUMMARY": "Roams between the 5 and 6 GHz AP MLDs of one mesh unit (and reassociations) finish in ~70 ms instead of timing out",
+        "CATEGORY": "network",
+        "SEVERITY": "major",
+        "RISK": "medium",
+        "REBOOT": "yes",
+        "KERNEL_MIN": "",
+        "KERNEL_MAX": "",
+        "DEFAULT": "on",
+        "UPSTREAM": "sent to linux-wireless 2026-10-15: https://lore.kernel.org/all/20261015-mac80211-roam-mfp-deauth-v1-1-9ccc69b434fd@gmail.com/"
+      },
+      "local_state": "not_applied",
+      "selection": "Defer unless roaming defect observed",
+      "validation_note": "Additional mac80211 DKMS/hook compatibility; no local roaming failure recorded."
+    }
+  ]
+}

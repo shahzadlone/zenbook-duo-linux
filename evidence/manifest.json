@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-03",
+  "timezone": "America/Toronto",
+  "original_storage": "Ignored .local/originals on the documentation workstation; original user files left unchanged.",
+  "limitations": [
+    "No successful full installer log received.",
+    "No full installed-system failed/current kernel logs received yet.",
+    "Photos are evidence of visible output, not complete machine-state captures.",
+    "Hash/signature checks from earlier session are recorded from its summary; no new installer revalidation claimed."
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/2026-11-03-ux8407aa/20261103_142724.jpg",
+      "sha256": "cb1e359c72a03d31ad14c3742301165d10d9a2c6c82497a2178358947322f73a",
+      "bytes": 2762199,
+      "original_sha256": "7a854373768344d0840fac6e51a4538e3879cd05e616b05fe2e19793d41b84db",
+      "description": "Live kernel/session and pre-install disk layout.",
+      "transformation": "Removed JPEG APP1 (EXIF/XMP), APP13 and COM segments when present, plus trailing metadata/auxiliary content after primary EOI. Primary compressed image retained; decoded primary pixels verified identical.",
+      "removed_markers": [
+        "0xe1",
+        "0xe1"
+      ],
+      "pixel_comparison": "identical",
+      "size": [
+        3888,
+        2218
+      ],
+      "trailing_bytes_removed": 89166
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/20261103_144023.jpg",
+      "sha256": "39ba87edf006ea783fc4879cc1afb50b4c218229b9bc4ddcb0fbf309c9baac86",
+      "bytes": 2954546,
+      "original_sha256": "de45b26c22b0e5829f082e1fd96766d207ceca99875fe0f2f63970ca40145224",
+      "description": "Installer summary before later encryption selection.",
+      "transformation": "Removed JPEG APP1 (EXIF/XMP), APP13 and COM segments when present, plus trailing metadata/auxiliary content after primary EOI. Primary compressed image retained; decoded primary pixels verified identical.",
+      "removed_markers": [
+        "0xe1",
+        "0xe1"
+      ],
+      "pixel_comparison": "identical",
+      "size": [
+        4000,
+        3000
+      ],
+      "trailing_bytes_removed": 79674
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/20261103_152237.jpg",
+      "sha256": "828a940c04298aa2c8f276dcfc5165caf3c218dc91641831278b3b2627ca91d0",
+      "bytes": 3668090,
+      "original_sha256": "7d8d5e7092a9a64cd63b779bec7777cd71a9c034715e1949a15c6ab562dd9b54",
+      "description": "Retry at 17 percent, retrieving base-system packages.",
+      "transformation": "Removed JPEG APP1 (EXIF/XMP), APP13 and COM segments when present, plus trailing metadata/auxiliary content after primary EOI. Primary compressed image retained; decoded primary pixels verified identical.",
+      "removed_markers": [
+        "0xe1",
+        "0xe1"
+      ],
+      "pixel_comparison": "identical",
+      "size": [
+        4000,
+        3000
+      ],
+      "trailing_bytes_removed": 180269
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/20261103_161909.jpg",
+      "sha256": "c3eaf3da55d34b7ca8e7bdf5cc5a8dcdab6c9528bbc6bd38431787ba03d404b7",
+      "bytes": 4249860,
+      "original_sha256": "9a60956c9102971bd0d8caacc9eac931bc8d933facf1400f48f014b96ef85e6d",
+      "description": "Previous-boot DMC/xe warning and dual-pipe timeout photograph.",
+      "transformation": "Removed JPEG APP1 (EXIF/XMP), APP13 and COM segments when present, plus trailing metadata/auxiliary content after primary EOI. Primary compressed image retained; decoded primary pixels verified identical.",
+      "removed_markers": [
+        "0xe1",
+        "0xe1"
+      ],
+      "pixel_comparison": "identical",
+      "size": [
+        4000,
+        3000
+      ],
+      "trailing_bytes_removed": 168912
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/20261103_164134.jpg",
+      "sha256": "bd9ea1062c212307282146a1313bb3f44524005420f870a60388a3654e90dbfd",
+      "bytes": 3680022,
+      "original_sha256": "c64382a02c454dcdb02c48aea85297215bedefa0fab74b8df269a04e4f8ee846",
+      "description": "Current filtered journal has no matches; Limine config and current-log export command.",
+      "transformation": "Removed JPEG APP1 (EXIF/XMP), APP13 and COM segments when present, plus trailing metadata/auxiliary content after primary EOI. Primary compressed image retained; decoded primary pixels verified identical.",
+      "removed_markers": [
+        "0xe1",
+        "0xe1"
+      ],
+      "pixel_comparison": "identical",
+      "size": [
+        4000,
+        3000
+      ],
+      "trailing_bytes_removed": 60560
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/installer-failed.redacted.log",
+      "sha256": "578a172b68f2c7e249f72bc99b90c0f7a2deaa6908e849b366f12217b1e9e037",
+      "bytes": 195140,
+      "original_sha256": "a3945f8bcab7e97bb2965e8da8966bcf1aec77a5d909b0986aa7f0e921b3a4ee",
+      "description": "Extracted failed Calamares installation log from user-provided CachyOS paste.",
+      "transformation": "Credential-related lines withheld in full, even if benign; local-user paths and MACs redacted where matched. Diagnostic ordering and remaining content preserved.",
+      "redaction_counts": {
+        "credential_related_lines": 42,
+        "windows_user_paths": 0,
+        "home_user_paths": 0,
+        "mac_addresses": 0
+      },
+      "source_url": "https://paste.cachyos.org/p/6d7262b"
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/rufus.redacted.log",
+      "sha256": "99f35bb593bf629da6a30142305bb74a23ca076c070cd304bba278d5b6542f9b",
+      "bytes": 3084,
+      "original_sha256": "8ecb6876fd780cdc45caa8ecf1ba41b1c4a41db5958e0c38a1d8657e9b1eaa15",
+      "description": "Rufus USB preparation log retained on the older Windows/WSL computer.",
+      "transformation": "Credential-related lines withheld in full, even if benign; local-user paths and MACs redacted where matched. Diagnostic ordering and remaining content preserved.",
+      "redaction_counts": {
+        "credential_related_lines": 0,
+        "windows_user_paths": 1,
+        "home_user_paths": 0,
+        "mac_addresses": 0
+      },
+      "source_url": null
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/graphics-photo-transcription.md",
+      "sha256": "4d9d6386f4b85921219d8932a3b4392c80e8cd318330d2fb5405c66891f5e372",
+      "bytes": 1679,
+      "description": "Selected diagnostic lines manually transcribed from the 16:19 photograph; not a full journal.",
+      "transformation": "Authored evidence record; see document for source, omissions and command provenance."
+    },
+    {
+      "path": "evidence/2026-11-03-ux8407aa/current-boot-and-limine.md",
+      "sha256": "a0e104c56c3514e42507df21743c8e5cd0504564e3174d904b62c063167a1e8c",
+      "bytes": 1744,
+      "description": "Manual transcription of 16:41 working-boot filter, log export and Limine configuration.",
+      "transformation": "Authored evidence record; see document for source, omissions and command provenance."
+    },
+    {
+      "path": "evidence/research/burakgon-rollback-reproduction.txt",
+      "sha256": "abf8c8b8724ce7d40bbf43ec7d47a9262d9357d292cf463ee6ede585519cd4d3",
+      "bytes": 578,
+      "description": "Actual isolated reproduction result against the pinned upstream helper implementation.",
+      "transformation": "Authored evidence record; see document for source, omissions and command provenance."
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "updated_date": "2026-11-03",
+  "timezone": "America/Toronto",
+  "machine_id": "ux8407aa-2026",
+  "model": "ASUS Zenbook Duo UX8407AA",
+  "os": "CachyOS",
+  "desktop": "KDE Plasma",
+  "desktop_version": null,
+  "session_type": "wayland",
+  "shell_observed": "fish",
+  "running_kernel": "7.3.1-1-cachyos",
+  "live_kernel": "7.1.6-1-cachyos",
+  "bios_observed": {
+    "version": "UX8407AA.305",
+    "date_text": "02/10/2026",
+    "evidence": "evidence/2026-11-03-ux8407aa/20261103_161909.jpg"
+  },
+  "install_status": "completed_user_confirmed",
+  "desktop_status": "logged_in_after_cold_recovery",
+  "stability_status": "not_qualified",
+  "approach": "selected_burakgon_modules_after_review",
+  "applied_burakgon_modules": [],
+  "module_ledger": {
+    "audio-cs35l56-ot25": {
+      "state": "not_applied",
+      "planned_handling": "Skip on current 7.3.1"
+    },
+    "audio-ghost-rt722": {
+      "state": "not_applied",
+      "planned_handling": "Skip on current 7.3.1"
+    },
+    "desktop-kde-duo": {
+      "state": "not_applied",
+      "planned_handling": "Core integration candidate"
+    },
+    "desktop-power-widget": {
+      "state": "not_applied",
+      "planned_handling": "Optional; defer"
+    },
+    "display-dpcd-backlight": {
+      "state": "not_applied",
+      "planned_handling": "Candidate if brightness needs it"
+    },
+    "display-dsc-10bit": {
+      "state": "not_applied",
+      "planned_handling": "Defer until stable"
+    },
+    "display-edp2-tcss": {
+      "state": "not_applied",
+      "planned_handling": "High-priority separate candidate"
+    },
+    "display-psr-et-off": {
+      "state": "not_applied",
+      "planned_handling": "Conditional graphics candidate"
+    },
+    "keyboard-hid-asus": {
+      "state": "not_applied",
+      "planned_handling": "Core input candidate"
+    },
+    "power-dtt": {
+      "state": "not_applied",
+      "planned_handling": "Defer"
+    },
+    "power-kbd-lid-wake": {
+      "state": "not_applied",
+      "planned_handling": "Candidate after sleep baseline"
+    },
+    "power-profile-sync": {
+      "state": "not_applied",
+      "planned_handling": "Defer until power baseline"
+    },
+    "power-runtime-pm": {
+      "state": "not_applied",
+      "planned_handling": "Defer"
+    },
+    "power-tpm-rng": {
+      "state": "not_applied",
+      "planned_handling": "Optional; defer"
+    },
+    "sensors-accel-mount": {
+      "state": "not_applied",
+      "planned_handling": "With validated sensor setup"
+    },
+    "sensors-ish-firmware": {
+      "state": "not_applied",
+      "planned_handling": "Core candidate if sensors fail"
+    },
+    "system-health": {
+      "state": "not_applied",
+      "planned_handling": "Pair with validated fixes"
+    },
+    "touchpad-accel": {
+      "state": "not_applied",
+      "planned_handling": "Optional; defer"
+    },
+    "touchpad-motion": {
+      "state": "not_applied",
+      "planned_handling": "Conditional input candidate"
+    },
+    "touchpad-palm": {
+      "state": "not_applied",
+      "planned_handling": "Input candidate after baseline"
+    },
+    "touchscreen-hid": {
+      "state": "not_applied",
+      "planned_handling": "Core candidate after baseline"
+    },
+    "wifi-powersave-ac": {
+      "state": "not_applied",
+      "planned_handling": "Optional; defer"
+    },
+    "wifi-roam-deauth": {
+      "state": "not_applied",
+      "planned_handling": "Defer unless roaming defect observed"
+    }
+  },
+  "storage": {
+    "disk_at_install": "/dev/nvme0n1",
+    "model": "KIOXIA KBG60ZNV1T02",
+    "size_gib_reported": 953.9,
+    "root": "LUKS2 + Btrfs",
+    "root_subvolume_from_config": "/@",
+    "esp_path_from_config": "/boot",
+    "boot_partition_gib_planned": 4,
+    "mount_inventory_pending": true,
+    "windows_removed": true,
+    "erase_authorization": "Explicit user confirmation of backups and acceptance of Windows/recovery loss for this target SSD."
+  },
+  "boot": {
+    "bootloader": "Limine",
+    "config_evidence": "evidence/2026-11-03-ux8407aa/current-boot-and-limine.md",
+    "graphics_overrides_in_displayed_default_line": [],
+    "effective_cmdline_pending": true,
+    "secure_boot": "Disable guidance followed by successful boot; current measured state pending.",
+    "keyboard_workaround": "Lift off lower screen before power-on/restart until validated TCSS fix."
+  },
+  "graphics_incident": {
+    "state": "recovered_unresolved",
+    "previous_boot_signature": [
+      "DMC wakelock ack timed out",
+      "flip_done timed out",
+      "pipe A commit wait timed out",
+      "pipe B commit wait timed out"
+    ],
+    "current_boot_filter": "no_matches_in_supplied_164134_photo",
+    "filter_patterns": [
+      "DMC wakelock",
+      "DBuf",
+      "flip_done",
+      "PHY B"
+    ],
+    "confirmed_permanent_fix": false,
+    "keyboard_causation": "not_established",
+    "tcss_causation_for_this_incident": "not_established",
+    "proposed_parameters_applied": false
+  },
+  "pending_artifacts": [
+    {
+      "name": "zenbook-previous-first-boot.log",
+      "state": "user_reports_saved_not_received"
+    },
+    {
+      "name": "zenbook-current-fixed-boot.log",
+      "state": "export_seen_in_photo_full_file_not_received"
+    },
+    {
+      "name": "current-filter-no-matches-text",
+      "state": "photo_received_text_file_not_received"
+    }
+  ],
+  "next_actions": [
+    "Verify native target identity and current Git state.",
+    "Review complete uploaded/captured logs and effective configuration.",
+    "Establish /boot/config/kernel recovery and snapshot coverage.",
+    "Resolve/test source rollback finding before module apply/revert.",
+    "Select kernel-appropriate fixes and test incrementally."
+  ],
+  "untested_features": [
+    "dock-undock matrix",
+    "touch/pen mapping",
+    "automatic rotation",
+    "brightness",
+    "Fn/backlight",
+    "audio and microphones",
+    "Bluetooth keyboard pairing",
+    "suspend/resume/lid wake",
+    "battery/power profiles",
+    "webcam/IR",
+    "kernel-update/DKMS recovery"
+  ],
+  "evidence": [
+    "evidence/README.md",
+    "docs/journey/2026-11-03.md",
+    "docs/troubleshooting/graphics-freeze.md"
+  ]
+}

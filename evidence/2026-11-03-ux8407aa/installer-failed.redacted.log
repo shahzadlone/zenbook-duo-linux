@@ -1,0 +1,2374 @@
+
+=== START CALAMARES 3.4.1
+2026-11-03 - 19:22:04 [6]: void CalamaresApplication::init()
+2026-11-03 - 19:22:04 [6]:     Calamares version: 3.4.1 
+2026-11-03 - 19:22:04 [6]:     .. Using Qt version: 6.11.1 
+2026-11-03 - 19:22:04 [6]:     .. Build type: Release 
+2026-11-03 - 19:22:04 [6]:     .. Using Boost Python 
+2026-11-03 - 19:22:04 [6]:     .. Using settings: "/etc/calamares/settings.conf" 
+2026-11-03 - 19:22:04 [6]:     .. Using log file: "/home/liveuser/.cache/calamares/session.log" 
+2026-11-03 - 19:22:04 [6]:     .. Languages: QList("ar", "as", "ast", "az", "az_AZ", "be", "bg", "bn", "ca", "ca@valencia", "cs_CZ", "da", "de", "el", "en", "en_GB", "eo", "es", "es_AR", "es_MX", "et", "eu", "fa", "fi_FI", "fr", "fur", "gl", "he", "hi", "hr", "hu", "ia", "id", "is", "it_IT", "ja", "ka", "ko", "lt", "ml", "mr", "nb", "nl", "oc", "pl", "pt_BR", "pt_PT", "ro", "ru", "si", "sk", "sl", "sq", "sr", "sr@latin", "sv", "tg", "th", "tr_TR", "uk", "uz", "vi", "zh_CN", "zh_TW") 
+2026-11-03 - 19:22:04 [6]: bool Calamares::initQmlModulesDir()
+2026-11-03 - 19:22:04 [6]:     Using Calamares QML directory "/usr/share/calamares/qml" 
+2026-11-03 - 19:22:04 [6]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:22:04 [6]:     Using Calamares branding file at "/usr/share/calamares/branding/cachyos/branding.desc" 
+2026-11-03 - 19:22:04 [2]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:22:04 [2]:     WARNING: the branding component "/usr/share/calamares/branding/cachyos" does not ship translations. 
+2026-11-03 - 19:22:04 [6]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:22:04 [6]:     Loaded branding component "cachyos" 
+2026-11-03 - 19:22:04 [6]:     .. No translation for "tz_" "C" using default (en) 
+2026-11-03 - 19:22:04 [6]:     .. No translation for "calamares_" "C" using default (en) 
+2026-11-03 - 19:22:04 [6]:     .. STARTUP: initSettings, initQmlPath, initBranding done 
+2026-11-03 - 19:22:04 [6]:     .. STARTUP: initModuleManager: module init started 
+2026-11-03 - 19:22:04 [6]: void Calamares::ModuleManager::doInit()
+2026-11-03 - 19:22:04 [6]:     Found 38 modules 
+2026-11-03 - 19:22:04 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:22:04 [6]:     STARTUP: initModuleManager: all modules init done 
+2026-11-03 - 19:22:04 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:22:04 [6]:     STARTUP: initJobQueue done 
+2026-11-03 - 19:22:04 [6]: CalamaresWindow::CalamaresWindow(QWidget*)
+2026-11-03 - 19:22:04 [6]:     Available desktop QSize(1807, 1129) minimum size QSize(1024, 520) 
+2026-11-03 - 19:22:04 [6]:     .. Proposed window size: 1100 520 
+2026-11-03 - 19:22:04 [6]: QString Calamares::searchQmlFile(QmlSearch, const QString&)
+2026-11-03 - 19:22:04 [6]:     Looking for QML for "calamares-sidebar" 
+2026-11-03 - 19:22:04 [6]:     .. Looking at QML file "/usr/share/calamares/branding/cachyos/calamares-sidebar.qml" 
+2026-11-03 - 19:22:04 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/calamares-sidebar.qml:26:5: TypeError: Cannot read property 'width' of null
+2026-11-03 - 19:22:04 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:22:04 [6]:     STARTUP: CalamaresWindow created; loadModules started 
+2026-11-03 - 19:22:04 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:22:04 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:22:04 [6]: void Config::initLanguages()
+2026-11-03 - 19:22:04 [6]:     Trying to match locale "C" 
+2026-11-03 - 19:22:04 [6]: void Config::initLanguages()
+2026-11-03 - 19:22:04 [6]:     Trying to match locale QLocale::system()/* C, Default, Default */ 
+2026-11-03 - 19:22:04 [6]:     .. Trying to match approximate locale QLocale::C 
+2026-11-03 - 19:22:04 [6]:     .. Trying to match English (US) 
+2026-11-03 - 19:22:04 [6]: void Config::setLocaleIndex(int)
+2026-11-03 - 19:22:04 [6]:     Index 14 Selected locale "en" 
+2026-11-03 - 19:22:04 [6]:     .. Loaded QRC translation "tz_" "en" 
+2026-11-03 - 19:22:04 [6]:     .. Loaded QRC translation "calamares_" "en" 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "welcome@online" loading complete. 
+2026-11-03 - 19:22:04 [6]: QStringList loadLocales(const QString&)
+2026-11-03 - 19:22:04 [6]:     Loading locales from "/usr/share/i18n/SUPPORTED" 
+2026-11-03 - 19:22:04 [6]:     ..  Read 503 lines 
+2026-11-03 - 19:22:04 [6]:     ..  After filtering 328 lines 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "locale@locale" loading complete. 
+2026-11-03 - 19:22:04 [6]: KeyboardModelsModel::KeyboardModelsModel(QObject*)
+2026-11-03 - 19:22:04 [6]:     Loaded 183 keyboard models 
+2026-11-03 - 19:22:04 [6]: KeyboardGroupsSwitchersModel::KeyboardGroupsSwitchersModel(QObject*)
+2026-11-03 - 19:22:04 [6]:     Loaded 45 keyboard groups 
+2026-11-03 - 19:22:04 [6]: KeyboardPage::KeyboardPage(Config*, QWidget*)
+2026-11-03 - 19:22:04 [6]:     Variants now total= 0 selected= -1 
+2026-11-03 - 19:22:04 [6]: KeyboardPage::KeyboardPage(Config*, QWidget*)
+2026-11-03 - 19:22:04 [6]:     Groups now total= 45 selected= -1 
+2026-11-03 - 19:22:04 [6]:     .. Loaded QRC translation "kb_" "en" 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "keyboard@keyboard" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Config::setConfigurationMap(const QVariantMap&)
+2026-11-03 - 19:22:04 [6]:     Using module ID "packagechooser@bootloader" 
+2026-11-03 - 19:22:04 [6]: void fillModel(PackageListModel*, const QVariantList&)
+2026-11-03 - 19:22:04 [6]:     Loading PackageChooser model items from config 
+2026-11-03 - 19:22:04 [6]:     .. Loaded PackageChooser with 5 entries. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "packagechooser@bootloader" loading complete. 
+2026-11-03 - 19:22:04 [6]: Calamares::Partition::InternalManager::InternalManager()
+2026-11-03 - 19:22:04 [6]:     KPMCore backend starting .. 
+2026-11-03 - 19:22:04 [6]: DEBUG (Qt): Loaded backend plugin:  "pmsfdiskbackendplugin"
+2026-11-03 - 19:22:04 [6]:     .. Backend @0x56395e5002c0 "pmsfdiskbackendplugin" "1" 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "partition@partition" loading complete. 
+2026-11-03 - 19:22:04 [6]: void fillModel(PackageListModel*, const QVariantList&)
+2026-11-03 - 19:22:04 [6]:     Loading PackageChooser model items from config 
+2026-11-03 - 19:22:04 [6]:     .. Loaded PackageChooser with 19 entries. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "packagechooser@desktop" loading complete. 
+2026-11-03 - 19:22:04 [6]: void Config::setConfigurationMap(const QVariantMap&)
+2026-11-03 - 19:22:04 [6]:     Loading netinstall from 2 alternate sources. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "netinstall@netinstall" loading complete. 
+2026-11-03 - 19:22:04 [6]:     .. minLength set to 4 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "users@users" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "summary@summary" loading complete. 
+2026-11-03 - 19:22:04 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:22:04 [6]:     Module "partition@partition" already loaded. 
+2026-11-03 - 19:22:04 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+2026-11-03 - 19:22:04 [6]:     QML import paths: 
+     "/usr/share/calamares/qml" 
+     "/usr/bin" 
+     "qrc:/qt-project.org/imports" 
+     "qrc:/qt/qml" 
+     "/usr/lib/qt6/qml" 
+2026-11-03 - 19:22:04 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+2026-11-03 - 19:22:04 [6]:     QML load on startup, API 2. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "zfs@zfs" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@modify_mk_hook" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@initialize_pacman" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@before-online" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "machineid@machineid" loading complete. 
+2026-11-03 - 19:22:04 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:22:04 [6]:     Module "users@users" already loaded. 
+2026-11-03 - 19:22:04 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:22:04 [6]:     Module "locale@locale" already loaded. 
+2026-11-03 - 19:22:04 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:22:04 [6]:     Module "keyboard@keyboard" already loaded. 
+2026-11-03 - 19:22:04 [2]: void Calamares::Module::loadConfigurationFile(const QString&)
+2026-11-03 - 19:22:04 [2]:     WARNING: No config file for "chwd" found anywhere at 
+     "/etc/calamares/modules/chwd.conf" 
+     "/usr/share/calamares/modules/chwd.conf" 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "luksbootkeyfile@luksbootkeyfile" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "luksopenswaphookcfg@luksopenswaphookcfg" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "initcpio@initcpio" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@reset_mk_hook" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@shellprocess" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@enable_ufw" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@greetd" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@btrfs_snapshot" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "shellprocess@cleanup_calamares" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     CppJobModule "umount@umount" loading complete. 
+2026-11-03 - 19:22:04 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:22:04 [6]:     ViewModule "finished@finished" loading complete. 
+2026-11-03 - 19:22:04 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:22:04 [6]: void LoaderQueue::fetch(const QUrl&)
+2026-11-03 - 19:22:04 [6]:     NetInstall loading groups from QUrl("https://raw.githubusercontent.com/CachyOS/cachyos-calamares/cachyos-dev/src/modules/netinstall/netinstall.yaml") 
+2026-11-03 - 19:22:05 [6]: void CalamaresApplication::initViewSteps()
+2026-11-03 - 19:22:05 [6]:     STARTUP: loadModules for all modules done 
+2026-11-03 - 19:22:05 [6]: void Calamares::ModuleManager::checkRequirements()
+2026-11-03 - 19:22:05 [6]:     Checking module requirements .. 
+2026-11-03 - 19:22:05 [6]: void CalamaresApplication::initViewSteps()
+2026-11-03 - 19:22:05 [6]:     STARTUP: Window now visible and ProgressTreeView populated 
+2026-11-03 - 19:22:05 [6]:     .. 11 view steps loaded. 
+2026-11-03 - 19:22:05 [6]:     .. Loaded QRC translation "kb_" "en" 
+2026-11-03 - 19:22:05 [6]: bool GeneralRequirements::checkHasPower()
+2026-11-03 - 19:22:05 [6]:     A battery exists, checking for mains power. 
+2026-11-03 - 19:22:05 [6]: void LoaderQueue::dataArrived()
+2026-11-03 - 19:22:05 [6]:     NetInstall group data received 54111 bytes from QUrl("https://raw.githubusercontent.com/CachyOS/cachyos-calamares/cachyos-dev/src/modules/netinstall/netinstall.yaml") 
+2026-11-03 - 19:22:05 [6]: void Calamares::SlideshowQML::loadQmlV2Complete()
+2026-11-03 - 19:22:05 [6]:     QML component complete, API 2 
+2026-11-03 - 19:22:05 [6]: QStringList Calamares::GeoIP::getElementTexts(const QByteArray&, const QString&)
+2026-11-03 - 19:22:05 [6]:     GeoIP found 1 elements 
+2026-11-03 - 19:22:05 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+2026-11-03 - 19:22:05 [6]:     GeneralRequirements output: 
+     storage :   8589934592 
+     enoughStorage :   true 
+     RAM :   2684354560 
+     enoughRam :   true 
+     hasPower :   true 
+     hasInternet :   true 
+     isRoot :   true 
+2026-11-03 - 19:22:05 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+2026-11-03 - 19:22:05 [6]:     Got 6 requirement results from "welcome" 
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:39:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:54:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:70:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:85:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:100:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:115:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:22:05 [6]:     .. Loading "/usr/share/calamares/branding/cachyos/show.qml" 
+2026-11-03 - 19:22:05 [2]: bool applyLocale1(const BasicLayoutInfo&, AdditionalLayoutInfo&)
+2026-11-03 - 19:22:05 [2]:     WARNING: Could not set keyboard config through org.freedesktop.locale1.X11Keyboard. QDBusError("org.freedesktop.DBus.Error.InvalidArgs", "Specified keymap cannot be compiled, refusing as invalid.") 
+2026-11-03 - 19:22:05 [6]: void applyXkb(const BasicLayoutInfo&, AdditionalLayoutInfo&)
+2026-11-03 - 19:22:05 [6]:     xkbmap selection changed to:  "custom" - "" 
+2026-11-03 - 19:22:05 [6]: setGeoIP(Config*, const QVariantMap&)::<lambda()>
+2026-11-03 - 19:22:05 [6]:     GeoIP result for welcome= "CA" 
+2026-11-03 - 19:22:05 [6]: void setCountry(Config*, const QString&, Calamares::GeoIP::Handler*)
+2026-11-03 - 19:22:05 [6]:     Unusable country code "CA" 
+2026-11-03 - 19:22:05 [6]:     .. Obtained from "https://geoip.kde.org/v1/ubiquity"  ( 2 "CountryCode" ) 
+2026-11-03 - 19:22:05 [6]: DEBUG (Qt): getting temp failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:22:05 [6]: DEBUG (Qt): getting powered on time failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:22:05 [6]: DEBUG (Qt): getting power cycles failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:22:05 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/nvme0n1p2"
+2026-11-03 - 19:22:05 [6]: DEBUG (Qt): 332799 103184 4096
+2026-11-03 - 19:22:06 [6]: DEBUG (Qt): 6291455 867198 4096
+2026-11-03 - 19:22:06 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/sda" :  No such file or directory
+2026-11-03 - 19:22:06 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/sda" :  No such file or directory
+2026-11-03 - 19:22:06 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/zram0" :  No such file or directory
+2026-11-03 - 19:22:06 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/zram0" :  No such file or directory
+2026-11-03 - 19:22:06 [6]: QList<Device*> PartUtils::getDevices(DeviceType)
+2026-11-03 - 19:22:06 [6]:     Removing unsuitable devices: 3 candidates. 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p1") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p2") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p3") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p4") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p5") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/nvme0n1p6") 
+2026-11-03 - 19:22:06 [6]:     .. Running QList("blkid", "/dev/sda") 
+2026-11-03 - 19:22:06 [6]:     .. Removing device with iso9660 filesystem (probably a CD) on it "/dev/sda" 
+2026-11-03 - 19:22:06 [6]:     .. Removing zram "/dev/zram0" 
+2026-11-03 - 19:22:06 [6]:     .. there are 1 devices left. 
+2026-11-03 - 19:22:06 [6]: void PartitionCoreModule::doInit()
+2026-11-03 - 19:22:06 [6]:     LIST OF DETECTED DEVICES: 
+2026-11-03 - 19:22:06 [6]:     .. node	capacity	name	prettyName 
+2026-11-03 - 19:22:06 [6]:     .. "/dev/nvme0n1" 1024209543168 DevName$ade60057 DevNamePretty$97ca4cbc 
+2026-11-03 - 19:22:06 [6]:     .. 1 devices detected. 
+2026-11-03 - 19:22:06 [6]: void Calamares::RequirementsChecker::reportProgress()
+2026-11-03 - 19:22:06 [6]:     Remaining modules: 1 
+     "partition" 
+2026-11-03 - 19:22:07 [6]: void Calamares::RequirementsChecker::reportProgress()
+2026-11-03 - 19:22:07 [6]:     Remaining modules: 1 
+     "partition" 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("blkid", "-s", "TYPE", "-o", "value", "/dev/nvme0n1p1") 
+2026-11-03 - 19:22:08 [6]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+2026-11-03 - 19:22:08 [6]:     Checking device "/dev/nvme0n1p1" for fstab (fs= "vfat" ) 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("mount", "-o", "ro", "/dev/nvme0n1p1", "/tmp/calamares-zfPXaF") 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("sync") 
+2026-11-03 - 19:22:08 [6]: void Calamares::RequirementsChecker::reportProgress()
+2026-11-03 - 19:22:08 [6]:     Remaining modules: 1 
+     "partition" 
+2026-11-03 - 19:22:08 [2]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+2026-11-03 - 19:22:08 [2]:     WARNING: Could not read fstab from mounted fs 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("umount", "-R", "/tmp/calamares-zfPXaF") 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 19:22:08 [6]:     .. Running QList("sync") 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 394088448 "(0GiB)" for "/dev/nvme0n1p1" length: 921600 sectorsUsed: 151896 fsType: "fat32" 
+2026-11-03 - 19:22:08 [6]: OsproberEntryList PartUtils::runOsprober(DeviceModel*)
+2026-11-03 - 19:22:08 [6]:     os-prober lines after cleanup: 
+     "/dev/nvme0n1p1@/efi/Microsoft/Boot/bootmgfw.efi:Windows Boot Manager:Windows:efi" 
+2026-11-03 - 19:22:08 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x56395e506350) without calling endResetModel first
+2026-11-03 - 19:22:08 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x56395e506350) without calling beginResetModel first
+2026-11-03 - 19:22:08 [6]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 19:22:08 [6]:     system is EFI and new EFI system partition has been found. 
+2026-11-03 - 19:22:08 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+2026-11-03 - 19:22:08 [6]:     Got 1 requirement results from "partition" 
+2026-11-03 - 19:22:08 [2]: void ChoicePage::updateActionDescriptionsTr()
+2026-11-03 - 19:22:08 [2]:     WARNING: Invalid osprober count, labels and buttons not updated. 
+2026-11-03 - 19:22:08 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:22:08 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::updateDeviceStatePreview()
+2026-11-03 - 19:22:08 [6]:     Updating partitioning state widgets. 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::setupActions()
+2026-11-03 - 19:22:08 [6]:     Setting up actions for "/dev/nvme0n1" with 1 entries. 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 394088448 "(0GiB)" for "/dev/nvme0n1p1" length: 921600 sectorsUsed: 151896 fsType: "fat32" 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p1" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 471859200 "(0GiB)" 
+2026-11-03 - 19:22:08 [6]:     ..  Can not resize "/dev/nvme0n1p2" , filesystem "unknown" does not support resize. 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p2" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 16777216 "(0GiB)" 
+2026-11-03 - 19:22:08 [6]:     ..  Can not resize "/dev/nvme0n1p3" , filesystem "BitLocker" does not support resize. 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p3" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  Partition "/dev/nvme0n1p3" authorized for replace install. 
+2026-11-03 - 19:22:08 [6]:     .. contains replaceable "/dev/nvme0n1p3" 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 422645760 "(0GiB)" for "/dev/nvme0n1p4" length: 2662400 sectorsUsed: 1836920 fsType: "ntfs" 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p4" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 1363148800 "(1GiB)" 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 3552047104 "(3GiB)" for "/dev/nvme0n1p5" length: 50331648 sectorsUsed: 43394056 fsType: "ntfs" 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p5" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  Partition "/dev/nvme0n1p5" authorized for replace install. 
+2026-11-03 - 19:22:08 [6]:     .. contains replaceable "/dev/nvme0n1p5" 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 162795520 "(0GiB)" for "/dev/nvme0n1p6" length: 532480 sectorsUsed: 214520 fsType: "fat32" 
+2026-11-03 - 19:22:08 [6]:     ..  Checking if "/dev/nvme0n1p6" can be replaced. 
+2026-11-03 - 19:22:08 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 272629760 "(0GiB)" 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::updateActionDescriptionsTr()
+2026-11-03 - 19:22:08 [6]:     Setting texts for 1 non-empty osprober entry 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::setupActions()
+2026-11-03 - 19:22:08 [6]:     No partitions available for resize-action. 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::continueApplyDeviceChoice()
+2026-11-03 - 19:22:08 [6]:     Previous device -1 new device 0 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 19:22:08 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 19:22:08 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:22:08 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:22:08 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 19:22:08 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 19:22:08 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:22:08 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:22:08 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:22:08 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:22:08 [6]: void Calamares::RequirementsChecker::finished()
+2026-11-03 - 19:22:08 [6]:     All requirements have been checked. 
+2026-11-03 - 19:22:08 [6]: void Calamares::RequirementsModel::describe() const
+2026-11-03 - 19:22:08 [6]:     Requirements model has 7 items 
+2026-11-03 - 19:22:08 [6]:     .. requirement 0 "storage" satisfied? true mandatory? false 
+2026-11-03 - 19:22:08 [6]:     .. requirement 1 "ram" satisfied? true mandatory? true 
+2026-11-03 - 19:22:08 [6]:     .. requirement 2 "power" satisfied? true mandatory? false 
+2026-11-03 - 19:22:08 [6]:     .. requirement 3 "internet" satisfied? true mandatory? true 
+2026-11-03 - 19:22:08 [6]:     .. requirement 4 "root" satisfied? true mandatory? false 
+2026-11-03 - 19:22:08 [6]:     .. requirement 5 "screen" satisfied? true mandatory? false 
+2026-11-03 - 19:22:08 [6]:     .. requirement 6 "partitions" satisfied? true mandatory? true 
+2026-11-03 - 19:22:10 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:22:10 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:22:11 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:22:13 [6]: void Calamares::ViewManager::quit()
+2026-11-03 - 19:22:13 [6]:     Cancelling view step "welcome@online" 
+
+
+
+=== START CALAMARES 3.4.1
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::init()
+2026-11-03 - 19:32:46 [6]:     Calamares version: 3.4.1 
+2026-11-03 - 19:32:46 [6]:     .. Using Qt version: 6.11.1 
+2026-11-03 - 19:32:46 [6]:     .. Build type: Release 
+2026-11-03 - 19:32:46 [6]:     .. Using Boost Python 
+2026-11-03 - 19:32:46 [6]:     .. Using settings: "/etc/calamares/settings.conf" 
+2026-11-03 - 19:32:46 [6]:     .. Using log file: "/home/liveuser/.cache/calamares/session.log" 
+2026-11-03 - 19:32:46 [6]:     .. Languages: QList("ar", "as", "ast", "az", "az_AZ", "be", "bg", "bn", "ca", "ca@valencia", "cs_CZ", "da", "de", "el", "en", "en_GB", "eo", "es", "es_AR", "es_MX", "et", "eu", "fa", "fi_FI", "fr", "fur", "gl", "he", "hi", "hr", "hu", "ia", "id", "is", "it_IT", "ja", "ka", "ko", "lt", "ml", "mr", "nb", "nl", "oc", "pl", "pt_BR", "pt_PT", "ro", "ru", "si", "sk", "sl", "sq", "sr", "sr@latin", "sv", "tg", "th", "tr_TR", "uk", "uz", "vi", "zh_CN", "zh_TW") 
+2026-11-03 - 19:32:46 [6]: bool Calamares::initQmlModulesDir()
+2026-11-03 - 19:32:46 [6]:     Using Calamares QML directory "/usr/share/calamares/qml" 
+2026-11-03 - 19:32:46 [6]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:32:46 [6]:     Using Calamares branding file at "/usr/share/calamares/branding/cachyos/branding.desc" 
+2026-11-03 - 19:32:46 [2]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:32:46 [2]:     WARNING: the branding component "/usr/share/calamares/branding/cachyos" does not ship translations. 
+2026-11-03 - 19:32:46 [6]: Calamares::Branding::Branding(const QString&, QObject*, qreal)
+2026-11-03 - 19:32:46 [6]:     Loaded branding component "cachyos" 
+2026-11-03 - 19:32:46 [6]:     .. No translation for "tz_" "C" using default (en) 
+2026-11-03 - 19:32:46 [6]:     .. No translation for "calamares_" "C" using default (en) 
+2026-11-03 - 19:32:46 [6]:     .. STARTUP: initSettings, initQmlPath, initBranding done 
+2026-11-03 - 19:32:46 [6]:     .. STARTUP: initModuleManager: module init started 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::doInit()
+2026-11-03 - 19:32:46 [6]:     Found 38 modules 
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:32:46 [6]:     STARTUP: initModuleManager: all modules init done 
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:32:46 [6]:     STARTUP: initJobQueue done 
+2026-11-03 - 19:32:46 [6]: CalamaresWindow::CalamaresWindow(QWidget*)
+2026-11-03 - 19:32:46 [6]:     Available desktop QSize(1807, 1129) minimum size QSize(1024, 520) 
+2026-11-03 - 19:32:46 [6]:     .. Proposed window size: 1100 520 
+2026-11-03 - 19:32:46 [6]: QString Calamares::searchQmlFile(QmlSearch, const QString&)
+2026-11-03 - 19:32:46 [6]:     Looking for QML for "calamares-sidebar" 
+2026-11-03 - 19:32:46 [6]:     .. Looking at QML file "/usr/share/calamares/branding/cachyos/calamares-sidebar.qml" 
+2026-11-03 - 19:32:46 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/calamares-sidebar.qml:26:5: TypeError: Cannot read property 'width' of null
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::initView()
+2026-11-03 - 19:32:46 [6]:     STARTUP: CalamaresWindow created; loadModules started 
+2026-11-03 - 19:32:46 [6]: void Config::initLanguages()
+2026-11-03 - 19:32:46 [6]:     Trying to match locale "C" 
+2026-11-03 - 19:32:46 [6]: void Config::initLanguages()
+2026-11-03 - 19:32:46 [6]:     Trying to match locale QLocale::system()/* C, Default, Default */ 
+2026-11-03 - 19:32:46 [6]:     .. Trying to match approximate locale QLocale::C 
+2026-11-03 - 19:32:46 [6]:     .. Trying to match English (US) 
+2026-11-03 - 19:32:46 [6]: void Config::setLocaleIndex(int)
+2026-11-03 - 19:32:46 [6]:     Index 14 Selected locale "en" 
+2026-11-03 - 19:32:46 [6]:     .. Loaded QRC translation "tz_" "en" 
+2026-11-03 - 19:32:46 [6]:     .. Loaded QRC translation "calamares_" "en" 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "welcome@online" loading complete. 
+2026-11-03 - 19:32:46 [6]: QStringList loadLocales(const QString&)
+2026-11-03 - 19:32:46 [6]:     Loading locales from "/usr/share/i18n/SUPPORTED" 
+2026-11-03 - 19:32:46 [6]:     ..  Read 503 lines 
+2026-11-03 - 19:32:46 [6]:     ..  After filtering 328 lines 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "locale@locale" loading complete. 
+2026-11-03 - 19:32:46 [6]: KeyboardModelsModel::KeyboardModelsModel(QObject*)
+2026-11-03 - 19:32:46 [6]:     Loaded 183 keyboard models 
+2026-11-03 - 19:32:46 [6]: KeyboardGroupsSwitchersModel::KeyboardGroupsSwitchersModel(QObject*)
+2026-11-03 - 19:32:46 [6]:     Loaded 45 keyboard groups 
+2026-11-03 - 19:32:46 [6]: KeyboardPage::KeyboardPage(Config*, QWidget*)
+2026-11-03 - 19:32:46 [6]:     Variants now total= 0 selected= -1 
+2026-11-03 - 19:32:46 [6]: KeyboardPage::KeyboardPage(Config*, QWidget*)
+2026-11-03 - 19:32:46 [6]:     Groups now total= 45 selected= -1 
+2026-11-03 - 19:32:46 [6]:     .. Loaded QRC translation "kb_" "en" 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "keyboard@keyboard" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Config::setConfigurationMap(const QVariantMap&)
+2026-11-03 - 19:32:46 [6]:     Using module ID "packagechooser@bootloader" 
+2026-11-03 - 19:32:46 [6]: void fillModel(PackageListModel*, const QVariantList&)
+2026-11-03 - 19:32:46 [6]:     Loading PackageChooser model items from config 
+2026-11-03 - 19:32:46 [6]:     .. Loaded PackageChooser with 5 entries. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "packagechooser@bootloader" loading complete. 
+2026-11-03 - 19:32:46 [6]: Calamares::Partition::InternalManager::InternalManager()
+2026-11-03 - 19:32:46 [6]:     KPMCore backend starting .. 
+2026-11-03 - 19:32:46 [6]: DEBUG (Qt): Loaded backend plugin:  "pmsfdiskbackendplugin"
+2026-11-03 - 19:32:46 [6]:     .. Backend @0x55762f9fb430 "pmsfdiskbackendplugin" "1" 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "partition@partition" loading complete. 
+2026-11-03 - 19:32:46 [6]: void fillModel(PackageListModel*, const QVariantList&)
+2026-11-03 - 19:32:46 [6]:     Loading PackageChooser model items from config 
+2026-11-03 - 19:32:46 [6]:     .. Loaded PackageChooser with 19 entries. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "packagechooser@desktop" loading complete. 
+2026-11-03 - 19:32:46 [6]: void Config::setConfigurationMap(const QVariantMap&)
+2026-11-03 - 19:32:46 [6]:     Loading netinstall from 2 alternate sources. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "netinstall@netinstall" loading complete. 
+2026-11-03 - 19:32:46 [6]:     .. minLength set to 4 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "users@users" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "summary@summary" loading complete. 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:32:46 [6]:     Module "partition@partition" already loaded. 
+2026-11-03 - 19:32:46 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+2026-11-03 - 19:32:46 [6]:     QML import paths: 
+     "/usr/share/calamares/qml" 
+     "/usr/bin" 
+     "qrc:/qt-project.org/imports" 
+     "qrc:/qt/qml" 
+     "/usr/lib/qt6/qml" 
+2026-11-03 - 19:32:46 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+2026-11-03 - 19:32:46 [6]:     QML load on startup, API 2. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "zfs@zfs" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@modify_mk_hook" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@initialize_pacman" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@before-online" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "machineid@machineid" loading complete. 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:32:46 [6]:     Module "users@users" already loaded. 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:32:46 [6]:     Module "locale@locale" already loaded. 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::loadModules()
+2026-11-03 - 19:32:46 [6]:     Module "keyboard@keyboard" already loaded. 
+2026-11-03 - 19:32:46 [2]: void Calamares::Module::loadConfigurationFile(const QString&)
+2026-11-03 - 19:32:46 [2]:     WARNING: No config file for "chwd" found anywhere at 
+     "/etc/calamares/modules/chwd.conf" 
+     "/usr/share/calamares/modules/chwd.conf" 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "luksbootkeyfile@luksbootkeyfile" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "luksopenswaphookcfg@luksopenswaphookcfg" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "initcpio@initcpio" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@reset_mk_hook" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@shellprocess" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@enable_ufw" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@greetd" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@btrfs_snapshot" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "shellprocess@cleanup_calamares" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::CppJobModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     CppJobModule "umount@umount" loading complete. 
+2026-11-03 - 19:32:46 [6]: virtual void Calamares::ViewModule::loadSelf()
+2026-11-03 - 19:32:46 [6]:     ViewModule "finished@finished" loading complete. 
+2026-11-03 - 19:32:46 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:32:46 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:32:46 [6]: void LoaderQueue::fetch(const QUrl&)
+2026-11-03 - 19:32:46 [6]:     NetInstall loading groups from QUrl("https://raw.githubusercontent.com/CachyOS/cachyos-calamares/cachyos-dev/src/modules/netinstall/netinstall.yaml") 
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::initViewSteps()
+2026-11-03 - 19:32:46 [6]:     STARTUP: loadModules for all modules done 
+2026-11-03 - 19:32:46 [6]: void Calamares::ModuleManager::checkRequirements()
+2026-11-03 - 19:32:46 [6]:     Checking module requirements .. 
+2026-11-03 - 19:32:46 [6]: void CalamaresApplication::initViewSteps()
+2026-11-03 - 19:32:46 [6]:     STARTUP: Window now visible and ProgressTreeView populated 
+2026-11-03 - 19:32:46 [6]:     .. 11 view steps loaded. 
+2026-11-03 - 19:32:46 [6]:     .. Loaded QRC translation "kb_" "en" 
+2026-11-03 - 19:32:46 [2]: WARNING (Qt): Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'io.calamares.calamares'")
+2026-11-03 - 19:32:47 [6]: void Calamares::SlideshowQML::loadQmlV2Complete()
+2026-11-03 - 19:32:47 [6]:     QML component complete, API 2 
+2026-11-03 - 19:32:47 [6]: bool GeneralRequirements::checkHasPower()
+2026-11-03 - 19:32:47 [6]:     A battery exists, checking for mains power. 
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): getting temp failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): getting powered on time failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): getting power cycles failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/nvme0n1p2"
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): 332799 103184 4096
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): 6291455 867198 4096
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:39:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:54:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:70:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:85:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:100:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [2]: WARNING (Qt): file:///usr/share/calamares/branding/cachyos/show.qml:115:13: Unable to assign [undefined] to QQuickImage::HAlignment
+2026-11-03 - 19:32:47 [6]:     .. Loading "/usr/share/calamares/branding/cachyos/show.qml" 
+2026-11-03 - 19:32:47 [6]: void LoaderQueue::dataArrived()
+2026-11-03 - 19:32:47 [6]:     NetInstall group data received 54111 bytes from QUrl("https://raw.githubusercontent.com/CachyOS/cachyos-calamares/cachyos-dev/src/modules/netinstall/netinstall.yaml") 
+2026-11-03 - 19:32:47 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+2026-11-03 - 19:32:47 [6]:     GeneralRequirements output: 
+     storage :   8589934592 
+     enoughStorage :   true 
+     RAM :   2684354560 
+     enoughRam :   true 
+     hasPower :   true 
+     hasInternet :   true 
+     isRoot :   true 
+2026-11-03 - 19:32:47 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+2026-11-03 - 19:32:47 [6]:     Got 6 requirement results from "welcome" 
+2026-11-03 - 19:32:47 [2]: bool applyLocale1(const BasicLayoutInfo&, AdditionalLayoutInfo&)
+2026-11-03 - 19:32:47 [2]:     WARNING: Could not set keyboard config through org.freedesktop.locale1.X11Keyboard. QDBusError("org.freedesktop.DBus.Error.InvalidArgs", "Specified keymap cannot be compiled, refusing as invalid.") 
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/sda" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/sda" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: void applyXkb(const BasicLayoutInfo&, AdditionalLayoutInfo&)
+2026-11-03 - 19:32:47 [6]:     xkbmap selection changed to:  "custom" - "" 
+2026-11-03 - 19:32:47 [6]: QStringList Calamares::GeoIP::getElementTexts(const QByteArray&, const QString&)
+2026-11-03 - 19:32:47 [6]:     GeoIP found 1 elements 
+2026-11-03 - 19:32:47 [6]: setGeoIP(Config*, const QVariantMap&)::<lambda()>
+2026-11-03 - 19:32:47 [6]:     GeoIP result for welcome= "CA" 
+2026-11-03 - 19:32:47 [6]: void setCountry(Config*, const QString&, Calamares::GeoIP::Handler*)
+2026-11-03 - 19:32:47 [6]:     Unusable country code "CA" 
+2026-11-03 - 19:32:47 [6]:     .. Obtained from "https://geoip.kde.org/v1/ubiquity"  ( 2 "CountryCode" ) 
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): smartctl initialization failed for  "/dev/zram0" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: DEBUG (Qt): error during smart output parsing for  "/dev/zram0" :  No such file or directory
+2026-11-03 - 19:32:47 [6]: QList<Device*> PartUtils::getDevices(DeviceType)
+2026-11-03 - 19:32:47 [6]:     Removing unsuitable devices: 3 candidates. 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p1") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p2") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p3") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p4") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p5") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/nvme0n1p6") 
+2026-11-03 - 19:32:47 [6]:     .. Running QList("blkid", "/dev/sda") 
+2026-11-03 - 19:32:47 [6]:     .. Removing device with iso9660 filesystem (probably a CD) on it "/dev/sda" 
+2026-11-03 - 19:32:47 [6]:     .. Removing zram "/dev/zram0" 
+2026-11-03 - 19:32:47 [6]:     .. there are 1 devices left. 
+2026-11-03 - 19:32:47 [6]: void PartitionCoreModule::doInit()
+2026-11-03 - 19:32:47 [6]:     LIST OF DETECTED DEVICES: 
+2026-11-03 - 19:32:47 [6]:     .. node	capacity	name	prettyName 
+2026-11-03 - 19:32:47 [6]:     .. "/dev/nvme0n1" 1024209543168 DevName$be3ef348 DevNamePretty$9f68f81e 
+2026-11-03 - 19:32:47 [6]:     .. 1 devices detected. 
+2026-11-03 - 19:32:48 [6]: void Calamares::RequirementsChecker::reportProgress()
+2026-11-03 - 19:32:48 [6]:     Remaining modules: 1 
+     "partition" 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("blkid", "-s", "TYPE", "-o", "value", "/dev/nvme0n1p1") 
+2026-11-03 - 19:32:48 [6]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+2026-11-03 - 19:32:48 [6]:     Checking device "/dev/nvme0n1p1" for fstab (fs= "vfat" ) 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("mount", "-o", "ro", "/dev/nvme0n1p1", "/tmp/calamares-BUimHw") 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("sync") 
+2026-11-03 - 19:32:48 [2]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+2026-11-03 - 19:32:48 [2]:     WARNING: Could not read fstab from mounted fs 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("umount", "-R", "/tmp/calamares-BUimHw") 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 19:32:48 [6]:     .. Running QList("sync") 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 394088448 "(0GiB)" for "/dev/nvme0n1p1" length: 921600 sectorsUsed: 151896 fsType: "fat32" 
+2026-11-03 - 19:32:48 [6]: OsproberEntryList PartUtils::runOsprober(DeviceModel*)
+2026-11-03 - 19:32:48 [6]:     os-prober lines after cleanup: 
+     "/dev/nvme0n1p1@/efi/Microsoft/Boot/bootmgfw.efi:Windows Boot Manager:Windows:efi" 
+2026-11-03 - 19:32:48 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 19:32:48 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 19:32:48 [6]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 19:32:48 [6]:     system is EFI and new EFI system partition has been found. 
+2026-11-03 - 19:32:48 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+2026-11-03 - 19:32:48 [6]:     Got 1 requirement results from "partition" 
+2026-11-03 - 19:32:48 [2]: void ChoicePage::updateActionDescriptionsTr()
+2026-11-03 - 19:32:48 [2]:     WARNING: Invalid osprober count, labels and buttons not updated. 
+2026-11-03 - 19:32:48 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:32:48 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::updateDeviceStatePreview()
+2026-11-03 - 19:32:48 [6]:     Updating partitioning state widgets. 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::setupActions()
+2026-11-03 - 19:32:48 [6]:     Setting up actions for "/dev/nvme0n1" with 1 entries. 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 394088448 "(0GiB)" for "/dev/nvme0n1p1" length: 921600 sectorsUsed: 151896 fsType: "fat32" 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p1" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 471859200 "(0GiB)" 
+2026-11-03 - 19:32:48 [6]:     ..  Can not resize "/dev/nvme0n1p2" , filesystem "unknown" does not support resize. 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p2" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 16777216 "(0GiB)" 
+2026-11-03 - 19:32:48 [6]:     ..  Can not resize "/dev/nvme0n1p3" , filesystem "BitLocker" does not support resize. 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p3" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  Partition "/dev/nvme0n1p3" authorized for replace install. 
+2026-11-03 - 19:32:48 [6]:     .. contains replaceable "/dev/nvme0n1p3" 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 422645760 "(0GiB)" for "/dev/nvme0n1p4" length: 2662400 sectorsUsed: 1836920 fsType: "ntfs" 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p4" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 1363148800 "(1GiB)" 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 3552047104 "(3GiB)" for "/dev/nvme0n1p5" length: 50331648 sectorsUsed: 43394056 fsType: "ntfs" 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p5" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  Partition "/dev/nvme0n1p5" authorized for replace install. 
+2026-11-03 - 19:32:48 [6]:     .. contains replaceable "/dev/nvme0n1p5" 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 162795520 "(0GiB)" for "/dev/nvme0n1p6" length: 532480 sectorsUsed: 214520 fsType: "fat32" 
+2026-11-03 - 19:32:48 [6]:     ..  Checking if "/dev/nvme0n1p6" can be replaced. 
+2026-11-03 - 19:32:48 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 272629760 "(0GiB)" 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::updateActionDescriptionsTr()
+2026-11-03 - 19:32:48 [6]:     Setting texts for 1 non-empty osprober entry 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::setupActions()
+2026-11-03 - 19:32:48 [6]:     No partitions available for resize-action. 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::continueApplyDeviceChoice()
+2026-11-03 - 19:32:48 [6]:     Previous device -1 new device 0 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 19:32:48 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 19:32:48 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:32:48 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:32:48 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 19:32:48 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 19:32:48 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:32:48 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:32:48 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 19:32:48 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 19:32:48 [6]: void Calamares::RequirementsChecker::finished()
+2026-11-03 - 19:32:48 [6]:     All requirements have been checked. 
+2026-11-03 - 19:32:48 [6]: void Calamares::RequirementsModel::describe() const
+2026-11-03 - 19:32:48 [6]:     Requirements model has 7 items 
+2026-11-03 - 19:32:48 [6]:     .. requirement 0 "storage" satisfied? true mandatory? false 
+2026-11-03 - 19:32:48 [6]:     .. requirement 1 "ram" satisfied? true mandatory? true 
+2026-11-03 - 19:32:48 [6]:     .. requirement 2 "power" satisfied? true mandatory? false 
+2026-11-03 - 19:32:48 [6]:     .. requirement 3 "internet" satisfied? true mandatory? true 
+2026-11-03 - 19:32:48 [6]:     .. requirement 4 "root" satisfied? true mandatory? false 
+2026-11-03 - 19:32:48 [6]:     .. requirement 5 "screen" satisfied? true mandatory? false 
+2026-11-03 - 19:32:48 [6]:     .. requirement 6 "partitions" satisfied? true mandatory? true 
+2026-11-03 - 19:32:52 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:32:52 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:32:53 [2]: WARNING (Qt): QIODevice::read (QSslSocket): device not open
+2026-11-03 - 19:33:00 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+2026-11-03 - 19:33:00 [6]:     Mapping "en" in "CA" to locale. 
+2026-11-03 - 19:33:00 [6]:     .. Got best match for "en" as "en_BW.UTF-8" 
+2026-11-03 - 19:33:00 [6]:     .. Got best match for "en_CA" as "en_CA.UTF-8" 
+2026-11-03 - 14:33:00 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+2026-11-03 - 14:33:00 [6]:     Mapping "en" in "CA" to locale. 
+2026-11-03 - 14:33:00 [6]:     .. Got best match for "en" as "en_BW.UTF-8" 
+2026-11-03 - 14:33:00 [6]:     .. Got best match for "en_CA" as "en_CA.UTF-8" 
+2026-11-03 - 14:33:00 [6]: static LocaleConfiguration LocaleConfiguration::fromLanguageAndLocation(const QString&, const QStringList&, const QString&)
+2026-11-03 - 14:33:00 [6]:     Mapping "en" in "CA" to locale. 
+2026-11-03 - 14:33:00 [6]:     .. Got best match for "en" as "en_BW.UTF-8" 
+2026-11-03 - 14:33:00 [6]:     .. Got best match for "en_CA" as "en_CA.UTF-8" 
+2026-11-03 - 14:33:05 [6]: void Config::guessLocaleKeyboardLayout()
+2026-11-03 - 14:33:05 [6]:     Got locale language "en_CA.UTF-8" 
+2026-11-03 - 14:33:05 [6]:     .. special case language "en_CA" becomes "us" 
+2026-11-03 - 14:33:05 [6]:     .. looking for locale part "us" 
+2026-11-03 - 14:33:05 [6]:     .. matched "us" 
+2026-11-03 - 14:34:04 [6]: void Config::updateGlobalStorage(const QStringList&) const
+2026-11-03 - 14:34:04 [6]:     "packagechooser@bootloader" selected "limine" 
+2026-11-03 - 14:34:04 [2]: void Config::setConfigurationMap(const QVariantMap&)
+2026-11-03 - 14:34:04 [2]:     WARNING: Configuration for *initialSwapChoice* is not one of the *userSwapChoices* 
+2026-11-03 - 14:34:04 [2]:     .. Choice "none" added. 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateDeviceStatePreview()
+2026-11-03 - 14:34:04 [6]:     Updating partitioning state widgets. 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::setupActions()
+2026-11-03 - 14:34:04 [6]:     Setting up actions for "/dev/nvme0n1" with 1 entries. 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 394088448 "(0GiB)" for "/dev/nvme0n1p1" length: 921600 sectorsUsed: 151896 fsType: "fat32" 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p1" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 471859200 "(0GiB)" 
+2026-11-03 - 14:34:04 [6]:     ..  Can not resize "/dev/nvme0n1p2" , filesystem "unknown" does not support resize. 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p2" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 16777216 "(0GiB)" 
+2026-11-03 - 14:34:04 [6]:     ..  Can not resize "/dev/nvme0n1p3" , filesystem "BitLocker" does not support resize. 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p3" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  Partition "/dev/nvme0n1p3" authorized for replace install. 
+2026-11-03 - 14:34:04 [6]:     .. contains replaceable "/dev/nvme0n1p3" 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 422645760 "(0GiB)" for "/dev/nvme0n1p4" length: 2662400 sectorsUsed: 1836920 fsType: "ntfs" 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p4" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 1363148800 "(1GiB)" 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 3552047104 "(3GiB)" for "/dev/nvme0n1p5" length: 50331648 sectorsUsed: 43394056 fsType: "ntfs" 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p5" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  Partition "/dev/nvme0n1p5" authorized for replace install. 
+2026-11-03 - 14:34:04 [6]:     .. contains replaceable "/dev/nvme0n1p5" 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 11274289152 "(10.5GiB)" 
+     Available storage B: 162795520 "(0GiB)" for "/dev/nvme0n1p6" length: 532480 sectorsUsed: 214520 fsType: "fat32" 
+2026-11-03 - 14:34:04 [6]:     ..  Checking if "/dev/nvme0n1p6" can be replaced. 
+2026-11-03 - 14:34:04 [6]:     ..  NO, insufficient storage 
+     Required  storage B: 9126805504 "(8GiB)" 
+     Available storage B: 272629760 "(0GiB)" 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionDescriptionsTr()
+2026-11-03 - 14:34:04 [6]:     Setting texts for 1 non-empty osprober entry 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::setupActions()
+2026-11-03 - 14:34:04 [6]:     No partitions available for resize-action. 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::continueApplyDeviceChoice()
+2026-11-03 - 14:34:04 [6]:     Previous device 0 new device 0 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     InstallChoice Config::NoChoice "none" 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:04 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:04 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:34:04 [6]:     No partitioning choice has been made yet 
+2026-11-03 - 14:34:21 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:34:21 [6]:     InstallChoice Config::Erase "erase" 
+2026-11-03 - 14:34:21 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+2026-11-03 - 14:34:21 [6]:     CreatePartitionTableJob::createTable trying to make table for device "/dev/nvme0n1" 
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:34:21 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 14:34:21 [2]:     WARNING: system is EFI but no EFI system partitions found. 
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:34:21 [6]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 14:34:21 [6]:     system is EFI and new EFI system partition has been found. 
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:34:21 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:34:22 [6]: void PartitionCoreModule::dumpQueue() const
+2026-11-03 - 14:34:22 [6]:     # Queue: 
+2026-11-03 - 14:34:22 [6]:     .. ## Device: "/dev/nvme0n1" 
+2026-11-03 - 14:34:22 [6]:     .. - CreatePartitionTableJob 
+2026-11-03 - 14:34:22 [6]:     .. - CreatePartitionJob 
+2026-11-03 - 14:34:22 [6]:     .. - SetPartFlagsJob 
+2026-11-03 - 14:34:22 [6]:     .. - CreatePartitionJob 
+2026-11-03 - 14:34:22 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:34:22 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:34:24 [6]: PartitionBarsView::PartitionBarsView(QWidget*)::<lambda(const QModelIndex&)>
+2026-11-03 - 14:34:24 [6]:     Clicked row 2 
+2026-11-03 - 14:36:44 [6]: void Config::updateGlobalStorage(const QStringList&) const
+2026-11-03 - 14:36:44 [6]:     "packagechooser@desktop" groups to select in netinstall QList("KDE-Desktop") 
+2026-11-03 - 14:37:11 [2]: WARNING (Qt): dataChanged() called with an invalid index range:
+    topleft: QModelIndex(0,0,0x5576305e3690,PackageModel(0x55762fab61e0))
+    bottomRight:QModelIndex(-1,-1,0x0,QObject(0x0))
+2026-11-03 - 14:37:17 [6]: bool additions(Calamares::GlobalStorage*, const QString&, const QVariantList&, const QVariantList&)
+2026-11-03 - 14:37:17 [6]:     Existing package operations length 0 
+2026-11-03 - 14:37:17 [6]:     .. 169 critical packages. 
+2026-11-03 - 14:37:17 [6]:     .. 4 non-critical packages. 
+2026-11-03 - 14:40:12 [2]: WARNING (Qt): QObject::setParent: Cannot set parent, new parent is in a different thread
+2026-11-03 - 14:40:12 [6]: virtual QString PartitionViewStep::prettyStatus() const
+2026-11-03 - 14:40:12 [6]:     Summary for Partition 1 Config::Erase 
+2026-11-03 - 14:40:12 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+2026-11-03 - 14:40:12 [6]:     Checking LVM use on 1 devices 
+2026-11-03 - 14:40:12 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+2026-11-03 - 14:40:12 [6]:     Building partition information map 
+2026-11-03 - 14:40:12 [6]:     .. partitions on "/dev/nvme0n1" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "false" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "btrfs" 
+     fsName :   "btrfs" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:40:12 [2]: WARNING (Qt): QLayout: Attempting to add QLayout "" to QWidget "", which already has a layout
+2026-11-03 - 14:40:12 [2]: WARNING (Qt): QObject::setParent: Cannot set parent, new parent is in a different thread
+2026-11-03 - 14:40:12 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+2026-11-03 - 14:40:12 [6]:     Checking LVM use on 1 devices 
+2026-11-03 - 14:40:12 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+2026-11-03 - 14:40:12 [6]:     Building partition information map 
+2026-11-03 - 14:40:12 [6]:     .. partitions on "/dev/nvme0n1" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "false" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:40:12 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "btrfs" 
+     fsName :   "btrfs" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:40:12 [6]: void ensureSize(QWidget*, QScrollArea*, Calamares::ViewStep*)
+2026-11-03 - 14:40:12 [6]:     Summary widget is larger than viewport, enlarge by 141 to QSize(1100, 623) 
+2026-11-03 - 14:44:33 [6]: bool additions(Calamares::GlobalStorage*, const QString&, const QVariantList&, const QVariantList&)
+2026-11-03 - 14:44:33 [6]:     Existing package operations length 2 
+2026-11-03 - 14:44:33 [6]:     .. Removing existing operations for "netinstall@netinstall" 
+2026-11-03 - 14:44:33 [6]:     .. Removing existing operations for "netinstall@netinstall" 
+2026-11-03 - 14:44:33 [6]:     .. 169 critical packages. 
+2026-11-03 - 14:44:33 [6]:     .. 4 non-critical packages. 
+2026-11-03 - 14:44:34 [6]: void Config::updateGlobalStorage(const QStringList&) const
+2026-11-03 - 14:44:34 [6]:     "packagechooser@desktop" groups to select in netinstall QList("KDE-Desktop") 
+2026-11-03 - 14:44:40 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:44:40 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:05 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:05 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:05 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:05 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:05 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:05 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:06 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:06 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:06 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:06 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:07 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:07 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:08 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:08 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:09 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:09 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:09 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:09 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:09 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:09 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:10 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:10 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:14 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:14 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:14 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:14 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:14 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:14 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:14 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:14 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:14 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:14 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:16 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:16 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:17 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:17 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:17 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:17 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:18 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:18 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:18 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:18 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:18 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:18 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:34 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:34 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:35 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:35 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:37 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:37 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:37 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:37 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:38 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:38 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:38 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:38 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:38 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:38 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:38 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:38 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:39 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:39 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:39 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:39 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:42 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:42 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:42 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:42 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:43 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:43 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:43 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:43 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:44 [6]: bool ChoicePage::calculateNextEnabled() const
+2026-11-03 - 14:45:44 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:45:44 [6]: void ChoicePage::applyActionChoice(InstallChoice)
+2026-11-03 - 14:45:44 [6]:     InstallChoice Config::Erase "erase" 
+2026-11-03 - 14:45:44 [6]: void ChoicePage::updateActionChoicePreview(InstallChoice)
+2026-11-03 - 14:45:44 [6]:     Updating partitioning preview widgets. 
+2026-11-03 - 14:45:44 [6]: DEBUG (Qt): getting temp failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 14:45:44 [6]: DEBUG (Qt): getting powered on time failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 14:45:44 [6]: DEBUG (Qt): getting power cycles failed for  "/dev/nvme0n1" :  No such file or directory
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): unknown file system type  ""  on  "/dev/nvme0n1p2"
+2026-11-03 - 14:45:44 [6]: DEBUG (Qt): 332799 103184 4096
+2026-11-03 - 14:45:44 [6]: DEBUG (Qt): 6291455 867198 4096
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:45:44 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+2026-11-03 - 14:45:44 [6]:     CreatePartitionTableJob::createTable trying to make table for device "/dev/nvme0n1" 
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:45:44 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 14:45:44 [2]:     WARNING: system is EFI but no EFI system partitions found. 
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:45:44 [6]: void PartitionCoreModule::scanForEfiSystemPartitions()
+2026-11-03 - 14:45:44 [6]:     system is EFI and new EFI system partition has been found. 
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): beginResetModel called on BootLoaderModel(0x55762fa016c0) without calling endResetModel first
+2026-11-03 - 14:45:44 [2]: WARNING (Qt): endResetModel called on BootLoaderModel(0x55762fa016c0) without calling beginResetModel first
+2026-11-03 - 14:45:44 [6]: void PartitionCoreModule::dumpQueue() const
+2026-11-03 - 14:45:44 [6]:     # Queue: 
+2026-11-03 - 14:45:44 [6]:     .. ## Device: "/dev/nvme0n1" 
+2026-11-03 - 14:45:44 [6]:     .. - CreatePartitionTableJob 
+2026-11-03 - 14:45:44 [6]:     .. - CreatePartitionJob 
+2026-11-03 - 14:45:44 [6]:     .. - SetPartFlagsJob 
+2026-11-03 - 14:45:44 [6]:     .. - CreatePartitionJob 
+2026-11-03 - 14:45:49 [6]: void Config::updateGlobalStorage(const QStringList&) const
+2026-11-03 - 14:45:49 [6]:     "packagechooser@desktop" groups to select in netinstall QList("KDE-Desktop") 
+2026-11-03 - 14:45:51 [6]: bool additions(Calamares::GlobalStorage*, const QString&, const QVariantList&, const QVariantList&)
+2026-11-03 - 14:45:51 [6]:     Existing package operations length 2 
+2026-11-03 - 14:45:51 [6]:     .. Removing existing operations for "netinstall@netinstall" 
+2026-11-03 - 14:45:51 [6]:     .. Removing existing operations for "netinstall@netinstall" 
+2026-11-03 - 14:45:51 [6]:     .. 169 critical packages. 
+2026-11-03 - 14:45:51 [6]:     .. 4 non-critical packages. 
+2026-11-03 - 14:45:57 [2]: WARNING (Qt): QObject::setParent: Cannot set parent, new parent is in a different thread
+2026-11-03 - 14:45:57 [6]: virtual QString PartitionViewStep::prettyStatus() const
+2026-11-03 - 14:45:57 [6]:     Summary for Partition 1 Config::Erase 
+2026-11-03 - 14:45:57 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+2026-11-03 - 14:45:57 [6]:     Checking LVM use on 1 devices 
+2026-11-03 - 14:45:57 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+2026-11-03 - 14:45:57 [6]:     Building partition information map 
+2026-11-03 - 14:45:57 [6]:     .. partitions on "/dev/nvme0n1" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "false" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "btrfs" 
+     fsName :   "luks2" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+     luksMapperName: :   "" 
+2026-11-03 - 14:45:57 [2]: WARNING (Qt): QLayout: Attempting to add QLayout "" to QWidget "", which already has a layout
+2026-11-03 - 14:45:57 [2]: WARNING (Qt): QObject::setParent: Cannot set parent, new parent is in a different thread
+2026-11-03 - 14:45:57 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+2026-11-03 - 14:45:57 [6]:     Checking LVM use on 1 devices 
+2026-11-03 - 14:45:57 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+2026-11-03 - 14:45:57 [6]:     Building partition information map 
+2026-11-03 - 14:45:57 [6]:     .. partitions on "/dev/nvme0n1" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "false" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+2026-11-03 - 14:45:57 [6]:     ..  mapping for "" "New Partition" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "btrfs" 
+     fsName :   "luks2" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "true" 
+     luksMapperName: :   "" 
+2026-11-03 - 14:46:16 [6]: DEBUG (Qt): QML Component (default slideshow) activated
+2026-11-03 - 14:46:16 [6]: QStringList findEssentialLVs(const QList<PartitionCoreModule::DeviceInfo*>&)
+2026-11-03 - 14:46:16 [6]:     Checking LVM use on 1 devices 
+2026-11-03 - 14:46:16 [6]: void Calamares::JobThread::finalize()
+2026-11-03 - 14:46:16 [6]:     There are 47 jobs, total weight 34 
+2026-11-03 - 14:46:16 [6]:     .. Job 1 "Managing auto-mount settings…" +wt 0.111111 tot.wt 0.111111 
+2026-11-03 - 14:46:16 [6]:     .. Job 2 "Clearing all temporary mounts…" +wt 0.111111 tot.wt 0.222222 
+2026-11-03 - 14:46:16 [6]:     .. Job 3 "Clear mounts for partitioning operations on /dev/nvme0n1" +wt 0.111111 tot.wt 0.333333 
+2026-11-03 - 14:46:16 [6]:     .. Job 4 "Creating new gpt partition table on /dev/nvme0n1…" +wt 0.111111 tot.wt 0.444444 
+2026-11-03 - 14:46:16 [6]:     .. Job 5 "Create new 4096MiB partition on /dev/nvme0n1 (KBG60ZNV1T02 KIOXIA)" +wt 0.111111 tot.wt 0.555556 
+2026-11-03 - 14:46:16 [6]:     .. Job 6 "Set flags on 4096MiB fat32 partition" +wt 0.111111 tot.wt 0.666667 
+2026-11-03 - 14:46:16 [6]:     .. Job 7 "Create new 972664MiB partition on /dev/nvme0n1 (KBG60ZNV1T02 KIOXIA) with entries root" +wt 0.111111 tot.wt 0.777778 
+2026-11-03 - 14:46:16 [6]:     .. Job 8 "Set partition information" +wt 0.111111 tot.wt 0.888889 
+2026-11-03 - 14:46:16 [6]:     .. Job 9 "Managing auto-mount settings…" +wt 0.111111 tot.wt 1 
+2026-11-03 - 14:46:16 [6]:     .. Job 10 "Creating ZFS pools and datasets…" +wt 1 tot.wt 2 
+2026-11-03 - 14:46:16 [6]:     .. Job 11 "mount" +wt 1 tot.wt 3 
+2026-11-03 - 14:46:16 [6]:     .. Job 12 "modify 90-mkinitcpio-install.hook on host and chroot" +wt 1 tot.wt 4 
+2026-11-03 - 14:46:16 [6]:     .. Job 13 "initialize pacman ... ranking mirrors ... copy pacman mirrorlist and keyring to target ..." +wt 1 tot.wt 5 
+2026-11-03 - 14:46:16 [6]:     .. Job 14 "Preparing your system for online installation of CachyOS" +wt 1 tot.wt 6 
+2026-11-03 - 14:46:16 [6]:     .. Job 15 "pacstrap" +wt 1 tot.wt 7 
+2026-11-03 - 14:46:16 [6]:     .. Job 16 "Generate machine-id." +wt 1 tot.wt 8 
+2026-11-03 - 14:46:16 [6]:     .. Job 17 "Configuring <pre>sudo</pre> users…" +wt 0.166667 tot.wt 8.16667 
+2026-11-03 - 14:46:16 [6]:     .. Job 18 "Preparing groups…" +wt 0.166667 tot.wt 8.33333 
+2026-11-03 - 14:46:16 [6]:     .. Job 19 "Create user s" +wt 0.166667 tot.wt 8.5 
+2026-11-03 - 14:46:16 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:46:16 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:46:16 [6]:     .. Job 22 "Set hostname ss" +wt 0.166667 tot.wt 9 
+2026-11-03 - 14:46:16 [6]:     .. Job 23 "Setting timezone to America/Toronto…" +wt 1 tot.wt 10 
+2026-11-03 - 14:46:16 [6]:     .. Job 24 "Setting keyboard model to pc105, layout as us-…" +wt 1 tot.wt 11 
+2026-11-03 - 14:46:16 [6]:     .. Job 25 "localecfg" +wt 1 tot.wt 12 
+2026-11-03 - 14:46:16 [6]:     .. Job 26 "chwd" +wt 1 tot.wt 13 
+2026-11-03 - 14:46:16 [6]:     .. Job 27 "packages" +wt 1 tot.wt 14 
+2026-11-03 - 14:46:16 [6]:     .. Job 28 "Configuring LUKS key file." +wt 1 tot.wt 15 
+2026-11-03 - 14:46:16 [6]:     .. Job 29 "Configuring encrypted swap." +wt 1 tot.wt 16 
+2026-11-03 - 14:46:16 [6]:     .. Job 30 "fstab" +wt 1 tot.wt 17 
+2026-11-03 - 14:46:16 [6]:     .. Job 31 "plymouthcfg" +wt 1 tot.wt 18 
+2026-11-03 - 14:46:16 [6]:     .. Job 32 "zfshostid" +wt 1 tot.wt 19 
+2026-11-03 - 14:46:16 [6]:     .. Job 33 "initcpiocfg" +wt 1 tot.wt 20 
+2026-11-03 - 14:46:16 [6]:     .. Job 34 "Creating initramfs with mkinitcpio…" +wt 1 tot.wt 21 
+2026-11-03 - 14:46:16 [6]:     .. Job 35 "networkcfg" +wt 1 tot.wt 22 
+2026-11-03 - 14:46:16 [6]:     .. Job 36 "displaymanager" +wt 1 tot.wt 23 
+2026-11-03 - 14:46:16 [6]:     .. Job 37 "hwclock" +wt 1 tot.wt 24 
+2026-11-03 - 14:46:16 [6]:     .. Job 38 "grubcfg" +wt 1 tot.wt 25 
+2026-11-03 - 14:46:16 [6]:     .. Job 39 "bootloader" +wt 1 tot.wt 26 
+2026-11-03 - 14:46:16 [6]:     .. Job 40 "reset 90-mkinitcpio-install.hook" +wt 1 tot.wt 27 
+2026-11-03 - 14:46:16 [6]:     .. Job 41 "services-systemd" +wt 1 tot.wt 28 
+2026-11-03 - 14:46:16 [6]:     .. Job 42 "Running shell processes…" +wt 1 tot.wt 29 
+2026-11-03 - 14:46:16 [6]:     .. Job 43 "Enable the UFW Firewall as default and allow outgoing but deny incoming" +wt 1 tot.wt 30 
+2026-11-03 - 14:46:16 [6]:     .. Job 44 "Configuring noctalia-greeter..." +wt 1 tot.wt 31 
+2026-11-03 - 14:46:16 [6]:     .. Job 45 "Creating Btrfs installation snapshot" +wt 1 tot.wt 32 
+2026-11-03 - 14:46:16 [6]:     .. Job 46 "Removing installer files from target system" +wt 1 tot.wt 33 
+2026-11-03 - 14:46:16 [6]:     .. Job 47 "Unmounting file systems…" +wt 1 tot.wt 34 
+2026-11-03 - 14:46:16 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:16 [6]:     Starting job "Managing auto-mount settings…" ( 1 / 47 ) 
+2026-11-03 - 14:46:16 [6]: virtual Calamares::JobResult AutoMountManagementJob::exec()
+2026-11-03 - 14:46:16 [6]:     Set automount to disable 
+2026-11-03 - 14:46:16 [1]: void {anonymous}::PowerManagementInterface::inhibitDBusCallFinished(QDBusPendingCallWatcher*)
+2026-11-03 - 14:46:16 [1]:     ERROR: Could not inhibit sleep: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.freedesktop.PowerManagement.Inhibit was not provided by any .service files") 
+2026-11-03 - 14:46:17 [6]: std::shared_ptr<Calamares::Partition::AutoMountInfo> Calamares::Partition::automountDisable(bool)
+2026-11-03 - 14:46:17 [6]:     Setting Solid automount to disabled 
+2026-11-03 - 14:46:17 [6]:     .. 2 reply QList() 
+2026-11-03 - 14:46:17 [6]:     .. 2 reply QList(QVariant(bool, false)) 
+2026-11-03 - 14:46:17 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:17 [6]:     Starting job "Clearing all temporary mounts…" ( 2 / 47 ) 
+2026-11-03 - 14:46:17 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:17 [6]:     Starting job "Clear mounts for partitioning operations on /dev/nvme0n1" ( 3 / 47 ) 
+2026-11-03 - 14:46:17 [6]: QStringList getPartitionsForDevice(const QString&)
+2026-11-03 - 14:46:17 [6]:     Reading from "/proc/partitions" looking for "nvme0n1" 
+2026-11-03 - 14:46:17 [6]: virtual Calamares::JobResult ClearMountsJob::exec()
+2026-11-03 - 14:46:17 [6]:     ClearMountsJob finished. Here's what was done: 
+2026-11-03 - 14:46:17 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:17 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:17 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:17 [6]:     Starting job "Creating new gpt partition table on /dev/nvme0n1…" ( 4 / 47 ) 
+2026-11-03 - 14:46:17 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+2026-11-03 - 14:46:17 [6]:     Creating new partition table of type "gpt" , uncommitted partitions: 
+2026-11-03 - 14:46:17 [6]:     .. "unallocated" 
+2026-11-03 - 14:46:17 [6]:     .. "New Partition" 
+2026-11-03 - 14:46:17 [6]:     .. "New Partition" 
+2026-11-03 - 14:46:17 [6]:     .. Running QList("lsblk") 
+2026-11-03 - 14:46:17 [6]:     .. lsblk output:
+ NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0   2.7G  1 loop /run/archiso/airootfs
+sda           8:0    1  14.4G  0 disk 
+|-sda1        8:1    1   2.9G  0 part 
+`-sda2        8:2    1    23M  0 part 
+zram0       253:0    0  30.8G  0 disk [SWAP]
+nvme0n1     259:0    0 953.9G  0 disk 
+|-nvme0n1p1 259:1    0   450M  0 part 
+|-nvme0n1p2 259:2    0    16M  0 part 
+|-nvme0n1p3 259:3    0 927.9G  0 part 
+|-nvme0n1p4 259:4    0   1.3G  0 part 
+|-nvme0n1p5 259:5    0    24G  0 part 
+`-nvme0n1p6 259:6    0   260M  0 part
+2026-11-03 - 14:46:17 [6]:     .. Running QList("mount") 
+2026-11-03 - 14:46:17 [6]:     .. mount output:
+ proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sys on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+dev on /dev type devtmpfs (rw,nosuid,relatime,size=15906644k,nr_inodes=3976661,mode=755,inode64,huge=advise)
+run on /run type tmpfs (rw,nosuid,nodev,relatime,mode=755,inode64,huge=advise)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+copytoram on /run/archiso/copytoram type tmpfs (rw,relatime,size=24194912k,mode=755,inode64,huge=advise,x-initrd.mount)
+cowspace on /run/archiso/cowspace type tmpfs (rw,relatime,size=10485760k,mode=755,inode64,huge=advise,x-initrd.mount)
+/dev/loop0 on /run/archiso/airootfs type squashfs (ro,relatime,errors=continue,threads=single,x-initrd.mount)
+airootfs on / type overlay (rw,relatime,lowerdir=/run/archiso/airootfs,upperdir=/run/archiso/cowspace/persistent_/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_/x86_64/workdir,uuid=on)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64,huge=advise,usrquota)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=600,ptmxmode=000)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting)
+none on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=44,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=2543)
+none on /run/credentials/systemd-journald.service type tmpfs (ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,nosuid,nodev,relatime,pagesize=2M)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+none on /run/credentials/systemd-resolved.service type tmpfs (ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap)
+none on /run/credentials/systemd-networkd.service type tmpfs (ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap)
+tmpfs on /etc/pacman.d/gnupg type tmpfs (rw,relatime,mode=755,inode64,huge=advise,noswap)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,nr_inodes=1048576,inode64,huge=advise,usrquota)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3225988k,nr_inodes=806497,mode=700,uid=1000,gid=1000,inode64,huge=advise)
+portal on /run/user/1000/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+portal on /home/liveuser/.cache/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+2026-11-03 - 14:46:18 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:18 [6]:     Starting job "Create new 4096MiB partition on /dev/nvme0n1 (KBG60ZNV1T02 KIOXIA)" ( 5 / 47 ) 
+2026-11-03 - 14:46:20 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:20 [6]:     Starting job "Set flags on partition /dev/nvme0n1p1" ( 6 / 47 ) 
+2026-11-03 - 14:46:20 [6]: virtual Calamares::JobResult SetPartFlagsJob::exec()
+2026-11-03 - 14:46:20 [6]:     Setting flags on "/dev/nvme0n1" partition "/dev/nvme0n1p1" 
+     "boot" 
+2026-11-03 - 14:46:21 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:21 [6]:     Starting job "Create new 972664MiB partition on /dev/nvme0n1 (KBG60ZNV1T02 KIOXIA) with entries root" ( 7 / 47 ) 
+2026-11-03 - 14:46:34 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:34 [6]:     Starting job "Set partition information" ( 8 / 47 ) 
+2026-11-03 - 14:46:34 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+2026-11-03 - 14:46:34 [6]:     Building partition information map 
+2026-11-03 - 14:46:34 [6]:     .. partitions on "/dev/nvme0n1" 
+2026-11-03 - 14:46:34 [6]:     ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     filesystem-uuid (uuid) :   "FSUUID$4a3bec91" 
+     claimed :   "false" 
+2026-11-03 - 14:46:34 [6]:     ..  mapping for "/dev/nvme0n1p1" "/dev/nvme0n1p1" 
+     partlabel :   "" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/boot" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     filesystem-uuid (uuid) :   "FSUUID$3cbdd14d" 
+     claimed :   "true" 
+2026-11-03 - 14:46:34 [6]:     ..  mapping for "/dev/nvme0n1p2" "/dev/nvme0n1p2" 
+     partlabel :   "root" 
+     partition-uuid (partuuid) :   "PartUUID$7e3dc1b9" 
+     parttype :   "" 
+     partattrs :   "0" 
+     mountPoint: :   "/" 
+     fs: :   "btrfs" 
+     fsName :   "luks2" 
+     filesystem-uuid (uuid) :   "FSUUID$50d89864" 
+     claimed :   "true" 
+     luksMapperName: :   "luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931" 
+2026-11-03 - 14:46:34 [6]:     .. Partition method: "erase" 
+2026-11-03 - 14:46:34 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+2026-11-03 - 14:46:34 [6]:     Saving partition information map to GlobalStorage["partitions"] 
+2026-11-03 - 14:46:34 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+2026-11-03 - 14:46:34 [6]:     FillGlobalStorageJob writing empty bootLoader value 
+2026-11-03 - 14:46:34 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:34 [6]:     Starting job "Managing auto-mount settings…" ( 9 / 47 ) 
+2026-11-03 - 14:46:34 [6]: virtual Calamares::JobResult AutoMountManagementJob::exec()
+2026-11-03 - 14:46:34 [6]:     Restore automount settings 
+2026-11-03 - 14:46:34 [6]:     .. 2 reply QList() 
+2026-11-03 - 14:46:34 [6]:     .. 2 reply QList(QVariant(bool, false)) 
+2026-11-03 - 14:46:34 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:34 [6]:     Starting job "Creating ZFS pools and datasets…" ( 10 / 47 ) 
+2026-11-03 - 14:46:35 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:35 [6]:     Starting job "mount" ( 11 / 47 ) 
+2026-11-03 - 14:46:35 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+2026-11-03 - 14:46:35 [6]:     Job file "/usr/lib/calamares/modules/mount/main.py" 
+2026-11-03 - 14:46:35 [6]: [PYTHON JOB]: Found gettext "en_CA" in "/usr/share/locale/en_CA" 
+2026-11-03 - 14:46:35 [6]:     .. Job description from pretty_name "mount" = "Mounting partitions." 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@home,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/home") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@root,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/root") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@srv,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/srv") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@cache,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/var/cache") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@tmp,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/var/tmp") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "btrfs", "-o", "subvol=/@log,defaults,noatime,compress=zstd:1", "/dev/mapper/luks-6318a6df-eefe-4cc2-8154-7a4f3a9ca931", "/tmp/calamares-root-748uc6a2/var/log") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "vfat", "-o", "defaults,umask=0077", "/dev/nvme0n1p1", "/tmp/calamares-root-748uc6a2/boot") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-o", "bind", "/dev", "/tmp/calamares-root-748uc6a2/dev") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "proc", "-o", "defaults,noatime", "proc", "/tmp/calamares-root-748uc6a2/proc") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "tmpfs", "-o", "defaults,noatime", "tmpfs", "/tmp/calamares-root-748uc6a2/run") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-o", "bind", "/run/udev", "/tmp/calamares-root-748uc6a2/run/udev") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "sysfs", "-o", "defaults,noatime", "sys", "/tmp/calamares-root-748uc6a2/sys") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [2]: WARNING: [PYTHON JOB]: "[Errno 2] No such file or directory: 'chcon'" 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("mount", "-t", "efivarfs", "-o", "defaults,noatime", "efivarfs", "/tmp/calamares-root-748uc6a2/sys/firmware/efi/efivars") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:46:35 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:35 [6]:     Starting job "modify 90-mkinitcpio-install.hook on host and chroot" ( 12 / 47 ) 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "mkdir -p /etc/pacman.d/hooks/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "cp /etc/calamares/scripts/90-mkinitcpio-install.hook /etc/pacman.d/hooks/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "mkdir -p /tmp/calamares-root-748uc6a2/usr/share/libalpm/scripts/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "cp /etc/calamares/scripts/mkinitcpio-install-calamares /tmp/calamares-root-748uc6a2/usr/share/libalpm/scripts/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "chmod +x /tmp/calamares-root-748uc6a2/usr/share/libalpm/scripts/mkinitcpio-install-calamares") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "mkdir -p /tmp/calamares-root-748uc6a2/etc/pacman.d/hooks/") 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "cp /etc/calamares/scripts/90-mkinitcpio-install.hook /tmp/calamares-root-748uc6a2/etc/pacman.d/hooks/") 
+2026-11-03 - 14:46:35 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:46:35 [6]:     Starting job "initialize pacman ... ranking mirrors ... copy pacman mirrorlist and keyring to target ..." ( 13 / 47 ) 
+2026-11-03 - 14:46:35 [6]:     .. Running QList("/bin/sh", "-c", "bash /etc/calamares/scripts/update-mirrorlist") 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "Updating rate-mirrors\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     ":: Synchronizing package databases...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     " cachyos downloading...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     " core downloading...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     " extra downloading...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     " multilib downloading...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "resolving dependencies...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "looking for conflicting packages...\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "Package (2)                   Old Version  New Version  Net Change  Download Size\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "cachyos/cachyos-rate-mirrors  23-3         26-2           0.00 MiB       0.01 MiB\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "cachyos/rate-mirrors          0.30.0-1     0.33.0-1       0.04 MiB       2.00 MiB\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "Total Download Size:   2.01 MiB\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "Total Installed Size:  5.60 MiB\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "Net Upgrade Size:      0.04 MiB\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     "\n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     ":: Proceed with installation? [Y/n] \n" 
+2026-11-03 - 14:46:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:35 [6]:     ":: Retrieving packages...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     " rate-mirrors-0.33.0-1-x86_64 downloading...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     " cachyos-rate-mirrors-26-2-any downloading...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "checking keyring...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "checking package integrity...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "loading package files...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "checking for file conflicts...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     ":: Processing package changes...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "upgrading rate-mirrors...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "upgrading cachyos-rate-mirrors...\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "Failed to enable unit: Unit /etc/systemd/system/cachyos-rate-mirrors.timer is masked\n" 
+2026-11-03 - 14:46:37 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:37 [6]:     "error: command failed to execute correctly\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     ":: Running post-transaction hooks...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "(1/3) Reloading system manager configuration...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "(2/3) Enqueuing marked services...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "(3/3) Arming ConditionNeedsUpdate...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "==> Entry country not set, trying to detect...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     " --> Using entry country: CA\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     " --> Ranking mirrors for arch repository in /etc/pacman.d/mirrorlist...\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "# STARTED AT: 2026-11-03 14:46:38.832171203 -05:00\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "# VERSION: 0.33.0\n" 
+2026-11-03 - 14:46:38 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:38 [6]:     "# ARGS: rate-mirrors --save /tmp/tmp.S5hDgY9zlK arch\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# FETCHED MIRRORS: 1190\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# PROTOCOL FILTER: 693 -> 279 mirrors\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# MIRRORS LEFT AFTER FILTERING: 279\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# JUMP #1\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# EXPLORING CA\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# VISITED CA\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR US (by HubsFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR UK (by HubsFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR JP (by HubsFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR NL (by DistanceFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR MA (by DistanceFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "#     + NEIGHBOR MX (by DistanceFirst)\n" 
+2026-11-03 - 14:46:39 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:39 [6]:     "# TOO FEW BYTES LOADED https://nl.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:40 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:40 [6]:     "# [CA] SpeedTestResult { speed: 267.9 KB/s; elapsed: 916ms; connection_time: 53ms }\n" 
+2026-11-03 - 14:46:40 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:40 [6]:     "# [US] SpeedTestResult { speed: 171.5 KB/s; elapsed: 904ms; connection_time: 77ms }\n" 
+2026-11-03 - 14:46:40 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:40 [6]:     "# [CA] SpeedTestResult { speed: 185.5 KB/s; elapsed: 1.00s; connection_time: 83ms }\n" 
+2026-11-03 - 14:46:40 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:40 [6]:     "# [US] SpeedTestResult { speed: 177.3 KB/s; elapsed: 785ms; connection_time: 118ms }\n" 
+2026-11-03 - 14:46:40 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:40 [6]:     "# [MX] SpeedTestResult { speed: 195.7 KB/s; elapsed: 962ms; connection_time: 139ms }\n" 
+2026-11-03 - 14:46:41 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:41 [6]:     "# [UK] SpeedTestResult { speed: 121.9 KB/s; elapsed: 873ms; connection_time: 401ms }\n" 
+2026-11-03 - 14:46:41 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:41 [6]:     "# [MA] SpeedTestResult { speed: 145.0 KB/s; elapsed: 978ms; connection_time: 494ms }\n" 
+2026-11-03 - 14:46:41 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:41 [6]:     "# [JP] SpeedTestResult { speed: 188.4 KB/s; elapsed: 955ms; connection_time: 785ms }\n" 
+2026-11-03 - 14:46:41 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:41 [6]:     "# [JP] SpeedTestResult { speed: 225.7 KB/s; elapsed: 992ms; connection_time: 1.18s }\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# [UK] SpeedTestResult { speed: 405.9 KB/s; elapsed: 988ms; connection_time: 1.33s }\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# [NL] SpeedTestResult { speed: 315.9 KB/s; elapsed: 932ms; connection_time: 1.38s }\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     TOP CONNECTION TIME: CA - 53ms\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: US - 77ms\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     TOP NEIGHBOR - SPEED: UK - 405.9 KB/s\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# \n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# JUMP #2\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# EXPLORING US\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR FR (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR DE (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR ES (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR KR (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR CN (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR BR (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# EXPLORING UK\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR SE (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR SG (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR NO (by HubsFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR CH (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR FI (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "#     + NEIGHBOR AT (by DistanceFirst)\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# TOO FEW BYTES LOADED https://es.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:42 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:42 [6]:     "# TOO FEW BYTES LOADED https://ch.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# TOO FEW BYTES LOADED https://br.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [SE] SpeedTestResult { speed: 379.7 KB/s; elapsed: 871ms; connection_time: 104ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [SE] SpeedTestResult { speed: 111.2 KB/s; elapsed: 884ms; connection_time: 471ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [KR] SpeedTestResult { speed: 90.5 KB/s; elapsed: 925ms; connection_time: 520ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# TOO FEW BYTES LOADED https://at.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [FR] SpeedTestResult { speed: 131.4 KB/s; elapsed: 872ms; connection_time: 570ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# TOO FEW BYTES LOADED https://arch.yhtez.xyz/\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [BR] SpeedTestResult { speed: 75.4 KB/s; elapsed: 977ms; connection_time: 588ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [DE] SpeedTestResult { speed: 85.9 KB/s; elapsed: 858ms; connection_time: 630ms }\n" 
+2026-11-03 - 14:46:43 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:43 [6]:     "# [CH] SpeedTestResult { speed: 103.2 KB/s; elapsed: 938ms; connection_time: 702ms }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [FI] SpeedTestResult { speed: 132.4 KB/s; elapsed: 989ms; connection_time: 921ms }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [DE] SpeedTestResult { speed: 157.6 KB/s; elapsed: 933ms; connection_time: 757ms }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# TOO FEW BYTES LOADED https://singapore.mirror.pkgbuild.com/\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [CN] SpeedTestResult { speed: 116.3 KB/s; elapsed: 915ms; connection_time: 1.30s }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [NO] SpeedTestResult { speed: 118.8 KB/s; elapsed: 965ms; connection_time: 1.31s }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [NO] SpeedTestResult { speed: 138.3 KB/s; elapsed: 945ms; connection_time: 1.48s }\n" 
+2026-11-03 - 14:46:44 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:44 [6]:     "# [AT] SpeedTestResult { speed: 247.1 KB/s; elapsed: 563ms; connection_time: 833ms }\n" 
+2026-11-03 - 14:46:45 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:45 [6]:     "# TOO FEW BYTES LOADED https://mirror.sg.cdn-perfprod.com/archlinux/\n" 
+2026-11-03 - 14:46:45 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:45 [6]:     "# [ES] SpeedTestResult { speed: 181.9 KB/s; elapsed: 990ms; connection_time: 440ms }\n" 
+2026-11-03 - 14:46:45 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:45 [6]:     "# [KR] SpeedTestResult { speed: 260.2 KB/s; elapsed: 985ms; connection_time: 563ms }\n" 
+2026-11-03 - 14:46:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:46 [6]:     "# [CN] SpeedTestResult { speed: 602.7 KB/s; elapsed: 992ms; connection_time: 1.69s }\n" 
+2026-11-03 - 14:46:47 [6]: DEBUG (Qt): QML Component (default slideshow) Next slide
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "# [FR] FAILED TO CONNECT TO https://mirror.cyberbits.eu/archlinux/extra/os/x86_64/extra.files\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: SE - 104ms\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     TOP NEIGHBOR - SPEED: CN - 602.7 KB/s\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "# \n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "# JUMP #3\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "# EXPLORING SE\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR PL (by DistanceFirst)\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR DK (by DistanceFirst)\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR CZ (by DistanceFirst)\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "# EXPLORING CN\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR HK (by DistanceFirst)\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR TW (by DistanceFirst)\n" 
+2026-11-03 - 14:46:51 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:51 [6]:     "#     + NEIGHBOR BD (by DistanceFirst)\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [CZ] SpeedTestResult { speed: 395.5 KB/s; elapsed: 517ms; connection_time: 526ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [PL] SpeedTestResult { speed: 124.3 KB/s; elapsed: 856ms; connection_time: 669ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [HK] SpeedTestResult { speed: 107.4 KB/s; elapsed: 967ms; connection_time: 789ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [DK] SpeedTestResult { speed: 83.8 KB/s; elapsed: 952ms; connection_time: 825ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [TW] SpeedTestResult { speed: 90.7 KB/s; elapsed: 899ms; connection_time: 829ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [CZ] SpeedTestResult { speed: 146.2 KB/s; elapsed: 952ms; connection_time: 848ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [DK] SpeedTestResult { speed: 157.3 KB/s; elapsed: 989ms; connection_time: 875ms }\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# TOO FEW BYTES LOADED https://mirror.limda.net/archlinux/\n" 
+2026-11-03 - 14:46:53 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:53 [6]:     "# [BD] SpeedTestResult { speed: 78.5 KB/s; elapsed: 939ms; connection_time: 1.07s }\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "# [PL] SpeedTestResult { speed: 94.4 KB/s; elapsed: 998ms; connection_time: 1.41s }\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "# TOO FEW BYTES LOADED https://taipei.mirror.pkgbuild.com/\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: CZ - 526ms\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "#     TOP NEIGHBOR - SPEED: CZ - 395.5 KB/s\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "# \n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "# JUMP #4\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "# EXPLORING CZ\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "#     + NEIGHBOR SI (by DistanceFirst)\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "#     + NEIGHBOR HU (by DistanceFirst)\n" 
+2026-11-03 - 14:46:54 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:54 [6]:     "#     + NEIGHBOR UA (by DistanceFirst)\n" 
+2026-11-03 - 14:46:55 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:55 [6]:     "# [UA] SpeedTestResult { speed: 271.8 KB/s; elapsed: 452ms; connection_time: 434ms }\n" 
+2026-11-03 - 14:46:55 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:55 [6]:     "# [UA] SpeedTestResult { speed: 159.9 KB/s; elapsed: 880ms; connection_time: 474ms }\n" 
+2026-11-03 - 14:46:55 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:55 [6]:     "# [HU] SpeedTestResult { speed: 276.9 KB/s; elapsed: 590ms; connection_time: 543ms }\n" 
+2026-11-03 - 14:46:55 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:55 [6]:     "# [SI] SpeedTestResult { speed: 162.5 KB/s; elapsed: 739ms; connection_time: 555ms }\n" 
+2026-11-03 - 14:46:55 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:55 [6]:     "# [SI] SpeedTestResult { speed: 115.6 KB/s; elapsed: 637ms; connection_time: 626ms }\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "# [HU] SpeedTestResult { speed: 300.6 KB/s; elapsed: 980ms; connection_time: 1.48s }\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: UA - 434ms\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     TOP NEIGHBOR - SPEED: HU - 300.6 KB/s\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "# \n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "# JUMP #5\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "# EXPLORING UA\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR RU (by DistanceFirst)\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR RO (by DistanceFirst)\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR LV (by DistanceFirst)\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "# EXPLORING HU\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR IT (by DistanceFirst)\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR MK (by DistanceFirst)\n" 
+2026-11-03 - 14:46:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:56 [6]:     "#     + NEIGHBOR TR (by DistanceFirst)\n" 
+2026-11-03 - 14:46:57 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:57 [6]:     "# TOO FEW BYTES LOADED https://it.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:57 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:57 [6]:     "# TOO FEW BYTES LOADED https://ru.mirrors.cicku.me/archlinux/\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [IT] SpeedTestResult { speed: 237.3 KB/s; elapsed: 966ms; connection_time: 490ms }\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [RO] SpeedTestResult { speed: 79.7 KB/s; elapsed: 924ms; connection_time: 590ms }\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [TR] SpeedTestResult { speed: 89.0 KB/s; elapsed: 897ms; connection_time: 653ms }\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [RU] SpeedTestResult { speed: 126.2 KB/s; elapsed: 908ms; connection_time: 692ms }\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# TOO FEW BYTES LOADED https://mirrors.nxthost.com/archlinux/\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [LV] SpeedTestResult { speed: 149.8 KB/s; elapsed: 984ms; connection_time: 756ms }\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# TOO FEW BYTES LOADED https://mirror.verinomi.com/archlinux/\n" 
+2026-11-03 - 14:46:58 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:58 [6]:     "# [LV] SpeedTestResult { speed: 126.4 KB/s; elapsed: 972ms; connection_time: 851ms }\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "# TOO FEW BYTES LOADED https://mirror.t-home.mk/archlinux/\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: IT - 490ms\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "#     TOP NEIGHBOR - SPEED: IT - 237.3 KB/s\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "# SPEEDS ARE GETTING WORSE, STOPPING\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "# \n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "\n" 
+2026-11-03 - 14:46:59 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:46:59 [6]:     "# TESTING UNLABELED MIRRORS\n" 
+2026-11-03 - 14:47:00 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:00 [6]:     "# SpeedTestResult { speed: 728.3 KB/s; elapsed: 922ms; connection_time: 96ms }\n" 
+2026-11-03 - 14:47:00 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:00 [6]:     "# SpeedTestResult { speed: 293.5 KB/s; elapsed: 976ms; connection_time: 338ms }\n" 
+2026-11-03 - 14:47:00 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:00 [6]:     "# SpeedTestResult { speed: 379.8 KB/s; elapsed: 989ms; connection_time: 398ms }\n" 
+2026-11-03 - 14:47:01 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:01 [6]:     "# SpeedTestResult { speed: 315.8 KB/s; elapsed: 930ms; connection_time: 978ms }\n" 
+2026-11-03 - 14:47:01 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:01 [6]:     "# SpeedTestResult { speed: 352.4 KB/s; elapsed: 998ms; connection_time: 1.06s }\n" 
+2026-11-03 - 14:47:01 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:01 [6]:     "# \n" 
+2026-11-03 - 14:47:01 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:01 [6]:     "\n" 
+2026-11-03 - 14:47:01 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:01 [6]:     "# RE-TESTING TOP MIRRORS\n" 
+2026-11-03 - 14:47:02 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:02 [6]:     "# SpeedTestResult { speed: 1.3 MB/s; elapsed: 990ms; connection_time: 180ms }\n" 
+2026-11-03 - 14:47:04 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:04 [6]:     "# [CN] SpeedTestResult { speed: 436.4 KB/s; elapsed: 994ms; connection_time: 1.21s }\n" 
+2026-11-03 - 14:47:06 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:06 [6]:     "# [UK] SpeedTestResult { speed: 968.7 KB/s; elapsed: 989ms; connection_time: 370ms }\n" 
+2026-11-03 - 14:47:07 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:07 [6]:     "# [CZ] SpeedTestResult { speed: 772.2 KB/s; elapsed: 806ms; connection_time: 584ms }\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# SpeedTestResult { speed: 1.2 MB/s; elapsed: 992ms; connection_time: 303ms }\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# ==== RESULTS (top re-tested) ====\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   1. SpeedTestResult { speed: 1.3 MB/s; elapsed: 990ms; connection_time: 180ms } -> https://fastly.mirror.pkgbuild.com/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   2. SpeedTestResult { speed: 1.2 MB/s; elapsed: 992ms; connection_time: 303ms } -> https://mirror.rackspace.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   3. [UK] SpeedTestResult { speed: 968.7 KB/s; elapsed: 989ms; connection_time: 370ms } -> https://archlinux.uk.mirror.allworldit.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   4. [CZ] SpeedTestResult { speed: 772.2 KB/s; elapsed: 806ms; connection_time: 584ms } -> https://gluttony.sin.cvut.cz/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   5. [CN] SpeedTestResult { speed: 436.4 KB/s; elapsed: 994ms; connection_time: 1.21s } -> https://mirrors.wsyu.edu.cn/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   6. [SE] SpeedTestResult { speed: 379.7 KB/s; elapsed: 871ms; connection_time: 104ms } -> https://mirror.osbeck.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   7. SpeedTestResult { speed: 352.4 KB/s; elapsed: 998ms; connection_time: 1.06s } -> https://ftpmirror.infania.net/mirror/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   8. [NL] SpeedTestResult { speed: 315.9 KB/s; elapsed: 932ms; connection_time: 1.38s } -> https://ams.nl.mirrors.bjg.at/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#   9. SpeedTestResult { speed: 315.8 KB/s; elapsed: 930ms; connection_time: 978ms } -> https://mirrors.teamcloud.am/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  10. [HU] SpeedTestResult { speed: 300.6 KB/s; elapsed: 980ms; connection_time: 1.48s } -> https://ftp.ek-cer.hu/pub/mirrors/ftp.archlinux.org/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  11. SpeedTestResult { speed: 293.5 KB/s; elapsed: 976ms; connection_time: 338ms } -> https://geo.mirror.pkgbuild.com/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  12. [HU] SpeedTestResult { speed: 276.9 KB/s; elapsed: 590ms; connection_time: 543ms } -> https://hu.mirror.frigyes.dev/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  13. [UA] SpeedTestResult { speed: 271.8 KB/s; elapsed: 452ms; connection_time: 434ms } -> https://mirror.mirohost.net/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  14. [CA] SpeedTestResult { speed: 267.9 KB/s; elapsed: 916ms; connection_time: 53ms } -> https://mirror.csclub.uwaterloo.ca/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  15. [KR] SpeedTestResult { speed: 260.2 KB/s; elapsed: 985ms; connection_time: 563ms } -> https://mirror.keiminem.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  16. [AT] SpeedTestResult { speed: 247.1 KB/s; elapsed: 563ms; connection_time: 833ms } -> https://at.arch.mirror.kescher.at/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  17. [IT] SpeedTestResult { speed: 237.3 KB/s; elapsed: 966ms; connection_time: 490ms } -> https://archlinux.mirror.server24.net/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  18. [JP] SpeedTestResult { speed: 225.7 KB/s; elapsed: 992ms; connection_time: 1.18s } -> https://www.miraa.jp/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  19. [MX] SpeedTestResult { speed: 195.7 KB/s; elapsed: 962ms; connection_time: 139ms } -> https://arch.jsc.mx/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  20. [JP] SpeedTestResult { speed: 188.4 KB/s; elapsed: 955ms; connection_time: 785ms } -> https://mirror.aria-on-the-planet.es/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  21. [CA] SpeedTestResult { speed: 185.5 KB/s; elapsed: 1.00s; connection_time: 83ms } -> https://mirror.franscorack.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  22. [ES] SpeedTestResult { speed: 181.9 KB/s; elapsed: 990ms; connection_time: 440ms } -> https://mirror.raiolanetworks.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  23. [US] SpeedTestResult { speed: 177.3 KB/s; elapsed: 785ms; connection_time: 118ms } -> https://mirror.givebytes.net/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  24. [US] SpeedTestResult { speed: 171.5 KB/s; elapsed: 904ms; connection_time: 77ms } -> https://mirrors.logal.dev/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  25. [SI] SpeedTestResult { speed: 162.5 KB/s; elapsed: 739ms; connection_time: 555ms } -> https://mirror.tux.si/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  26. [UA] SpeedTestResult { speed: 159.9 KB/s; elapsed: 880ms; connection_time: 474ms } -> https://mirror.trapmaid.org/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  27. [DE] SpeedTestResult { speed: 157.6 KB/s; elapsed: 933ms; connection_time: 757ms } -> https://mirror.moson.org/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  28. [DK] SpeedTestResult { speed: 157.3 KB/s; elapsed: 989ms; connection_time: 875ms } -> https://mirrors.dotsrc.org/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  29. [LV] SpeedTestResult { speed: 149.8 KB/s; elapsed: 984ms; connection_time: 756ms } -> https://ftp.linux.edu.lv/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  30. [CZ] SpeedTestResult { speed: 146.2 KB/s; elapsed: 952ms; connection_time: 848ms } -> https://ftp.sh.cvut.cz/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  31. [MA] SpeedTestResult { speed: 145.0 KB/s; elapsed: 978ms; connection_time: 494ms } -> https://mirror.abderraziq.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  32. [NO] SpeedTestResult { speed: 138.3 KB/s; elapsed: 945ms; connection_time: 1.48s } -> https://mirror.neuf.no/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  33. [FI] SpeedTestResult { speed: 132.4 KB/s; elapsed: 989ms; connection_time: 921ms } -> https://mirror.srv.fail/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  34. [FR] SpeedTestResult { speed: 131.4 KB/s; elapsed: 872ms; connection_time: 570ms } -> https://archlinux.mailtunnel.eu/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  35. [LV] SpeedTestResult { speed: 126.4 KB/s; elapsed: 972ms; connection_time: 851ms } -> https://archlinux.koyanet.lv/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  36. [RU] SpeedTestResult { speed: 126.2 KB/s; elapsed: 908ms; connection_time: 692ms } -> https://repository.su/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  37. [PL] SpeedTestResult { speed: 124.3 KB/s; elapsed: 856ms; connection_time: 669ms } -> https://arch.midov.pl/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  38. [UK] SpeedTestResult { speed: 121.9 KB/s; elapsed: 873ms; connection_time: 401ms } -> https://uk.arch.niranjan.co/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  39. [NO] SpeedTestResult { speed: 118.8 KB/s; elapsed: 965ms; connection_time: 1.31s } -> https://mirror.archlinux.no/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  40. [CN] SpeedTestResult { speed: 116.3 KB/s; elapsed: 915ms; connection_time: 1.30s } -> https://mirrors.jlu.edu.cn/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  41. [SI] SpeedTestResult { speed: 115.6 KB/s; elapsed: 637ms; connection_time: 626ms } -> https://mirror.archlinux.si/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  42. [SE] SpeedTestResult { speed: 111.2 KB/s; elapsed: 884ms; connection_time: 471ms } -> https://ftp.myrveln.se/pub/linux/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  43. [HK] SpeedTestResult { speed: 107.4 KB/s; elapsed: 967ms; connection_time: 789ms } -> https://hkg.mirror.rackspace.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  44. [CH] SpeedTestResult { speed: 103.2 KB/s; elapsed: 938ms; connection_time: 702ms } -> https://theswissbay.ch/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  45. [PL] SpeedTestResult { speed: 94.4 KB/s; elapsed: 998ms; connection_time: 1.41s } -> https://mirror.juniorjpdj.pl/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  46. [TW] SpeedTestResult { speed: 90.7 KB/s; elapsed: 899ms; connection_time: 829ms } -> https://mirror.twds.com.tw/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  47. [KR] SpeedTestResult { speed: 90.5 KB/s; elapsed: 925ms; connection_time: 520ms } -> https://mirror2.keiminem.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  48. [TR] SpeedTestResult { speed: 89.0 KB/s; elapsed: 897ms; connection_time: 653ms } -> https://mirror.alastyr.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  49. [DE] SpeedTestResult { speed: 85.9 KB/s; elapsed: 858ms; connection_time: 630ms } -> https://berlin.mirror.pkgbuild.com/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  50. [DK] SpeedTestResult { speed: 83.8 KB/s; elapsed: 952ms; connection_time: 825ms } -> https://mirror.group.one/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  51. [RO] SpeedTestResult { speed: 79.7 KB/s; elapsed: 924ms; connection_time: 590ms } -> https://mirrors.pidginhost.com/arch/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  52. [BD] SpeedTestResult { speed: 78.5 KB/s; elapsed: 939ms; connection_time: 1.07s } -> https://mirror.xeonbd.com/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#  53. [BR] SpeedTestResult { speed: 75.4 KB/s; elapsed: 977ms; connection_time: 588ms } -> https://mirror.ufscar.br/archlinux/\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# FINISHED AT: 2026-11-03 14:47:09.159445021 -05:00\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://fastly.mirror.pkgbuild.com/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://gluttony.sin.cvut.cz/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.wsyu.edu.cn/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ftpmirror.infania.net/mirror/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ams.nl.mirrors.bjg.at/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.teamcloud.am/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ftp.ek-cer.hu/pub/mirrors/ftp.archlinux.org/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://geo.mirror.pkgbuild.com/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://hu.mirror.frigyes.dev/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.mirohost.net/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.keiminem.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://at.arch.mirror.kescher.at/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://archlinux.mirror.server24.net/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://www.miraa.jp/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://arch.jsc.mx/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.aria-on-the-planet.es/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.franscorack.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.raiolanetworks.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.givebytes.net/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.logal.dev/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.tux.si/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.trapmaid.org/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.moson.org/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.dotsrc.org/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ftp.linux.edu.lv/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ftp.sh.cvut.cz/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.abderraziq.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.neuf.no/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.srv.fail/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://archlinux.mailtunnel.eu/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://archlinux.koyanet.lv/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://repository.su/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://arch.midov.pl/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://uk.arch.niranjan.co/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.archlinux.no/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.jlu.edu.cn/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.archlinux.si/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://ftp.myrveln.se/pub/linux/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://hkg.mirror.rackspace.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://theswissbay.ch/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.twds.com.tw/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror2.keiminem.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.alastyr.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://berlin.mirror.pkgbuild.com/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.group.one/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirrors.pidginhost.com/arch/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.xeonbd.com/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "Server = https://mirror.ufscar.br/archlinux/$repo/os/$arch\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "==> Done [arch] /etc/pacman.d/mirrorlist\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     " --> Ranking mirrors for cachyos repository in /etc/pacman.d/cachyos-mirrorlist...\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# STARTED AT: 2026-11-03 14:47:09.251646767 -05:00\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# VERSION: 0.33.0\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# ARGS: rate-mirrors --save /tmp/tmp.S5hDgY9zlK cachyos\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# FETCHED MIRRORS: 36\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# MIRRORS LEFT AFTER FILTERING: 36\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# JUMP #1\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# EXPLORING CA\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "# VISITED CA\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#     + NEIGHBOR US (by HubsFirst)\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#     + NEIGHBOR UK (by HubsFirst)\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#     + NEIGHBOR CN (by HubsFirst)\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#     + NEIGHBOR NL (by DistanceFirst)\n" 
+2026-11-03 - 14:47:09 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:09 [6]:     "#     + NEIGHBOR VN (by DistanceFirst)\n" 
+2026-11-03 - 14:47:10 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:10 [6]:     "# [CA] SpeedTestResult { speed: 491.9 KB/s; elapsed: 965ms; connection_time: 81ms }\n" 
+2026-11-03 - 14:47:10 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:10 [6]:     "# [US] SpeedTestResult { speed: 274.3 KB/s; elapsed: 935ms; connection_time: 146ms }\n" 
+2026-11-03 - 14:47:11 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:11 [6]:     "# [US] SpeedTestResult { speed: 160.9 KB/s; elapsed: 916ms; connection_time: 156ms }\n" 
+2026-11-03 - 14:47:11 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:11 [6]:     "# [NL] SpeedTestResult { speed: 365.2 KB/s; elapsed: 986ms; connection_time: 416ms }\n" 
+2026-11-03 - 14:47:11 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:11 [6]:     "# [VN] SpeedTestResult { speed: 136.6 KB/s; elapsed: 839ms; connection_time: 840ms }\n" 
+2026-11-03 - 14:47:11 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:11 [6]:     "# [UK] SpeedTestResult { speed: 304.2 KB/s; elapsed: 969ms; connection_time: 840ms }\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# [CN] SpeedTestResult { speed: 177.6 KB/s; elapsed: 922ms; connection_time: 1.17s }\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# [CN] SpeedTestResult { speed: 190.5 KB/s; elapsed: 989ms; connection_time: 1.99s }\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     TOP CONNECTION TIME: CA - 81ms\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: US - 146ms\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     TOP SPEED: CA - 491.9 KB/s\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     TOP NEIGHBOR - SPEED: NL - 365.2 KB/s\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# \n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# JUMP #2\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# EXPLORING US\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR NO (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR KR (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR FR (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR DE (by DistanceFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# EXPLORING NL\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR IT (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR RU (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR SE (by HubsFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR CH (by DistanceFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR AT (by DistanceFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "#     + NEIGHBOR HU (by DistanceFirst)\n" 
+2026-11-03 - 14:47:12 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:12 [6]:     "# [DE] FAILED TO CONNECT TO https://mirror.mergedcloud.de/cachyos/repo/x86_64/cachyos/cachyos.files\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [AT] SpeedTestResult { speed: 258.3 KB/s; elapsed: 824ms; connection_time: 232ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [CH] SpeedTestResult { speed: 114.3 KB/s; elapsed: 860ms; connection_time: 349ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [SE] SpeedTestResult { speed: 168.3 KB/s; elapsed: 964ms; connection_time: 443ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [NO] SpeedTestResult { speed: 138.3 KB/s; elapsed: 827ms; connection_time: 466ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# TOO FEW BYTES LOADED https://mirror.keiminem.com/cachyos/repo/\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [HU] SpeedTestResult { speed: 142.0 KB/s; elapsed: 950ms; connection_time: 638ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [CH] SpeedTestResult { speed: 154.7 KB/s; elapsed: 900ms; connection_time: 661ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [KR] SpeedTestResult { speed: 140.3 KB/s; elapsed: 949ms; connection_time: 771ms }\n" 
+2026-11-03 - 14:47:14 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:14 [6]:     "# [IT] SpeedTestResult { speed: 149.3 KB/s; elapsed: 987ms; connection_time: 929ms }\n" 
+2026-11-03 - 14:47:15 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:15 [6]:     "# [RU] SpeedTestResult { speed: 153.5 KB/s; elapsed: 959ms; connection_time: 1.20s }\n" 
+2026-11-03 - 14:47:15 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:15 [6]:     "# [RU] SpeedTestResult { speed: 75.3 KB/s; elapsed: 978ms; connection_time: 1.73s }\n" 
+2026-11-03 - 14:47:16 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:16 [6]:     "# [FR] SpeedTestResult { speed: 566.0 KB/s; elapsed: 923ms; connection_time: 3.09s }\n" 
+2026-11-03 - 14:47:17 [6]: DEBUG (Qt): QML Component (default slideshow) Next slide
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# [IT] FAILED TO CONNECT TO https://cachyos.next-works.it/repo/x86_64/cachyos/cachyos.files\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "#     TOP NEIGHBOR - CONNECTION TIME: AT - 232ms\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "#     TOP NEIGHBOR - SPEED: FR - 566.0 KB/s\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# CONNECTION TIMES ARE GETTING WORSE, STOPPING\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# COUNTRY JUMPING YIELDED TOO FEW MIRRORS (19), ADDING OTHERS TO UNLABELED\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# \n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# TESTING UNLABELED MIRRORS\n" 
+2026-11-03 - 14:47:20 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:20 [6]:     "# [US] FAILED TO CONNECT TO https://mirror.hjk.gg/cachyos/repo/x86_64/cachyos/cachyos.files\n" 
+2026-11-03 - 14:47:21 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:21 [6]:     "# TOO FEW BYTES LOADED https://mirror5.krfoss.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:21 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:21 [6]:     "# [FI] SpeedTestResult { speed: 165.6 KB/s; elapsed: 544ms; connection_time: 78ms }\n" 
+2026-11-03 - 14:47:21 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:21 [6]:     "# SpeedTestResult { speed: 158.3 KB/s; elapsed: 978ms; connection_time: 84ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# [US] SpeedTestResult { speed: 149.4 KB/s; elapsed: 658ms; connection_time: 107ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# SpeedTestResult { speed: 134.0 KB/s; elapsed: 794ms; connection_time: 181ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# SpeedTestResult { speed: 146.0 KB/s; elapsed: 962ms; connection_time: 195ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# [US] SpeedTestResult { speed: 128.1 KB/s; elapsed: 959ms; connection_time: 247ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# [US] SpeedTestResult { speed: 137.4 KB/s; elapsed: 989ms; connection_time: 258ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# [KR] SpeedTestResult { speed: 234.9 KB/s; elapsed: 956ms; connection_time: 472ms }\n" 
+2026-11-03 - 14:47:22 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:22 [6]:     "# [RU] SpeedTestResult { speed: 184.6 KB/s; elapsed: 974ms; connection_time: 1.04s }\n" 
+2026-11-03 - 14:47:23 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:23 [6]:     "# TOO FEW BYTES LOADED https://cachyos.mirror.sahil.world/repo/\n" 
+2026-11-03 - 14:47:24 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:24 [6]:     "# TOO FEW BYTES LOADED https://mirror.limda.net/cachy/repo/\n" 
+2026-11-03 - 14:47:28 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:28 [6]:     "# [RU] SpeedTestResult { speed: 160.0 KB/s; elapsed: 819ms; connection_time: 6.98s }\n" 
+2026-11-03 - 14:47:28 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:28 [6]:     "# \n" 
+2026-11-03 - 14:47:28 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:28 [6]:     "\n" 
+2026-11-03 - 14:47:28 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:28 [6]:     "# RE-TESTING TOP MIRRORS\n" 
+2026-11-03 - 14:47:30 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:30 [6]:     "# [FR] SpeedTestResult { speed: 663.2 KB/s; elapsed: 993ms; connection_time: 655ms }\n" 
+2026-11-03 - 14:47:31 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:31 [6]:     "# [CA] SpeedTestResult { speed: 1.2 MB/s; elapsed: 986ms; connection_time: 92ms }\n" 
+2026-11-03 - 14:47:33 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:33 [6]:     "# [NL] SpeedTestResult { speed: 853.5 KB/s; elapsed: 882ms; connection_time: 435ms }\n" 
+2026-11-03 - 14:47:34 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:34 [6]:     "# [UK] SpeedTestResult { speed: 765.0 KB/s; elapsed: 995ms; connection_time: 369ms }\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "# [US] SpeedTestResult { speed: 1.1 MB/s; elapsed: 999ms; connection_time: 131ms }\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "# ==== RESULTS (top re-tested) ====\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   1. [CA] SpeedTestResult { speed: 1.2 MB/s; elapsed: 986ms; connection_time: 92ms } -> https://ca.mirror.cx/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   2. [US] SpeedTestResult { speed: 1.1 MB/s; elapsed: 999ms; connection_time: 131ms } -> https://mirrors.lansing2600.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   3. [NL] SpeedTestResult { speed: 853.5 KB/s; elapsed: 882ms; connection_time: 435ms } -> https://nl.mirror.cx/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   4. [UK] SpeedTestResult { speed: 765.0 KB/s; elapsed: 995ms; connection_time: 369ms } -> https://repo.c48.uk/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   5. [FR] SpeedTestResult { speed: 663.2 KB/s; elapsed: 993ms; connection_time: 655ms } -> https://mirror.lesviallon.fr/cachy/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   6. [AT] SpeedTestResult { speed: 258.3 KB/s; elapsed: 824ms; connection_time: 232ms } -> https://at.cachyos.org/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   7. [KR] SpeedTestResult { speed: 234.9 KB/s; elapsed: 956ms; connection_time: 472ms } -> https://mirror2.keiminem.com/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   8. [CN] SpeedTestResult { speed: 190.5 KB/s; elapsed: 989ms; connection_time: 1.99s } -> https://mirrors.ustc.edu.cn/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#   9. [RU] SpeedTestResult { speed: 184.6 KB/s; elapsed: 974ms; connection_time: 1.04s } -> https://wan.metrosg.ru/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  10. [CN] SpeedTestResult { speed: 177.6 KB/s; elapsed: 922ms; connection_time: 1.17s } -> https://mirror.nju.edu.cn/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  11. [SE] SpeedTestResult { speed: 168.3 KB/s; elapsed: 964ms; connection_time: 443ms } -> https://mirror.zyner.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  12. [FI] SpeedTestResult { speed: 165.6 KB/s; elapsed: 544ms; connection_time: 78ms } -> https://cachyos.doridian.net/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  13. [US] SpeedTestResult { speed: 160.9 KB/s; elapsed: 916ms; connection_time: 156ms } -> https://us-mnz.soulharsh007.dev/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  14. [RU] SpeedTestResult { speed: 160.0 KB/s; elapsed: 819ms; connection_time: 6.98s } -> https://mirror.jura12.ru/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  15. SpeedTestResult { speed: 158.3 KB/s; elapsed: 978ms; connection_time: 84ms } -> https://mirror.krfoss.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  16. [CH] SpeedTestResult { speed: 154.7 KB/s; elapsed: 900ms; connection_time: 661ms } -> https://mirror.init7.net/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  17. [RU] SpeedTestResult { speed: 153.5 KB/s; elapsed: 959ms; connection_time: 1.20s } -> https://mirror.cachy-arch.ru/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  18. [US] SpeedTestResult { speed: 149.4 KB/s; elapsed: 658ms; connection_time: 107ms } -> https://mirror.rosely.me/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  19. [IT] SpeedTestResult { speed: 149.3 KB/s; elapsed: 987ms; connection_time: 929ms } -> https://cachyos-mirror.m1k.cloud/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  20. SpeedTestResult { speed: 146.0 KB/s; elapsed: 962ms; connection_time: 195ms } -> https://cdn.lansing2600.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  21. [HU] SpeedTestResult { speed: 142.0 KB/s; elapsed: 950ms; connection_time: 638ms } -> https://mirror.bali0531.hu/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  22. [KR] SpeedTestResult { speed: 140.3 KB/s; elapsed: 949ms; connection_time: 771ms } -> https://mirror.pileus.kr/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  23. [NO] SpeedTestResult { speed: 138.3 KB/s; elapsed: 827ms; connection_time: 466ms } -> https://no.mirror.cx/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  24. [US] SpeedTestResult { speed: 137.4 KB/s; elapsed: 989ms; connection_time: 258ms } -> https://mirror.lug.umbc.edu/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  25. [VN] SpeedTestResult { speed: 136.6 KB/s; elapsed: 839ms; connection_time: 840ms } -> https://mirrors.nguyenhoang.cloud/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  26. SpeedTestResult { speed: 134.0 KB/s; elapsed: 794ms; connection_time: 181ms } -> https://cdn77.cachyos.org/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  27. [US] SpeedTestResult { speed: 128.1 KB/s; elapsed: 959ms; connection_time: 247ms } -> https://us.cachyos.org/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  28. [CH] SpeedTestResult { speed: 114.3 KB/s; elapsed: 860ms; connection_time: 349ms } -> https://mirror.hb9hil.org/cachyos/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "#  29. [RU] SpeedTestResult { speed: 75.3 KB/s; elapsed: 978ms; connection_time: 1.73s } -> https://archlinux.gay/cachy/repo/\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "# FINISHED AT: 2026-11-03 14:47:35.684851144 -05:00\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://ca.mirror.cx/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirrors.lansing2600.org/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://nl.mirror.cx/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://repo.c48.uk/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.lesviallon.fr/cachy/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://at.cachyos.org/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror2.keiminem.com/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://wan.metrosg.ru/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.nju.edu.cn/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.zyner.org/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://cachyos.doridian.net/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://us-mnz.soulharsh007.dev/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.jura12.ru/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.krfoss.org/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.init7.net/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.cachy-arch.ru/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.rosely.me/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://cachyos-mirror.m1k.cloud/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://cdn.lansing2600.org/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.bali0531.hu/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.pileus.kr/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://no.mirror.cx/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.lug.umbc.edu/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirrors.nguyenhoang.cloud/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://cdn77.cachyos.org/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://us.cachyos.org/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://mirror.hb9hil.org/cachyos/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "Server = https://archlinux.gay/cachy/repo/$arch/$repo\n" 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     "==> Done [cachyos] /etc/pacman.d/cachyos-mirrorlist\n" 
+2026-11-03 - 14:47:35 [6]:     .. Running QList("/bin/sh", "-c", "bash /etc/calamares/scripts/create-pacman-keyring") 
+2026-11-03 - 14:47:35 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:35 [6]:     ":: Synchronizing package databases...\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     " cachyos downloading...\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     " core downloading...\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     " extra downloading...\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     " multilib downloading...\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     "error: failed retrieving file 'cachyos.db' from ca.mirror.cx : Connection timed out after 10001 milliseconds\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     "warning: cachyos-keyring-20240331-1 is up to date -- skipping\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     " there is nothing to do\n" 
+2026-11-03 - 14:47:46 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:46 [6]:     ":: Synchronizing package databases...\n" 
+2026-11-03 - 14:47:47 [6]: DEBUG (Qt): QML Component (default slideshow) Next slide
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     " cachyos downloading...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     " core downloading...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     " extra downloading...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     " multilib downloading...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "error: failed retrieving file 'cachyos.db' from ca.mirror.cx : Connection timed out after 10001 milliseconds\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "resolving dependencies...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "looking for conflicting packages...\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "Package (1)                Old Version   New Version   Net Change  Download Size\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "cachyos/archlinux-keyring  1:20260727-1  1:20260909-1    0.00 MiB       1.21 MiB\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "Total Download Size:   1.21 MiB\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "Total Installed Size:  1.73 MiB\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "Net Upgrade Size:      0.00 MiB\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     "\n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     ":: Proceed with installation? [Y/n] \n" 
+2026-11-03 - 14:47:56 [6]: Calamares::CommandList::run()::<lambda(QString)>
+2026-11-03 - 14:47:56 [6]:     ":: Retrieving packages...\n" 
+2026-11-03 - 14:48:05 [2]: Calamares::Utils::ProcessResult Calamares::Utils::Runner::run()
+2026-11-03 - 14:48:05 [2]:     WARNING: Process "/bin/sh" timed out after 30000 ms. Output so far:
+
+2026-11-03 - 14:48:05 [2]: WARNING (Qt): QProcess: Destroyed while process ("env") is still running.
+2026-11-03 - 14:48:05 [6]: virtual void Calamares::JobThread::run()
+2026-11-03 - 14:48:05 [6]:     Skipping non-emergency job "Preparing your system for online installation of CachyOS" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "pacstrap" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Generate machine-id." 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Configuring <pre>sudo</pre> users…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Preparing groups…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Create user s" 
+2026-11-03 - 14:48:05 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:48:05 [6]: [REDACTED credential-related log line; original retained privately]
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Set hostname ss" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Setting timezone to America/Toronto…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Setting keyboard model to pc105, layout as us-…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "localecfg" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "chwd" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "packages" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Configuring LUKS key file." 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Configuring encrypted swap." 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "fstab" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "plymouthcfg" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "zfshostid" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "initcpiocfg" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Creating initramfs with mkinitcpio…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "networkcfg" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "displaymanager" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "hwclock" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "grubcfg" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "bootloader" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "reset 90-mkinitcpio-install.hook" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "services-systemd" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Running shell processes…" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Enable the UFW Firewall as default and allow outgoing but deny incoming" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Configuring noctalia-greeter..." 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Creating Btrfs installation snapshot" 
+2026-11-03 - 14:48:05 [6]:     ..  Skipping non-emergency job "Removing installer files from target system" 
+2026-11-03 - 14:48:05 [6]:     ..  Starting EMERGENCY JOB "Unmounting file systems…" ( 47 / 47 ) 
+2026-11-03 - 14:48:05 [6]: Calamares::JobResult unmountTargetMounts(const QString&)
+2026-11-03 - 14:48:05 [6]:     Read 13 entries from "/tmp/calamares-root-748uc6a2/" 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/var/tmp") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/var/log") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/var/cache") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/sys/firmware/efi/efivars") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/sys") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/srv") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/run/udev") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/run") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/root") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/proc") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/home") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/dev") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2/boot") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("umount", "-lv", "/tmp/calamares-root-748uc6a2") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("udevadm", "settle") 
+2026-11-03 - 14:48:05 [6]:     .. Running QList("sync") 
+2026-11-03 - 14:48:05 [1]: void Calamares::ViewManager::onInstallationFailed(const QString&, const QString&)
+2026-11-03 - 14:48:05 [1]:     ERROR: Installation failed: "External command failed to finish." 
+2026-11-03 - 14:48:05 [6]:     .. - message: "External command failed to finish." 
+2026-11-03 - 14:48:05 [6]:     .. - details: Command <i>bash /etc/calamares/scripts/create-pacman-keyring</i> failed to finish in 30 seconds.
+There was no output from the command.
+2026-11-03 - 14:48:06 [6]: void Calamares::ViewManager::onInstallationFailed(const QString&, const QString&)
+2026-11-03 - 14:48:06 [6]:     Calamares will quit when the dialog closes. 
+2026-11-03 - 14:48:06 [6]: DEBUG (Qt): QML Component (default slideshow) deactivated
+2026-11-03 - 14:48:06 [6]: void Config::doNotify(bool, bool)
+2026-11-03 - 14:48:06 [6]:     Notification not sent; completion: failed 
+2026-11-03 - 14:48:06 [6]: void {anonymous}::PowerManagementInterface::uninhibitSleep()
+2026-11-03 - 14:48:06 [6]:     Sleep was never inhibited. 
