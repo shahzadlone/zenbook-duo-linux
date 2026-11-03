@@ -6,6 +6,10 @@ This is the user's persistent research, installation and troubleshooting record 
 
 The filename is **AGENTS.md**; the user's request also spelled it AGNETS.md. The canonical file is this one.
 
+README.md is the user-facing installation entry point: keep it focused on model/distro guidance, setup commands, starting prompts and links. Local development housekeeping, build cleanup, evidence processing and repository maintenance belong here or in the relevant docs, not in the README narrative. This separation was explicitly requested by the user.
+
+Agent installation and Git access are documented in `docs/agent-setup.md`. The README contains separate preparation-computer and native-target prompts. `CLAUDE.md` imports this file so both agents share the same workflow. At session start summarize the verified machine, current status, missing evidence and next action; do not imply the agent inherited the chat or automatically read every linked document.
+
 ## Verify which machine you control
 
 The initial documentation agent ran in WSL on the older computer, at `/home/shahzad/~~/ask/zenbook-duo-linux`. Its terminal did **not** control the new UX8407AA. Commands supplied in chat for the new machine are not evidence that they ran unless the user returned results.

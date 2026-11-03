@@ -55,4 +55,6 @@ Cold and warm boot, login/lock/unlock, keyboard dock/undock, both panels, correc
 
 ## Suggested opening request to the next agent
 
-> Read AGENTS.md, docs/handoff.md, the UX8407AA machine profile and open issues. You are now running locally on the 2026 laptop; verify that first. Continue the CachyOS/KDE/Wayland setup using selected Burakgon modules after addressing the recorded source-review risks. Collect the pending logs, establish rollback, and distinguish the DMC login freeze from the TCSS lower-panel bug. Keep the journal, evidence, module ledger and handoff current, and push meaningful checkpoints to main without overwriting concurrent work.
+Use **Prompt 2** in [README.md](../README.md#prompt-2--finish-setup-locally-on-the-linux-laptop) from the cloned repository on the installed laptop. **Prompt 1** is for a preparation computer guiding installation on another machine. [Agent setup](agent-setup.md) covers Codex/Claude installation, Fish/Bash, cloning, account login and GitHub push access. `CLAUDE.md` imports the canonical AGENTS.md workflow.
+
+The setup instructions were added after the initial repository handoff. No agent installation on the target, hardware fix, new kernel log receipt or additional hardware test is implied by that documentation update.

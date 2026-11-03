@@ -6,6 +6,10 @@ Read AGENTS.md and the current handoff. Confirm the physical machine and whether
 
 The repository improves continuity by giving the next agent explicit, versioned evidence and decisions. It does not automatically train a model or supply context to an agent that has not read it.
 
+For a new computer, use [agent setup](agent-setup.md) and the appropriate starting prompt in [README.md](../README.md). Codex and Claude share the canonical AGENTS.md instructions through the checked-in entry files. Confirm that the agent has identified its actual host before granting significance to any hardware output.
+
+Keep README.md focused on installation and getting started. Put local development details, validation reports and maintenance rules in their dedicated documents; preserve the history without making it part of the public setup narrative.
+
 ## Collect diagnostics
 
 From a native Linux desktop terminal in the cloned repository:
