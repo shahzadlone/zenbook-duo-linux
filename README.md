@@ -1,10 +1,43 @@
-# Linux on ASUS Zenbook Duo
+<a id="top"></a>
 
-Installation guidance, tested results and troubleshooting for ASUS Zenbook Duo laptops, starting with the **2026 UX8407AA on CachyOS + KDE Plasma + Wayland**.
+<p align="center">
+  <img src="assets/artwork/zenbook-duo-linux-hero.png" alt="Concept artwork of an ASUS Zenbook Duo with two cyan-lit displays, a detached keyboard and the Linux Tux penguin." width="1200" />
+</p>
 
-See the [machine profiles](machines/) for recorded configurations and test results, and the [installation journal](docs/journey/2026-11-03.md) for the documented journey.
+<h1 align="center">ASUS Zenbook Duo · Linux</h1>
 
-## Which approach should I use?
+<p align="center">
+  <strong>Two screens. A Linux workspace.</strong><br />
+  A community field guide to installing, understanding and refining Linux on the Zenbook Duo.
+</p>
+
+<p align="center">
+  <a href="#choose-your-setup"><img src="assets/badges/cachyos.svg" alt="CachyOS" height="26" /></a>
+  <a href="#choose-your-setup"><img src="assets/badges/kde-plasma.svg" alt="KDE Plasma" height="26" /></a>
+  <a href="#choose-your-setup"><img src="assets/badges/wayland.svg" alt="Wayland" height="26" /></a>
+</p>
+
+<p align="center">
+  <a href="#choose-your-setup">Choose your setup</a> &nbsp;·&nbsp;
+  <a href="#install-codex-on-the-cachyos-laptop">Get started</a> &nbsp;·&nbsp;
+  <a href="#continue-with-an-ai-agent">AI prompts</a> &nbsp;·&nbsp;
+  <a href="#field-guide">Field guide</a>
+</p>
+
+---
+
+## Start here
+
+This project brings together hardware research, installation walkthroughs and troubleshooting, beginning with the **2026 UX8407AA on CachyOS + KDE Plasma + Wayland**. Each machine has its own configuration and test record.
+
+| Preparing an installation | Already running Linux |
+| --- | --- |
+| Work from another computer and get guided through the install. | Run an agent locally to diagnose hardware and finish configuration. |
+| [Use the preparation prompt →](#prompt-1--guide-me-from-another-computer) | [Use the local setup prompt →](#prompt-2--finish-setup-locally-on-the-linux-laptop) |
+
+[Explore machine profiles](machines/) · [Read the installation journey](docs/journey/2026-11-03.md)
+
+## Choose your setup
 
 | Laptop | Approach |
 | --- | --- |
@@ -62,6 +95,9 @@ If you already cloned the repository, open that folder instead of cloning again.
 
 ## Use Claude Code instead
 
+<details>
+<summary><strong>Install and launch Claude Code</strong></summary>
+
 Use the same repository and prompts. In Konsole, install the [official Claude Code CLI](https://code.claude.com/docs/en/setup):
 
 ```sh
@@ -79,9 +115,18 @@ claude
 
 Clone the repository first if you skipped the Codex instructions. Follow Claude's sign-in flow; Claude access is separate from ChatGPT access. You only need one of these agents. [Additional setup details](docs/agent-setup.md).
 
+</details>
+
+## Continue with an AI agent
+
+Choose the prompt for the computer the agent is actually running on. Expand it, copy the full text, and paste it into Codex or Claude Code from the repository directory.
+
 ## Prompt 1 — guide me from another computer
 
 Use this on a preparation computer, including Windows with WSL. The agent guides you through work on the target laptop and records the results you return.
+
+<details>
+<summary><strong>Copy the preparation-computer prompt</strong></summary>
 
 ```text
 Help me install and configure Linux on an ASUS Zenbook Duo, guiding me through
@@ -114,9 +159,14 @@ without overwriting work from the other computer. When native Linux is usable,
 help me install an agent, clone this repository on it and continue with Prompt 2.
 ```
 
+</details>
+
 ## Prompt 2 — finish setup locally on the Linux laptop
 
 Use this **inside the repository on the installed Linux laptop** to continue configuration and troubleshooting from its existing state.
+
+<details>
+<summary><strong>Copy the installed-laptop prompt</strong></summary>
 
 ```text
 Continue configuring this Zenbook Duo locally until its Linux setup is stable.
@@ -157,15 +207,32 @@ without overwriting concurrent work. Begin by summarizing the verified state,
 missing evidence and the next concrete action, then continue the work.
 ```
 
+</details>
+
 ## How the next agent gets context
 
 Start the agent **in the cloned repository** and give it the appropriate prompt. Codex loads [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports the same instructions for Claude Code. Those instructions direct the agent to the relevant machine record and require documentation of each trial. The repository carries context between sessions; earlier conversations are not automatically available. See [Codex instructions](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [Claude project instructions](https://code.claude.com/docs/en/memory).
 
-## Installation record and troubleshooting
+<p align="center">
+  <img src="assets/artwork/zenbook-duo-linux-field-notes.png" alt="Concept illustration of a dual-screen Zenbook Duo and Tux, drawn as a cyan engineering sketch on a midnight-blue drafting grid." width="1000" />
+</p>
 
-- [Installation journey](docs/journey/2026-11-03.md): research, USB preparation, installation, failures and recovery.
-- [Current handoff](docs/handoff.md), [UX8407AA status](machines/ux8407aa-2026/README.md) and [open issues](docs/open-issues.md).
-- [Research comparison](docs/research/project-comparison.md) and [module selection](docs/research/burakgon-modules.md).
-- [Installer timeout](docs/troubleshooting/installer-keyring-timeout.md) and [graphics freeze](docs/troubleshooting/graphics-freeze.md).
-- [Evidence](evidence/README.md) and [adding logs](logs/README.md).
-- [Recording trials](docs/workflow.md) and [templates](templates/README.md).
+## Field guide
+
+| Explore | What you will find |
+| --- | --- |
+| [Installation journey](docs/journey/2026-11-03.md) | USB preparation, installation, first boot and lessons from failed attempts. |
+| [Hardware profiles](machines/) | Model-specific configurations and recorded test results. |
+| [Research comparison](docs/research/project-comparison.md) | How the available Zenbook Duo Linux projects differ. |
+| [Module selection](docs/research/burakgon-modules.md) | What individual fixes do and when they may apply. |
+| [Troubleshooting](docs/open-issues.md) | Known issues, including [installer timeouts](docs/troubleshooting/installer-keyring-timeout.md) and [graphics freezes](docs/troubleshooting/graphics-freeze.md). |
+| [Evidence and logs](evidence/README.md) | Source material and [how to add diagnostic logs](logs/README.md). |
+| [Agent handoff](docs/handoff.md) | The current continuation point for the documented installation. |
+| [Recording a trial](docs/workflow.md) | A repeatable workflow and [templates](templates/README.md) for preserving results. |
+
+---
+
+<p align="center">
+  <sub>Built around real observations, shared research and careful iteration.</sub><br />
+  <sub><a href="assets/artwork/README.md">Original AI-generated concept artwork</a> · <a href="#top">Back to top ↑</a></sub>
+</p>

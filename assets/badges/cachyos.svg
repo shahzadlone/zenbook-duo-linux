@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="26" viewBox="0 0 104 26" role="img" aria-label="CachyOS">
+  <title>CachyOS</title>
+  <rect x="0.5" y="0.5" width="103" height="25" rx="6" fill="#0d1b2c" stroke="#2a3d54"/>
+  <circle cx="14" cy="13" r="3" fill="#69ddd5"/>
+  <text x="26" y="17" fill="#69ddd5" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600">CachyOS</text>
+</svg>

@@ -60,6 +60,8 @@ Use `templates/experiment.md` for trials and `templates/machine.md` for addition
 
 Do not include unrelated personal files or secrets. Keep JPEG evidence pixels unchanged when removing GPS/EXIF metadata. Preserve original hashes and describe transformations. Do not generate replacement screenshots with an image model.
 
+Decorative README media lives in `assets/`, separate from evidence. Keep artwork provenance and prompts in `assets/artwork/generation.json`. Concept imagery and stack badges must not imply hardware validation. Preserve the two reusable prompts and setup commands when restyling the README; keep navigation usable on GitHub and narrow screens.
+
 Check `git status`, fetch remote changes and use ordinary fast-forward/rebase/merge workflows as appropriate; preserve concurrent work. No force push, destructive reset or automatic deletion of someone else's artifacts. Do not embed absolute workstation paths in Markdown links; documentation must work after cloning on another machine.
 
 ## Rust build cleanup (required user instruction)

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="26" viewBox="0 0 130 26" role="img" aria-label="KDE Plasma">
+  <title>KDE Plasma</title>
+  <rect x="0.5" y="0.5" width="129" height="25" rx="6" fill="#0d1b2c" stroke="#2a3d54"/>
+  <circle cx="14" cy="13" r="3" fill="#89baff"/>
+  <text x="26" y="17" fill="#89baff" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600">KDE Plasma</text>
+</svg>
