@@ -138,11 +138,24 @@
   "display_topology": {
     "observed": "2026-11-22 kscreen-doctor: eDP-1 enabled 2880x1800@144 scale 2 rotation 4 (180 deg) geometry 0,0; eDP-2 connected but disabled, 2880x1800@144 available, geometry 1800,0; brightness control supported on both; user intent for rotation and eDP-2 state not yet confirmed"
   },
+  "keyboard_detach": {
+    "state": "bluetooth_unpaired",
+    "diagnosis": "2026-11-22: keyboard works docked via internal USB (usb 3-6, 0b05:1cd7); bluetoothctl devices empty (never paired); hci0 up, rfkill clear. Detached keyboard switches to Bluetooth and has no pairing. Upstream procedure: detach, enter pairing mode with the Bluetooth key (F11), bluetoothctl scan le / pair / trust, passkey typed on the keyboard; keyboard gets a new address each pairing-mode entry.",
+    "user_pairing_pending": true
+  },
+  "panel_orientation": {
+    "state": "expected_hardware_geometry",
+    "finding": "eDP-1 (top panel) is physically mounted 180 deg rotated, eDP-2 (bottom) mounted normally, matching the upstream hardware report. User's manual KDE 180 deg rotation of eDP-1 is the correct workaround; upstream touchscreen-hid (libinput calibration) and desktop-kde-duo (rotation daemon) automate this.",
+    "console_side_effect": "early boot splash/TTY text appears upside down on eDP-1 until userspace rotation applies; no kernel panel_orientation quirk for this model"
+  },
   "raydium_touchscreen_crash": {
     "state": "observed_unresolved",
     "event": "2026-11-21 20:13:51 EST kernel 7.3.3-1-cachyos: Oops general protection fault / NULL deref in raydium_i2c_irq+0x138 [raydium_i2c_ts] on irq/108-RAYD000; IRQ thread died; irq 108 nobody cared; IRQ #108 disabled",
     "affected_device": "i2c-RAYD0001:00 touchscreen (input13, pci 00:19.0 designware.2); RAYD0002 touch/stylus is a separate device",
-    "user_confirmation_of_dead_touch_pending": true
+    "user_report": "2026-11-22: user confirms touch does not work; consistent with disabled IRQ #108 since the crash",
+    "source_analysis": "2026-11-22: mainline raydium_i2c_ts.c has no NULL-deref fix and no recent functional commits; crash address ~0x10e implies NULL report base with report_size 0xfe. Likely device/firmware state glitch, single occurrence.",
+    "recovery": "reboot restores the IRQ (user deferring reboot while other agents run)",
+    "user_confirmation_of_dead_touch_pending": false
   },
   "xe_plane_faults": {
     "state": "chronic_nonfatal_observed",

@@ -28,7 +28,8 @@
 | xe plane faults | Chronic, non-fatal: 131 `PLANE ... fault (SURF==SURFLIVE)` lines on pipe A in current boot (7.3.3), also on 7.3.1 working boot; "Selective fetch area calculation failed in pipe A" at init. |
 | Upper-panel touchscreen (RAYD0001) | Kernel Oops 2026-11-21 20:13 EST: NULL deref in `raydium_i2c_irq`, IRQ #108 disabled; touch status since then unconfirmed. |
 | Lower-panel touch/stylus (RAYD0002) | Devices enumerated (touch, stylus, unknown); function untested. Nov 3 log showed one `incomplete report` warning. |
-| Keyboard typing | Worked during installation and for encryption/user interaction; freeze association unproven. |
+| Keyboard typing | Worked during installation and for encryption/user interaction; freeze association unproven. Docked over internal USB (0b05:1cd7). Detached: dead — Bluetooth never paired (upstream pairing procedure identified: F11 pairing key, bluetoothctl scan le, passkey on keyboard). |
+| Panel orientation | eDP-1 physically mounted 180° (upstream-confirmed); user's manual KDE rotation is the correct workaround; early-boot/TTY output appears upside down. |
 | Battery | 94.46/98.97 Wh (95%), reported Full, 0 W draw at capture. |
 | Sensors | Fans, NVMe, ACPI thermal zones readable via lm-sensors. |
 | Top touch, bottom touch, pen | Pending independent tests. |
