@@ -9,7 +9,7 @@
   "session_type": "wayland",
   "shell_observed": "fish",
   "running_kernel": "7.3.3-1-cachyos",
-  "kernel_note": "System updated from 7.3.1 (log evidence date) to 7.3.3 by user between 2026-11-03 and 2026-11-22; no stability test recorded on 7.3.3 yet.",
+  "kernel_note": "System updated from 7.3.1 (log evidence date) to 7.3.3 by user between 2026-11-03 and 2026-11-20; running since boot 0 (2026-11-20 20:19 EST). No DMC freeze recurrence observed through 2026-11-22.",
   "live_kernel": "7.1.6-1-cachyos",
   "bios_observed": {
     "version": "UX8407AA.305",
@@ -123,7 +123,7 @@
     "root_subvolume_from_config": "/@",
     "esp_path_from_config": "/boot",
     "boot_partition_gib_planned": 4,
-    "mount_inventory_pending": true,
+    "mount_inventory_verified": "2026-11-22: nvme0n1p1 4G vfat at /boot (fmask/dmask 077); nvme0n1p2 LUKS2 -> btrfs with subvolumes @ @home @root @srv @cache @tmp @log; zram 30.8G swap",
     "windows_removed": true,
     "erase_authorization": "Explicit user confirmation of backups and acceptance of Windows/recovery loss for this target SSD."
   },
@@ -131,13 +131,28 @@
     "bootloader": "Limine",
     "config_evidence": "evidence/2026-11-03-ux8407aa/current-boot-and-limine.md",
     "graphics_overrides_in_displayed_default_line": [],
-    "effective_cmdline_pending": true,
+    "effective_cmdline_verified": "2026-11-22: /proc/cmdline and generated limine.conf entries match; entry 1 = CachyOS 7.3.3, entry 2 = LTS 6.18.60, remember_last_entry yes, timeout 5; 25 snapper snapshots bootable via limine-snapper-sync; intel-ucode.img present",
     "secure_boot": "disabled_measured (SecureBoot efivar value 0x00, read 2026-11-22)",
     "keyboard_workaround": "Lift off lower screen before power-on/restart until validated TCSS fix."
   },
+  "display_topology": {
+    "observed": "2026-11-22 kscreen-doctor: eDP-1 enabled 2880x1800@144 scale 2 rotation 4 (180 deg) geometry 0,0; eDP-2 connected but disabled, 2880x1800@144 available, geometry 1800,0; brightness control supported on both; user intent for rotation and eDP-2 state not yet confirmed"
+  },
+  "raydium_touchscreen_crash": {
+    "state": "observed_unresolved",
+    "event": "2026-11-21 20:13:51 EST kernel 7.3.3-1-cachyos: Oops general protection fault / NULL deref in raydium_i2c_irq+0x138 [raydium_i2c_ts] on irq/108-RAYD000; IRQ thread died; irq 108 nobody cared; IRQ #108 disabled",
+    "affected_device": "i2c-RAYD0001:00 touchscreen (input13, pci 00:19.0 designware.2); RAYD0002 touch/stylus is a separate device",
+    "user_confirmation_of_dead_touch_pending": true
+  },
+  "xe_plane_faults": {
+    "state": "chronic_nonfatal_observed",
+    "current_boot": "131 PLANE fault lines on 7.3.3 boot (Nov 20-22), pipe A planes 1A/5A, SURF==SURFLIVE; also present on the 7.3.1 working boot; no freeze associated"
+  },
+  "xe_parameters_observed": "enable_dc=-1 enable_dmc_wl=-1 enable_psr=-1 enable_panel_replay=-1 enable_dpcd_backlight=-1; zenbook_duo_edp2_tcss unavailable (stock xe; TCSS module would add it)",
   "graphics_incident": {
-    "state": "recovered_unresolved",
+    "state": "recovered_not_recurred_through_2026-11-22",
     "full_log_review": "2026-11-22 reviewed logs/reviewed/2026-11-03-ux8407aa/; failed boot confirms WARNING intel_dmc_wl.c:227 intel_dmc_wl_get reached from gen9_set_dc_state via intel_display_power_put_async_work, i.e. a display DC-state (DMC) power transition; Duo keyboard USB disconnect at 16:05:47 mid-incident; working boot has no DMC/DBuf/flip_done errors but shows plane 5A fault repeats on pipe A (SURF=SURFLIVE=0x5200000), Selective fetch area calculation failure at init, and one GSC proxy not-bound error.",
+    "recurrence": "No DMC/DBuf/flip_done entries in boots -3..0 (Nov 3 17:18 through Nov 22). Only 5 boots recorded since install; freeze observed once.",
     "previous_boot_signature": [
       "DMC wakelock ack timed out",
       "flip_done timed out",

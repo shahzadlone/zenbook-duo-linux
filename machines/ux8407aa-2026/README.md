@@ -22,11 +22,15 @@
 
 | Feature | Local result |
 | --- | --- |
-| Wi-Fi | Worked in live session; installer downloaded online packages. Installed desktop networking not separately tested. |
-| Desktop/login | Eventually successful after cold recovery; initial login froze. |
-| Upper display | Image available; initially inverted in live environment. Final photograph is upright; exact persistent rotation settings not recorded. |
-| Lower display | Used during installation; docked/undocked operational matrix still untested. |
+| Wi-Fi | Worked in live session; installed system: Intel BE201 (Wi-Fi 7) on iwlwifi/iwlmld, connected; UFW firewall active. |
+| Desktop/login | Eventually successful after cold recovery; initial login froze. No freeze recurrence Nov 3–22. |
+| Displays | eDP-1 enabled 2880x1800@144, scale 2, rotation 4 (180°), geometry 0,0; eDP-2 connected but disabled (user intent unconfirmed). Brightness control supported on both. |
+| xe plane faults | Chronic, non-fatal: 131 `PLANE ... fault (SURF==SURFLIVE)` lines on pipe A in current boot (7.3.3), also on 7.3.1 working boot; "Selective fetch area calculation failed in pipe A" at init. |
+| Upper-panel touchscreen (RAYD0001) | Kernel Oops 2026-11-21 20:13 EST: NULL deref in `raydium_i2c_irq`, IRQ #108 disabled; touch status since then unconfirmed. |
+| Lower-panel touch/stylus (RAYD0002) | Devices enumerated (touch, stylus, unknown); function untested. Nov 3 log showed one `incomplete report` warning. |
 | Keyboard typing | Worked during installation and for encryption/user interaction; freeze association unproven. |
+| Battery | 94.46/98.97 Wh (95%), reported Full, 0 W draw at capture. |
+| Sensors | Fans, NVMe, ACPI thermal zones readable via lm-sensors. |
 | Top touch, bottom touch, pen | Pending independent tests. |
 | Backlight/Fn/media keys | Pending. |
 | Speakers, microphone, headset | Pending; upstream 7.3 audio fixes do not prove local audio success. |
