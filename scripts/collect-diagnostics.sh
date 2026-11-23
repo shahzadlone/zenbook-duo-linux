@@ -76,6 +76,12 @@ record boot-mount.txt findmnt /boot
 record command-line.txt cat /proc/cmdline
 record limine-defaults.txt "${sudo_prefix[@]}" cat /etc/default/limine
 record limine-entries.txt "${sudo_prefix[@]}" cat /boot/limine.conf
+record boot-listing.txt "${sudo_prefix[@]}" bash -c '
+    ls -la /boot
+    find /boot -maxdepth 2 -printf "%y %M %u:%g %s %p\n" 2>/dev/null | sort -k5
+'
+record btrfs-subvolumes.txt "${sudo_prefix[@]}" btrfs subvolume list /
+record snapper-snapshots.txt "${sudo_prefix[@]}" snapper -a list
 record journal-boots.txt "${sudo_prefix[@]}" journalctl --list-boots --no-pager
 record kernel-current.log "${sudo_prefix[@]}" journalctl -b 0 -k --no-pager
 record kernel-previous.log "${sudo_prefix[@]}" journalctl -b -1 -k --no-pager
@@ -111,6 +117,13 @@ if command -v kscreen-doctor >/dev/null; then record displays.txt kscreen-doctor
 if command -v wpctl >/dev/null; then record audio.txt wpctl status; fi
 if command -v snapper >/dev/null; then record snapper-configs.txt "${sudo_prefix[@]}" snapper list-configs; fi
 if command -v mokutil >/dev/null; then record secure-boot.txt mokutil --sb-state; fi
+record secure-boot-efivar.txt bash -c '
+    var=/sys/firmware/efi/efivars/SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+    if [[ -r $var ]]; then od -An -tx1 "$var"; else echo unavailable; fi
+'
+record input-devices.txt cat /proc/bus/input/devices
+if command -v sensors >/dev/null; then record sensors.txt sensors; fi
+if command -v upower >/dev/null; then record battery.txt upower -i /org/freedesktop/UPower/devices/battery_BAT0; fi
 if command -v nmcli >/dev/null; then record network-state.txt nmcli general status; fi
 
 cat >"$capture_dir/README.txt" <<'EOF'
