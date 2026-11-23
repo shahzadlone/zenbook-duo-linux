@@ -1,6 +1,16 @@
 # Current handoff: UX8407AA on CachyOS
 
-Recorded 2026-11-03. Read this before any installer, package or bootloader mutation.
+Recorded 2026-11-03; updated 2026-11-22 (local agent session on the laptop). Read this before any installer, package or bootloader mutation.
+
+## 2026-11-22 update: native agent session active
+
+- The repository is cloned on the target laptop (`/home/s/Desktop/2026ZenBookWork/zenbook-duo-linux`); identity verified: DMI `Zenbook Duo UX8407AA`, CachyOS, KDE, Wayland session, native Btrfs root.
+- Running kernel is now **7.3.3-1-cachyos** (user updated from 7.3.1); LTS 6.18.60 and both header packages are installed. No DKMS is installed. Secure Boot measured disabled (efivar value `0x00`). Snapper `root` config exists; Limine `BOOT_ORDER="*, *lts, *fallback, Snapshots"`.
+- Both pending kernel logs were received in `logs/incoming/`, reviewed, MAC-redacted and published under `logs/reviewed/2026-11-03-ux8407aa/` with SHA-256 provenance. The full-log findings are recorded in [graphics-freeze](troubleshooting/graphics-freeze.md): the freeze fires inside `gen9_set_dc_state`/`intel_dmc_wl_get` during a display DC-state transition; the working boot shows no DMC errors but repeated pipe A plane 5A faults.
+- Sudo is not available without the user's password from the agent shell. A consolidated read-only sudo collection script is prepared; the user runs it and returns output before bootloader/mount/snapshot work continues.
+- No module, kernel parameter or BIOS change has been applied in this session yet.
+
+## Original 2026-11-03 record
 
 ## Current facts
 

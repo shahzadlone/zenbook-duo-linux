@@ -19,6 +19,36 @@ intel_dmc_wl_get ... [xe]
 
 These are selected visible diagnostic lines, not a complete journal export. The warning stack points into the display power/wakelock path; the log's kernel-taint letters alone do not prove third-party modules were installed. The workflow had installed none.
 
+## Full-log review (received 2026-11-22)
+
+The user supplied both complete `journalctl -k` exports; reviewed copies with
+SHA-256 provenance are in [`logs/reviewed/2026-11-03-ux8407aa/`](../../logs/reviewed/2026-11-03-ux8407aa/).
+Both cover kernel 7.3.1-1-cachyos on 2026-11-03. Established facts from the full files:
+
+- Failed boot (16:04:31 start): the first error is at 16:05:28 —
+  `WARNING: drivers/gpu/drm/i915/display/intel_dmc_wl.c:227 at intel_dmc_wl_get`,
+  reached from `gen9_set_dc_state` ← `__intel_display_power_put_domain` ←
+  `intel_display_power_put_async_work`. The freeze therefore occurs **inside a
+  display DC-state (DMC) power transition**, not merely near one. `Unexpected DBuf
+  power power state (0x00000000, expected 0x0000000f)` follows, then repeated
+  `flip_done`/`commit wait` timeouts on pipes A and B and eDP-1 through 16:09:01.
+- The Duo keyboard USB device (`usb 3-6`) disconnected at 16:05:47 and
+  re-enumerated at 16:05:55 during the incident. This is consistent with the
+  keyboard being a casualty of the freeze (or of a USB/TCSS reset) rather than
+  a proven cause; causation remains unestablished.
+- Working boot (16:10:05 start): **no** DMC/DBuf/flip_done errors at all.
+  New signatures instead: `Selective fetch area calculation failed in pipe A`
+  at driver init, one `GSC proxy component not bound` at 16:10:27, and repeated
+  `[CRTC:153:pipe A][PLANE:136:plane 5A] fault (SURF=0x5200000, SURFLIVE=0x5200000)`
+  at 16:11:30 and 16:13:29. The export ends at 16:13:29; the desktop was in use.
+- Both boots used the same kernel command line: `quiet nowatchdog splash rw
+  rootflags=subvol=/@ rd.luks.uuid=... root=/dev/mapper/luks-...` — no `xe.*`
+  parameters were active in either boot.
+
+The DC-state call trace makes `xe.enable_dc=0` a **directly targeted** diagnostic
+(it disables exactly the power-saving path in which the warning fired), while
+remaining unproven as a permanent fix and potentially increasing power use.
+
 ## Distinguish these hypotheses
 
 | Failure family | Diagnostic evidence | Interpretation for this user |
@@ -34,7 +64,7 @@ These are selected visible diagnostic lines, not a complete journal export. The 
 
 Collect all available boot IDs before selecting the failed one. `-b -1` means the immediately preceding boot, not permanently “the bad boot.” Save the entire kernel log and optionally the full system journal locally, then publish reviewed/redacted excerpts. Include current kernel, package versions, firmware messages, BIOS, actual xe module path, command line, current parameters, display topology and whether the keyboard was on the lower screen at power-on.
 
-The later [16:41 photograph](../../evidence/2026-11-03-ux8407aa/20261103_164134.jpg) shows no matches for `DMC wakelock|DBuf|flip_done|PHY B` in the current boot and shows `/etc/default/limine`. This is a useful clean check for those patterns at that time, not a complete clean-journal or permanent-fix result. The user's saved full previous/current logs still await upload.
+The later [16:41 photograph](../../evidence/2026-11-03-ux8407aa/20261103_164134.jpg) shows no matches for `DMC wakelock|DBuf|flip_done|PHY B` in the current boot and shows `/etc/default/limine`. This is a useful clean check for those patterns at that time, not a complete clean-journal or permanent-fix result. The full previous/current logs were received 2026-11-22 and are reviewed above; they supersede the photographic excerpts for diagnosis.
 
 ## Candidates that were researched, not applied
 

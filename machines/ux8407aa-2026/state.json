@@ -1,5 +1,5 @@
 {
-  "updated_date": "2026-11-03",
+  "updated_date": "2026-11-22",
   "timezone": "America/Toronto",
   "machine_id": "ux8407aa-2026",
   "model": "ASUS Zenbook Duo UX8407AA",
@@ -8,7 +8,8 @@
   "desktop_version": null,
   "session_type": "wayland",
   "shell_observed": "fish",
-  "running_kernel": "7.3.1-1-cachyos",
+  "running_kernel": "7.3.3-1-cachyos",
+  "kernel_note": "System updated from 7.3.1 (log evidence date) to 7.3.3 by user between 2026-11-03 and 2026-11-22; no stability test recorded on 7.3.3 yet.",
   "live_kernel": "7.1.6-1-cachyos",
   "bios_observed": {
     "version": "UX8407AA.305",
@@ -131,11 +132,12 @@
     "config_evidence": "evidence/2026-11-03-ux8407aa/current-boot-and-limine.md",
     "graphics_overrides_in_displayed_default_line": [],
     "effective_cmdline_pending": true,
-    "secure_boot": "Disable guidance followed by successful boot; current measured state pending.",
+    "secure_boot": "disabled_measured (SecureBoot efivar value 0x00, read 2026-11-22)",
     "keyboard_workaround": "Lift off lower screen before power-on/restart until validated TCSS fix."
   },
   "graphics_incident": {
     "state": "recovered_unresolved",
+    "full_log_review": "2026-11-22 reviewed logs/reviewed/2026-11-03-ux8407aa/; failed boot confirms WARNING intel_dmc_wl.c:227 intel_dmc_wl_get reached from gen9_set_dc_state via intel_display_power_put_async_work, i.e. a display DC-state (DMC) power transition; Duo keyboard USB disconnect at 16:05:47 mid-incident; working boot has no DMC/DBuf/flip_done errors but shows plane 5A fault repeats on pipe A (SURF=SURFLIVE=0x5200000), Selective fetch area calculation failure at init, and one GSC proxy not-bound error.",
     "previous_boot_signature": [
       "DMC wakelock ack timed out",
       "flip_done timed out",
@@ -157,22 +159,23 @@
   "pending_artifacts": [
     {
       "name": "zenbook-previous-first-boot.log",
-      "state": "user_reports_saved_not_received"
+      "state": "received_and_published_2026-11-22",
+      "location": "logs/reviewed/2026-11-03-ux8407aa/zenbook-previous-first-boot.redacted.log"
     },
     {
       "name": "zenbook-current-fixed-boot.log",
-      "state": "export_seen_in_photo_full_file_not_received"
+      "state": "received_and_published_2026-11-22",
+      "location": "logs/reviewed/2026-11-03-ux8407aa/zenbook-current-fixed-boot.redacted.log"
     },
     {
       "name": "current-filter-no-matches-text",
-      "state": "photo_received_text_file_not_received"
+      "state": "superseded_by_received_full_logs"
     }
   ],
   "next_actions": [
-    "Verify native target identity and current Git state.",
-    "Review complete uploaded/captured logs and effective configuration.",
-    "Establish /boot/config/kernel recovery and snapshot coverage.",
-    "Resolve/test source rollback finding before module apply/revert.",
+    "Collect root-restricted baseline (mounts, /boot/limine entries, snapper, current-boot journal) via user-run sudo script.",
+    "Resolve/test SRC-001 rollback bug in reviewed Burakgon checkout before apply/revert.",
+    "Evaluate xe.enable_dc=0 as one-boot diagnostic for the DC-state transition freeze on 7.3.3.",
     "Select kernel-appropriate fixes and test incrementally."
   ],
   "untested_features": [

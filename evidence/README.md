@@ -26,8 +26,8 @@ Original logs/photos and temporary checkouts are not pushed. The SHA-256 of an o
 ## Missing artifacts
 
 - Full successful-install retry log (`~/cachy-install.log` existed in the live session but was not supplied).
-- `zenbook-previous-first-boot.log`: user reports saved; not yet received.
-- `zenbook-current-fixed-boot.log`: export command visible; full file not yet received.
-- A separate text copy of the current no-matches result: planned by user, photograph already retained.
+- ~~`zenbook-previous-first-boot.log`~~ received and published 2026-11-22 with provenance under [logs/reviewed](../logs/reviewed/2026-11-03-ux8407aa/provenance.md).
+- ~~`zenbook-current-fixed-boot.log`~~ received and published 2026-11-22 with provenance under [logs/reviewed](../logs/reviewed/2026-11-03-ux8407aa/provenance.md).
+- ~~A separate text copy of the current no-matches result~~ superseded by the received full logs; photograph retained.
 
 See [logs intake](../logs/README.md). Missing artifacts are not placeholders for fabricated content; their files are intentionally absent until provided.

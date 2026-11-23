@@ -10,7 +10,7 @@
 | Internal disk | KIOXIA KBG60ZNV1T02, `/dev/nvme0n1`, 953.9 GiB in installer/live output. |
 | Firmware | Kernel photograph: UX8407AA.305, date text `02/10/2026`. No firmware update performed. |
 | OS | CachyOS desktop, rolling; KDE Plasma selected; Wayland confirmed. |
-| Kernel | Live USB: 7.1.6-1-cachyos. Installed/running: 7.3.1-1-cachyos. |
+| Kernel | Live USB: 7.1.6-1-cachyos. Installed at incident: 7.3.1-1-cachyos (see reviewed logs). Running as of 2026-11-22: 7.3.3-1-cachyos after user system update; LTS 6.18.60-2 also installed with both header packages. No stability qualification on 7.3.3 yet. |
 | Other kernel | Installer package list included linux-cachyos-lts 6.18.55-2 and both headers; installed package inventory still needed. |
 | Bootloader | Limine selected; `/etc/default/limine` photographed at 16:41, with /boot ESP path and encrypted-root arguments. Effective `/proc/cmdline` and generated entries still to inspect. |
 | Root/boot | Installer created LUKS2 + Btrfs root and a separate 4 GiB FAT32 /boot; installed mount inventory pending. |

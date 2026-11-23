@@ -4,11 +4,11 @@
 
 | ID | Priority | State | Next evidence/action |
 | --- | --- | --- | --- |
-| DUO-001 | High | DMC login freeze recovered, unresolved | Review full failed/current logs; current filtered query was clear at 16:41. Preserve effective boot config and evaluate one reversible trial if warranted. |
+| DUO-001 | High | DMC login freeze recovered, unresolved; full logs reviewed 2026-11-22 | Failed boot shows WARNING at `intel_dmc_wl.c:227` reached from `gen9_set_dc_state` (display DC-state transition); keyboard USB disconnected mid-incident. Working boot has repeated pipe A plane 5A faults instead. Evaluate one-boot `xe.enable_dc=0` trial. |
 | DUO-002 | High | UX8407AA TCSS lower-panel risk, unpatched | Keep keyboard lifted at startup. Confirm symptoms/source compatibility and driver rollback before selecting xe DKMS. Do not conflate with DUO-001. |
 | DUO-003 | High | Burakgon identical-file rollback bug reproduced | Resolve and test ownership semantics before relying on module revert. See SRC-001. |
-| DUO-004 | High | Full installed-system logs not yet received | User will supply `zenbook-previous-first-boot.log`, `zenbook-current-fixed-boot.log`, and filtered output. Preserve originals and review publication. |
-| DUO-005 | Medium | Kernel/package/boot baseline incomplete | Inventory installed regular/LTS kernels, headers, active module paths, generated Limine entries, actual mount layout, Secure Boot and snapshot configuration. Limine source config photo is available. |
+| DUO-004 | High | Full installed-system logs received, reviewed and published 2026-11-22 | See `logs/reviewed/2026-11-03-ux8407aa/`. Originals checksummed; only MAC addresses redacted. Close after confirming no further intake expected for this incident. |
+| DUO-005 | Medium | Kernel/package/boot baseline partially complete | Collected 2026-11-22: linux-cachyos 7.3.3 + LTS 6.18.60 both with headers, no DKMS installed, Secure Boot disabled (efivar 0x00), snapper `root` config, Limine `BOOT_ORDER="*, *lts, *fallback, Snapshots"`. Still pending: mount layout, generated Limine entries in `/boot`, current-boot journal, snapshot coverage test. |
 | DUO-006 | Medium | Core hardware validation incomplete | Both displays, touch/pen, rotation, brightness, audio, keyboard/Fn, Bluetooth and sleep tests; record before/after. |
 | DUO-007 | Medium | Pacman hook capability unverified | Check actual libalpm support and upstream PR #2 status before installing source-fetch hooks. |
 | DUO-008 | Medium | Update/rollback procedure not exercised | Preserve /boot separately from root snapshots; test module rebuild and kernel-update recovery. |
@@ -25,5 +25,6 @@
 | DONE-005 | Installed desktop reached | User reports successful login after cold recovery. One boot is not stability qualification. |
 | DONE-006 | Kernel/Wayland and DMC signature established | User confirms 7.3.1-1-cachyos/Wayland; previous-boot warning photograph. |
 | DONE-007 | Current filtered journal and Limine config collected photographically | No matches for specified graphics patterns at 16:41; complete current log still pending. |
+| DONE-008 | Full failed/current kernel logs received, reviewed and published | `logs/reviewed/2026-11-03-ux8407aa/` with SHA-256 provenance; kernel-only journals, MAC redaction only. No 7.3.3 stability evidence yet. |
 
 Close an active issue only with the affected machine/kernel, evidence, validation conditions and rollback state recorded in a dated trial. If a workaround merely suppresses a symptom, say so and retain the maintenance obligation.
