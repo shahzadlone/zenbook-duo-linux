@@ -4,17 +4,13 @@ All line references refer to the pinned source snapshot unless updated by a late
 
 ## SRC-001: revert can delete an identical pre-existing file
 
-**Status: reproduced in an isolated temporary directory; not fixed in the upstream checkout or on the laptop.**
+**Status: reproduced against pinned upstream (2026-11-22, reconfirmed); fixed and tested in a reviewed local checkout — not upstream, not yet in use on the laptop.**
 
 Source: [Burakgon lib/actions.sh](https://github.com/burakgon/zenbook-duo-2026-linux/blob/8030783aac5273da5f2aa0da217a6bc408ee0533/lib/actions.sh), `duo_install_file`, `_existing_backup`, `_backup_once`, `duo_revert_manifest`.
 
-If the destination already exists and is byte-identical to the source, `duo_install_file` takes an early return. It records the destination with `_existing_backup`, which returns `-` if this module has never backed it up. Revert interprets `-` as a file the module created and removes it. Thus a no-op apply can take ownership of and later delete a file that predated the module.
+The bug: an unchanged (byte-identical) destination is recorded with `_existing_backup`, which returns `-` when the module never backed the file up; revert interprets `-` as module ownership and removes the file. A related finding: the content-equality branch ignored the requested mode, and symlinks were not excluded from the unchanged shortcut.
 
-Run the [isolated reproducer](../../scripts/reproduce-burakgon-rollback.sh) against the exact reviewed source. It creates only its own temporary file/state tree and invokes the helpers there. Its exit status identifies reproduction, not success of the upstream behavior. The [recorded result](../../evidence/research/burakgon-rollback-reproduction.txt) provides the test evidence.
-
-Before relying on apply/revert, distinguish already-managed destinations from unowned identical files and preserve original ownership semantics. Test at least: pre-existing identical content; pre-existing different content; new file; repeated application; changed desired content after first install; symlinks/modes as applicable. Simply backing up every identical file on every reapply can create a different ownership error for a file originally created by the module. No patch is included as “validated” here.
-
-Additional inspection concern, not a reproduced separate fix: the content-equality branch does not enforce a requested mode change. A complete fix should consider modes and symlinks rather than only bytes.
+Fix (see [the trial](../trials/2026-11-22-burakgon-rollback-fix.md) and [patch](../../evidence/research/burakgon-rollback-fix.patch)): back up a pre-existing identical destination before recording; module-created files still get removed because their older `-` manifest line wins on newest-first replay; enforce mode; exclude symlinks from the unchanged shortcut. The 13-scenario [test matrix](../../scripts/test-burakgon-rollback-fix.sh) passes fully on the fixed checkout and reproduces the bug on pristine.
 
 ## SRC-002: pacman hook syntax is distribution-dependent
 

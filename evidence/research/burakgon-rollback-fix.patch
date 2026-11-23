@@ -1,0 +1,22 @@
+diff --git a/lib/actions.sh b/lib/actions.sh
+index 7ed645e..5dcd2d6 100644
+--- a/lib/actions.sh
++++ b/lib/actions.sh
+@@ -45,9 +45,15 @@ duo_need_initramfs() { DUO_NEED_INITRAMFS=1; }
+ duo_install_file() {
+ 	local src="$1" dest="$2" mode="${3:-0644}" bak
+ 	[[ -f $src ]] || die "missing source file: $src"
+-	if [[ -e $dest ]] && cmp -s "$src" "$dest"; then
++	if [[ -f $dest && ! -L $dest ]] && cmp -s "$src" "$dest" \
++		&& [[ $(stat -c %a "$dest") == "${mode#0}" ]]; then
+ 		info "unchanged: $dest"
+-		_record file "$dest" "$(_existing_backup "$dest")"
++		# SRC-001 fix: back up a pre-existing identical destination before
++		# recording it. A bare "-" would make revert treat the file as module
++		# created and delete it. Backing up is safe for a file this module
++		# created earlier: its older "-" manifest line still wins on revert
++		# (manifests replay newest first), so the file is still removed then.
++		_record file "$dest" "$(_backup_once "$dest")"
+ 		return 0
+ 	fi
+ 	bak="$(_backup_once "$dest")"

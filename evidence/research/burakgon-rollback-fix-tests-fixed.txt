@@ -1,0 +1,15 @@
+PASS  1 pre-existing identical file survives revert
+PASS  2 pre-existing different file restored
+PASS  3a new file installed
+PASS  3b module-created file removed by revert
+PASS  4 module-created file removed after reapply+revert
+PASS  5 repeated applies restore original
+PASS  6 changed-source module file removed by revert
+PASS  6b changed-source pre-existing file restored
+PASS  7a mode enforced on apply
+PASS  7b original mode and content restored
+PASS  8a symlink replaced by regular file
+PASS  8b symlink restored by revert
+PASS  9 backup created exactly once across reapplies
+
+test-burakgon-rollback-fix: 13 passed, 0 failed (source: /home/s/Desktop/2026ZenBookWork/zenbook-duo-linux/.local/research/burakgon-fixed)

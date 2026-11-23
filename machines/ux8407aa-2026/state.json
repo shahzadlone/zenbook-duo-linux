@@ -19,7 +19,7 @@
   "install_status": "completed_user_confirmed",
   "desktop_status": "logged_in_after_cold_recovery",
   "stability_status": "not_qualified",
-  "approach": "selected_burakgon_modules_after_review",
+  "approach": "selected_burakgon_modules_after_review_with_local_lib_fix",
   "applied_burakgon_modules": [],
   "module_ledger": {
     "audio-cs35l56-ot25": {
@@ -174,9 +174,8 @@
   ],
   "next_actions": [
     "Collect root-restricted baseline (mounts, /boot/limine entries, snapper, current-boot journal) via user-run sudo script.",
-    "Resolve/test SRC-001 rollback bug in reviewed Burakgon checkout before apply/revert.",
     "Evaluate xe.enable_dc=0 as one-boot diagnostic for the DC-state transition freeze on 7.3.3.",
-    "Select kernel-appropriate fixes and test incrementally."
+    "Select kernel-appropriate fixes and test incrementally using the fixed lib checkout."
   ],
   "untested_features": [
     "dock-undock matrix",

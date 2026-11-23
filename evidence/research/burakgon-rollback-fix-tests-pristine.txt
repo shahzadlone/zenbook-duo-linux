@@ -1,0 +1,16 @@
+FAIL  1 pre-existing identical file survives revert
+PASS  2 pre-existing different file restored
+PASS  3a new file installed
+PASS  3b module-created file removed by revert
+PASS  4 module-created file removed after reapply+revert
+PASS  5 repeated applies restore original
+PASS  6 changed-source module file removed by revert
+PASS  6b changed-source pre-existing file restored
+FAIL  7a mode enforced on apply
+FAIL  7b original mode and content restored
+stat: cannot statx '/home/s/Desktop/2026ZenBookWork/zenbook-duo-linux/.local/rollback-test-8YqfT2/s7.dest': No such file or directory
+PASS  8a symlink replaced by regular file
+PASS  8b symlink restored by revert
+FAIL  9 backup created exactly once across reapplies
+
+test-burakgon-rollback-fix: 9 passed, 4 failed (source: /home/s/Desktop/2026ZenBookWork/zenbook-duo-linux/.local/research/burakgon-upstream)
